@@ -1,0 +1,15 @@
+numpy
+scipy
+matplotlib
+opencv
+pytesseract
+beautifulsoup4
+lxml
+fastapi
+snapshottest
+graphene
+ipython
+aiohttp
+pydantic
+pytest-asyncio
+uvicorn

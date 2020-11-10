@@ -1,0 +1,1351 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+
+
+    <!-- #APPTJ0316 -->
+    <title>Resultado da consulta processual</title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/dataTables.js"></script>
+    <script type="text/javascript" src="./js/jquery-historico-mandado.js"></script>
+    <script language="JavaScript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script>
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+
+
+
+<link href="http://www.tjrj.jus.br/importacao-portal/css" type="text/css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/importacao-portal/script"></script>
+
+
+
+
+
+    <style type="text/css" media="print">
+        #navegador { display:none; }
+        #navegador-horiz { display:none; }
+        #navegador-horiz2 { display:none; }
+        #navegador-horiz3 { display:none; }
+        #navegador-horiz-limpo { display:none; }
+        #content-barra  { display:none; }
+        #cabecalho { display:none; }
+        #rodape { display:none; }
+        #content, #content2,
+        #content3, #content100,
+        #content-center, #content-center2,
+        #content-frame, #content-id-busca,
+        #content-idusuario-100 {
+         margin-left:0px;
+         width:100%;
+        }
+        body { color:#000000; }
+        a { color:#000000; }
+        h1 { color:#000000; }
+        h2 { color:#000000; }
+        h3 { color:#000000; }
+        h4 { color:#000000; }
+        h5 { color:#000000; }
+        h6 { color:#000000; }
+
+        table { border-width: 1px; }
+    </style>
+    <style type="text/css">
+      .info { font-weight: bold; }
+      .negrito {font-weight: bold;}
+    </style>
+    <script type="text/javascript" src="./print.js"></script>
+    <script type="text/javascript" src="./funcoesPopUp.js?v=1.0"></script>
+    <script type="text/javascript" src="./js/consultaPorNumero.js?v=4"></script>
+    <script type="text/javascript" src="./autoCompletar.js"></script>
+    <script type="text/javascript" src="./js/impOutrosEstilos.js"></script>
+
+
+    <link href="./css/demo_table.css" rel="stylesheet" type="text/css">
+    <link href="./css/estilo.css" rel="stylesheet" type="text/css">
+
+
+
+    <script type="text/javascript" type="text/javascript">
+      var arquivosCss = new Array("http://www.tjrj.jus.br/css/body2/body.css",
+                                  "http://www.tjrj.jus.br/css/lay-out.css",
+                                  "http://www.tjrj.jus.br/css/menu.css",
+                                  "http://www.tjrj.jus.br/css/form.css",
+                                  "http://www.tjrj.jus.br/css/textos-img.css");
+      function submetePesqDocElet(){
+        //location.href='consultaProcDocElet.do?numProcesso=2015.029.014188-8&acessoIP=internet&senhaProcesso=document.getElementById('senhaProcesso').value;'
+        var senha = document.getElementById("senhaProcesso").value;
+        document.location.href="consultaProcDocElet.do?v=2&numProcesso=2015.029.014188-8&acessoIP=internet&senhaProcesso="+senha;
+      }
+      function exibeListaPersonagens(){
+        if (document.getElementById('listaPersonagens').style.display == "block")
+          document.getElementById('listaPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaPersonagens').style.display = "block"
+        }
+      }
+      function exibeListaHistoricoPersonagens(){
+        if (document.getElementById('listaHistoricoPersonagens').style.display == "block")
+          document.getElementById('listaHistoricoPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaHistoricoPersonagens').style.display = "block"
+        }
+      }
+
+      function assistirAudiencia(dtAudiencia,horaAudiencia){
+            document.location.href="redirencionakenta?codigoProc=0014010-35.2015.8.19.0029" + "&dtAudiencia=" + dtAudiencia + "&horaAudiencia=" + horaAudiencia;
+      }
+    </script>
+
+  </head>
+  <body>
+
+
+        <div id="tudo">
+
+    <!-- Início da div#tudo -->
+
+
+
+
+
+
+<div id="banner" role="banner">
+	<div id="barra">
+		<div class="container-fluid-1280 clearfix">
+			<div class="atalhos-wrapper">
+				<div class="menu-barra" role="navigation">
+					<ul class="atalhos">
+						<li><a href="http://www.tjrj.jus.br/web/guest/mapa-do-site" title="Mapa do site">Mapa do site</a></li>
+						<li><a href="http://www.tjrj.jus.br/web/guest/fale-conosco" title="Fale conosco">Fale conosco</a></li>
+						<li><a href="http://www.tjrj.jus.br/c/portal/login?p_l_id=10139" title="Intranet">Intranet</a></li>
+						<li><a href="https://outlook.office.com/" title="Webmail">Webmail</a></li>
+						<li><a href="https://portaltj.tjrj.jus.br/web/guest/home-interna" title="Magistrados">Magistrados, Servidores e Colaboradores</a></li>
+					</ul>
+				</div>
+				<ul class="redes clearfix">
+					<li class="nav-facebook"><a href="https://www.facebook.com/tjrjoficial" target="_blank" title="Acessar o Facebook"><i class="icone-rede" aria-label="Facebook"></i></a></li>
+					<li class="nav-twitter"><a href="https://twitter.com/tjrjoficial" target="_blank" title="Acessar o Twitter"><i class="icone-rede" aria-label="Twitter"></i></a></li>
+					<li class="nav-instagram"><a href="https://www.instagram.com/tjrjoficial/" target="_blank" title="Acessar o Instagram"><i class="icone-rede" aria-label="Instagram"></i></a></li>
+					<li class="nav-youtube"><a href="https://www.youtube.com/user/pjerjoficial" target="_blank" title="Acessar o Youtube"><i class="icone-rede" aria-label="Youtube"></i></a></li>
+					<li class="nav-flickr"><a href="https://www.flickr.com/people/pjerjoficial" target="_blank" title="Acessar o Flickr"><i class="icone-rede" aria-label="Flickr"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topo">
+		<div class="conteudo-topo">
+			<div class="container-fluid-1280">
+				<a class="logo" href="http://www.tjrj.jus.br" role="logo" title="TJRJ">
+					<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo.png" alt="TJRJ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+          <div id="navigation" role="navigation">
+	<h1 class="hide-accessible">Navegação</h1>
+	<div class="container-fluid-1280">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav clearfix" aria-label="Páginas do site">
+				<li class="active" role="presentation"><a href="http://www.tjrj.jus.br/web/guest/home" role="menuitem" title="Página inicial">Página inicial</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/consultas" role="menuitem" title="Consultas">Consultas</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/servicos/servicos" role="menuitem" title="Serviços">Serviços</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/institucional/institucional" role="menuitem" title="Institucional">Institucional</a></li>
+				<li role="presentation"><a href="http://cgj.tjrj.jus.br" target="_blank" role="menuitem" title="Corregedoria">Corregedoria</a></li>
+				<li role="presentation"><a href="http://www4.tjrj.jus.br/sislicweb/lic_conteudo.aspx?id=17" role="menuitem" title="Licitações">Licitações</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+      <!-- Início da div#container -->
+      <div id="container">
+
+
+
+
+
+        <!-- Menu Vertical Lateral -->
+
+
+
+<div id='navegador' class='naveg-vertical navegador list-menu'>
+<h2 class='titulo portlet-title-text'><div class="conteudo">
+<a href="http://www.tjrj.jus.br/web/guest/consultas/processos_jud/processos_jud" title="Judiciais" >Judiciais</a></div></h2><ul class="layouts level-1" ><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-numero-indice0" title="Por Número" >Por Número</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-nome-indice1" title="Por Nome" >Por Nome</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-oab-indice2" title="Por OAB" >Por OAB</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-advogado-indice3" title="Por Nome do Advogado" >Por Nome do Advogado</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-cpf-indice4" title="Por CPF / CNPJ" >Por CPF / CNPJ</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-protocolo-indice5" title="Por Protocolo" >Por Protocolo</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-serventia-indice6" title="Lista de Processos Aptos a Julgamento" >Lista de Processos Aptos a Julgamento</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do?o=prec#tabs-numero-indice0" title="Precatórios Judiciais" >Precatórios Judiciais</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/eJUD/ProcessarProcInconst.aspx" title="Processos de Inconstitucionalidade" >Processos de Inconstitucionalidade</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/consultaPedidoFalencia/inicio.do" title="Pedidos de Falência" >Pedidos de Falência</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/portalDeServicos/jsp/portal/formularioLogin.jsp" title="Por e-mail" >Por e-mail</a></li><li class="lfr-nav-item ultimo " ><a href="http://www.tjrj.jus.br/web/guest/consultas/processos-jud/formas-dispo-consultas" title="Formas disponíveis de Consulta" >Formas disponíveis de Consulta</a></li></ul></div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="content-barra">
+
+<!-- inicio da barra de ferramentas-->
+
+
+
+          <a href="javascript:history.go(-1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif" title="voltar" alt="voltar"/></a>
+
+
+
+      <a href="javascript:history.go(1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif" title="avanÃ§ar" alt="avanÃ§ar"/></a>
+
+
+      <a href="javascript:window.print();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-print.gif" title="imprimir" alt="imprimir"/></a>
+
+
+
+
+
+
+
+
+
+            <a href="javascript:location.href='http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do';"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-busca-arquivo.gif" title="nova busca" alt="nova busca"/></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Fim da barra de ferramentas-->
+</div>
+
+
+
+
+            <div id="content" name="content">
+
+
+
+            <h3>Consulta Processual - N&uacute;mero - Primeira
+                                  Inst&acirc;ncia</h3>
+          <form name="formResultado" action="">
+
+
+
+
+
+                <input type="HIDDEN" name="acessoIP"
+                       value='internet'/>
+
+              <input type="HIDDEN" name="maquinaResposta" value="internet"/>
+              <input id="tipoUsuario" type="HIDDEN" name="tipoUsuario" value=''/>
+
+
+              <table width="100%" border="0">
+                <tr>
+                  <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr valign="top">
+                  <td align="center" colspan="2" class="info">
+                    As informa&ccedil;&otilde;es aqui contidas n&atilde;o produzem
+                    efeitos legais.
+                    <br/>
+                    Somente a publica&ccedil;&atilde;o no DJERJ oficializa
+                    despachos e decis&otilde;es e estabelece prazos.
+                  </td>
+                </tr>
+
+
+
+
+                  <tr valign="top">
+                    <td align="center" colspan="2" class="info">
+
+                      <br/><h2>Processo N<sup>o</sup>
+                      0014010-35.2015.8.19.0029
+                      </h2>
+
+
+                    </td>
+                  </tr>
+
+
+                    <input type="HIDDEN" name="codigoProc"
+                           value='0014010-35.2015.8.19.0029'/>
+
+                  <tr><td>&nbsp;</td></tr>
+                   <tr valign="top">
+                   <td colspan="2" class="info">
+                      TJ/RJ -
+                      14/03/2020 08:13:47
+
+
+
+
+                        - Primeira inst&acirc;ncia
+
+                          - Distribu&iacute;do em
+                          11/02/2015
+
+
+
+                     </td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">&nbsp;</td>
+                     </tr>
+
+
+
+
+
+
+                        <tr valign="top">
+                          <td align="center" colspan="2" class="info" nowrap="nowrap">
+                            <a href="javascript: abrirVisualizador('2015.029.014188-8','1','0014010-35.2015.8.19.0029','N');">
+                              Processo eletrônico - clique aqui para visualizar.
+                             <img name='pesqDocElet' border="0" style="vertical-align:middle;"
+                                     src='http://www4.tjrj.jus.br/portalDeServicos/images/icones/visualizarProcesso.png' title='Pesquisar processo eletrônico'
+                                     alt='Pesquisar processo eletrônico'>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+                          <tr valign="top">
+                            <td align="center" colspan="2" class="info" nowrap="nowrap">
+
+
+
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td class="info">
+
+                        Comarca de Magé
+
+                    </td>
+                    <td class="info">
+
+                        Vara Criminal
+
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td colspan="1"/>
+                    <td class="info">
+
+                        Cartório da Vara Criminal
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Endere&ccedil;o:</td>
+                      <td valign="top">
+                        Rua Domingos Bellize
+                        &nbsp;
+                        178
+                        &nbsp;
+
+                        &nbsp;
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Bairro:</td>
+                      <td valign="top">
+                        Centro
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Cidade:</td>
+                      <td valign="top">
+                        Magé
+                      </td>
+                    </tr>
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">A&ccedil;&atilde;o:</td>
+                      <td valign="top">
+                        Tráfico de Drogas e Condutas Afins (Art. 33 - Lei 11.343/06)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Assunto:</td>
+                      <td valign="top">
+                        Tráfico de Drogas e Condutas Afins (Art. 33 - Lei 11.343/06)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Classe:</td>
+                      <td valign="top">
+                        Ação Penal - Procedimento Ordinário
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Aviso ao advogado:</td>
+                      <td valign="top">
+                        peça para juntar - DEVOLVIDO CARTÓRIO
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Autor
+                        </td>
+                        <td valign="top">
+                          MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Réu
+                        </td>
+                        <td valign="top">
+                          GLEICE RANGEL NETO OU GLEICE RANGEL NETO SALVADOR e outro(s)...
+                        </td>
+                      </tr>
+
+
+
+
+
+
+                            <tr>
+                            <td>&nbsp;</td>
+                            <td valign="top">
+                              <a href="javascript:exibeListaPersonagens();">
+                                <font size="-2">Listar todos os personagens</font>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" width="100%">
+                              <div id="listaPersonagens"
+                                   style="z-index:1000; position:absolute; width:50%; display:none; border-style:solid;background-color:#FFFFFA;">
+                                <table width="100%" class="tab-bord" cellpadding="3"
+                                       cellspacing="1">
+                                  <tr>
+                                    <td align="left" class="tab-chamada" width="20%"
+                                        valign="top" bgcolor="#D3D3D3">TIPO</td>
+                                    <td align="left" class="tab-chamada" width="40%"
+                                        valign="top" bgcolor="#D3D3D3">PERSONAGEM</td>
+                                  </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Autor
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        GLEICE RANGEL NETO OU GLEICE RANGEL NETO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Advogado
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        (RJ205136) LUCIO COSME FERREIRA PACHECO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LEONARDO VIEIRA CAMARA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        RITIELLE CORREIA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LUIZ FERNANDO DA COSTA LUGÃO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARLON DA SILVA SOUZA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Advogado
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        (TJ000002) DEFENSOR PÚBLICO
+                                      </td>
+                                    </tr>
+
+                                  <tr>
+                                    <td colspan="2" valign="top" nowrap="nowrap">
+                                      <hr></hr>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="right" valign="top"
+                                        nowrap="nowrap">
+                                      <a href="javaScript:printContent('listaPersonagens');">Imprimir</a>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <a href="javaScript:exibeListaPersonagens();">Fechar</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+                    <tr>
+                      <td valign="top" class="info">Advogado(s):</td>
+                      <td valign="top">
+
+                          RJ205136
+                          &nbsp;-&nbsp;
+                          LUCIO COSME FERREIRA PACHECO
+                          <br/>
+
+                          TJ000002
+                          &nbsp;-&nbsp;
+                          DEFENSOR PÚBLICO
+                          <br/>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>03/03/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifico que nesta data a ré RITIELLE CORREIA DA SILVA compareceu neste cartório, informando seu novo endereço: Rua Maria de Matos, Lt 73, Piabetá, Magé.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>21/02/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>12/02/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao interessado para que se manifeste sobre a Certidão do Oficial de Justiça.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>12/02/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>07/02/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao interessado para que se manifeste sobre a Certidão do Oficial de Justiça.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>07/02/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>03/02/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Notificação da Lei 11343/06<BR>Mandado de Notificação da Lei 11343/06<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> MAGE CENTRAL DE CUMP DE MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 03/02/2020</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 11/02/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>31/01/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Documento eletrônico juntado de forma automática.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/01/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>09/01/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao interessado para que se manifeste sobre a Certidão do Oficial de Justiça.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>09/01/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>28/11/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Notificação da Lei 11343/06<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> MAGE CENTRAL DE CUMP DE MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 04/12/2019</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 08/01/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>26/07/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>05/07/2019</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>01/07/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1. Verifica-se que a acusada Ritielle Correia da Silva compareceu espontaneamente nos autos, tendo apresentado documentos à fl. 2810. Assim, considero suprida a falta de notificação e dou a ré por notificada.
+
+2. Dê-s...
+<br><br>
+<a href='javascript:void("3");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=3&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov3" value="1. Verifica-se que a acusada Ritielle Correia da Silva compareceu espontaneamente nos autos, tendo apresentado documentos à fl. 2810. Assim, considero suprida a falta de notificação e dou a ré por notificada.
+
+2. Dê-se vista à Defensoria Pública, para que apresente defesa prévia quanto aos acusados Leonardo Vieira Camara, Ritielle Correia da Silva e Luiz Fernando da Costa Gulão.
+
+3. Expeça-se mandado de notificação para o acusado Marlon da Silva Souza.
+
+4. Após, voltem conclusos para designação de audiência de instrução e julgamento."><tr>
+<td valign=top nowrap class='negrito'>&nbsp;</td>
+<td valign=top align=justify class='normal'><a href='#' onClick=javascript:abreDocEletronico('00044CFD50C9B4139809C69FA0ABA0B70616C50A405D3629');>Visualizar Ato Assinado Digitalmente <img height='14' width='13' border='0' src='./imagens/pdf4.gif' alt='Visualizar Ato Assinado Digitalmente' title='Visualizar Ato Assinado Digitalmente' );></a></td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>01/07/2019</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>GABRIEL ALMEIDA MATOS DE CARVALHO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>26/06/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1. Certifico que, nesta data, desmembrei o presente feito dos autos de nº 0001193-36.2015.8.19.0029.
+
+Tendo como denunciados:
+
+Réu: Gleice Rangel Neto ou Gleice Rangel Neto Salvador
+Réu: Leonardo Vieira Camara
+Réu: Ritielle Correira da Silva
+Réu: Luiz Fernando da Costa Lugão
+Réu: Marlon da Silva Souza
+
+
+2. Certifico que o documento de fls. 02-Y à 02-AM, que consta como o quarto documento da árvore do processo eletrônico, na verdade, trata-se do segundo, conforme observado na numeração das páginas.
+
+
+3. Certifico, quanto ao presente feito, que a denunciada Gleice Rangel Neto, foi notificado à fl. 1892, tendo apresentado defesa prévia às fls. 2280/2283, estando assistido por advogado.
+O denunciado Leonardo Vieira Camara foi notificado à fl. 2066, tendo manifestado o desejo de ser assistido pela Defensoria Pública, não tendo apresentado ainda defesa prévia.
+A denunciada Ritielle Correira da Silva não foi notificada, conforme certidão de fl. 1882, mas apresentou documentos à fl. 2810, sendo assistido pela Defensoria Pública, não tendo apresentado ainda defesa prévia.
+O denunciado Luiz Fernando da Costa Gulão foi notificado à fl. 1698, manifestando o desejo de ser assistido pela Defensoria Público, não tendo apresentado defesa prévia.
+O denunciado Marlon da Silva Souza não foi notificado.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Desmembramento de Processo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data do movimento:</td>
+<td valign=top align=justify class='normal'>25/06/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Distribuição Desmembramento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da distribuição:</td>
+<td valign=top align=justify class='normal'>11/02/2015</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Serventia:</td>
+<td valign=top align=justify class='normal'>Cartório da Vara Criminal - Vara Criminal</td>
+</tr>
+
+
+
+
+
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+
+                  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <tr>
+                          <td valign="top" class="info">Processo(s) no Tribunal
+                                                           de Justi&ccedil;a:</td>
+
+
+
+
+                         <td valign="top" class="normal">
+                            Não há.
+                         </td>
+
+
+
+
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      &nbsp;
+                    </td>
+                  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Localiza&ccedil;&atilde;o
+                                                                       na serventia:</td>
+                      <td valign="top">
+                        Aguardando Manifestação Da(s) Parte(s)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+              </table>
+
+
+
+
+
+                  <p align="justify">
+                      Os autos de processos findos ter&atilde;o como
+                      destina&ccedil;&atilde;o final a guarda permanente ou
+                      a elimina&ccedil;&atilde;o, depois de cumpridos os
+                      respectivos prazos de guarda definidos na  Tabela de
+                      Temporalidade de Documentos do PJERJ.
+                  </p>
+
+
+
+
+
+
+
+
+          </form>
+          <!-- Fim da div#content -->
+        </div>
+        <div class="clear"/>
+        </div>
+        </div>
+      <!-- Fim da div#container -->
+      </div>
+
+
+
+
+              <div id="wndHistoricoMandados" class="window">
+                    <a href="#" class="fechar">Fechar</a>
+                    <table id="tbdados">
+                        <thead>
+                          <tr>
+                            <th>Número do Mandado</th>
+                            <th>Nome da Central Destinatária</th>
+                            <th>Nome do Tipo Mandado</th>
+                            <th>Data de Envio do Documento</th>
+                            <th>Data de Recebimento</th>
+							<th>Data de Recebimento pelo OJA</th>
+							<th>Data de Devolução pelo OJA</th>
+                            <th>Data de Devolução</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                                <tr>
+                                   <td>4601/2019/MND</td>
+                                   <td>MAGE CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Notificação da Lei 11343/06</td>
+                                   <td>28/11/2019</td>
+                                   <td>28/11/2019</td>
+								   <td>04/12/2019</td>
+                                   <td>08/01/2020</td>
+                                   <td>08/01/2020</td>
+                                   <td>Negativo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>274/2020/MND</td>
+                                   <td>MAGE CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Notificação da Lei 11343/06</td>
+                                   <td>03/02/2020</td>
+                                   <td>03/02/2020</td>
+								   <td>03/02/2020</td>
+                                   <td>06/02/2020</td>
+                                   <td>06/02/2020</td>
+                                   <td>Negativo Definitivo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>273/2020/MND</td>
+                                   <td>MAGE CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Notificação da Lei 11343/06</td>
+                                   <td>03/02/2020</td>
+                                   <td>03/02/2020</td>
+								   <td>03/02/2020</td>
+                                   <td>11/02/2020</td>
+                                   <td>11/02/2020</td>
+                                   <td>Negativo Definitivo</td>
+                                </tr>
+
+                        </tbody>
+                    </table>
+              </div>
+              <!--<div id="mascara"></div>-->
+
+
+
+      <div id="footer">
+	<div class="acesso-informacao">
+		<a href="http://www.tjrj.jus.br/web/guest/transparencia/apresentacao" title="Acesso à Informação">
+			<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo-acesso.png" alt="Acesso à Informação">
+		</a>
+	</div>
+	<div class="endereco">
+		<div class="container-fluid-1280">
+			<p>PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL
+				<br> Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 37,
+					Centro / CEP: 20010-090 / Tel.: (0xx21) 3133-2000
+				<br> Horários de funcionamento das Serventias Judiciais em todas as Comarcas do Estado do Rio de Janeiro:
+					 - 11h às 18h | Varas da Infância e da Juventude - 09h às 18h |
+					 Juizados Especiais e Adjuntos - 10h às 18h
+			</p>
+		</div>
+	</div>
+</div>
+<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+
+		i[r] = i[r] || function() {
+			var arrayValue = i[r].q || [];
+
+			i[r].q = arrayValue;
+
+			(i[r].q).push(arguments);
+		};
+
+		i[r].l = 1 * new Date();
+
+		a = s.createElement(o);
+		m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	//ga('create', 'UA-870424-2', 'auto');
+	ga('create', 'UA-870424-19', 'auto', {'sampleRate': 10});
+	ga('send', 'pageview');
+</script>
+      <!-- Fim da div#tudo -->
+    </body>
+</html>

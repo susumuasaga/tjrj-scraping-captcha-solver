@@ -1,0 +1,3471 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+
+
+    <!-- #APPTJ0316 -->
+    <title>Resultado da consulta processual</title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/dataTables.js"></script>
+    <script type="text/javascript" src="./js/jquery-historico-mandado.js"></script>
+    <script language="JavaScript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script>
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+
+
+
+<link href="http://www.tjrj.jus.br/importacao-portal/css" type="text/css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/importacao-portal/script"></script>
+
+
+
+
+
+    <style type="text/css" media="print">
+        #navegador { display:none; }
+        #navegador-horiz { display:none; }
+        #navegador-horiz2 { display:none; }
+        #navegador-horiz3 { display:none; }
+        #navegador-horiz-limpo { display:none; }
+        #content-barra  { display:none; }
+        #cabecalho { display:none; }
+        #rodape { display:none; }
+        #content, #content2,
+        #content3, #content100,
+        #content-center, #content-center2,
+        #content-frame, #content-id-busca,
+        #content-idusuario-100 {
+         margin-left:0px;
+         width:100%;
+        }
+        body { color:#000000; }
+        a { color:#000000; }
+        h1 { color:#000000; }
+        h2 { color:#000000; }
+        h3 { color:#000000; }
+        h4 { color:#000000; }
+        h5 { color:#000000; }
+        h6 { color:#000000; }
+
+        table { border-width: 1px; }
+    </style>
+    <style type="text/css">
+      .info { font-weight: bold; }
+      .negrito {font-weight: bold;}
+    </style>
+    <script type="text/javascript" src="./print.js"></script>
+    <script type="text/javascript" src="./funcoesPopUp.js?v=1.0"></script>
+    <script type="text/javascript" src="./js/consultaPorNumero.js?v=4"></script>
+    <script type="text/javascript" src="./autoCompletar.js"></script>
+    <script type="text/javascript" src="./js/impOutrosEstilos.js"></script>
+
+
+    <link href="./css/demo_table.css" rel="stylesheet" type="text/css">
+    <link href="./css/estilo.css" rel="stylesheet" type="text/css">
+
+
+
+    <script type="text/javascript" type="text/javascript">
+      var arquivosCss = new Array("http://www.tjrj.jus.br/css/body2/body.css",
+                                  "http://www.tjrj.jus.br/css/lay-out.css",
+                                  "http://www.tjrj.jus.br/css/menu.css",
+                                  "http://www.tjrj.jus.br/css/form.css",
+                                  "http://www.tjrj.jus.br/css/textos-img.css");
+      function submetePesqDocElet(){
+        //location.href='consultaProcDocElet.do?numProcesso=2018.029.010225-7&acessoIP=internet&senhaProcesso=document.getElementById('senhaProcesso').value;'
+        var senha = document.getElementById("senhaProcesso").value;
+        document.location.href="consultaProcDocElet.do?v=2&numProcesso=2018.029.010225-7&acessoIP=internet&senhaProcesso="+senha;
+      }
+      function exibeListaPersonagens(){
+        if (document.getElementById('listaPersonagens').style.display == "block")
+          document.getElementById('listaPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaPersonagens').style.display = "block"
+        }
+      }
+      function exibeListaHistoricoPersonagens(){
+        if (document.getElementById('listaHistoricoPersonagens').style.display == "block")
+          document.getElementById('listaHistoricoPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaHistoricoPersonagens').style.display = "block"
+        }
+      }
+
+      function assistirAudiencia(dtAudiencia,horaAudiencia){
+            document.location.href="redirencionakenta?codigoProc=0010368-49.2018.8.19.0029" + "&dtAudiencia=" + dtAudiencia + "&horaAudiencia=" + horaAudiencia;
+      }
+    </script>
+
+  </head>
+  <body>
+
+
+        <div id="tudo">
+
+    <!-- Início da div#tudo -->
+
+
+
+
+
+
+<div id="banner" role="banner">
+	<div id="barra">
+		<div class="container-fluid-1280 clearfix">
+			<div class="atalhos-wrapper">
+				<div class="menu-barra" role="navigation">
+					<ul class="atalhos">
+						<li><a href="http://www.tjrj.jus.br/web/guest/mapa-do-site" title="Mapa do site">Mapa do site</a></li>
+						<li><a href="http://www.tjrj.jus.br/web/guest/fale-conosco" title="Fale conosco">Fale conosco</a></li>
+						<li><a href="http://www.tjrj.jus.br/c/portal/login?p_l_id=10139" title="Intranet">Intranet</a></li>
+						<li><a href="https://outlook.office.com/" title="Webmail">Webmail</a></li>
+						<li><a href="https://portaltj.tjrj.jus.br/web/guest/home-interna" title="Magistrados">Magistrados, Servidores e Colaboradores</a></li>
+					</ul>
+				</div>
+				<ul class="redes clearfix">
+					<li class="nav-facebook"><a href="https://www.facebook.com/tjrjoficial" target="_blank" title="Acessar o Facebook"><i class="icone-rede" aria-label="Facebook"></i></a></li>
+					<li class="nav-twitter"><a href="https://twitter.com/tjrjoficial" target="_blank" title="Acessar o Twitter"><i class="icone-rede" aria-label="Twitter"></i></a></li>
+					<li class="nav-instagram"><a href="https://www.instagram.com/tjrjoficial/" target="_blank" title="Acessar o Instagram"><i class="icone-rede" aria-label="Instagram"></i></a></li>
+					<li class="nav-youtube"><a href="https://www.youtube.com/user/pjerjoficial" target="_blank" title="Acessar o Youtube"><i class="icone-rede" aria-label="Youtube"></i></a></li>
+					<li class="nav-flickr"><a href="https://www.flickr.com/people/pjerjoficial" target="_blank" title="Acessar o Flickr"><i class="icone-rede" aria-label="Flickr"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topo">
+		<div class="conteudo-topo">
+			<div class="container-fluid-1280">
+				<a class="logo" href="http://www.tjrj.jus.br" role="logo" title="TJRJ">
+					<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo.png" alt="TJRJ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+          <div id="navigation" role="navigation">
+	<h1 class="hide-accessible">Navegação</h1>
+	<div class="container-fluid-1280">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav clearfix" aria-label="Páginas do site">
+				<li class="active" role="presentation"><a href="http://www.tjrj.jus.br/web/guest/home" role="menuitem" title="Página inicial">Página inicial</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/consultas" role="menuitem" title="Consultas">Consultas</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/servicos/servicos" role="menuitem" title="Serviços">Serviços</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/institucional/institucional" role="menuitem" title="Institucional">Institucional</a></li>
+				<li role="presentation"><a href="http://cgj.tjrj.jus.br" target="_blank" role="menuitem" title="Corregedoria">Corregedoria</a></li>
+				<li role="presentation"><a href="http://www4.tjrj.jus.br/sislicweb/lic_conteudo.aspx?id=17" role="menuitem" title="Licitações">Licitações</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+      <!-- Início da div#container -->
+      <div id="container">
+
+
+
+
+
+        <!-- Menu Vertical Lateral -->
+
+
+
+<div id='navegador' class='naveg-vertical navegador list-menu'>
+<h2 class='titulo portlet-title-text'><div class="conteudo">
+<a href="http://www.tjrj.jus.br/web/guest/consultas/processos_jud/processos_jud" title="Judiciais" >Judiciais</a></div></h2><ul class="layouts level-1" ><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-numero-indice0" title="Por Número" >Por Número</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-nome-indice1" title="Por Nome" >Por Nome</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-oab-indice2" title="Por OAB" >Por OAB</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-advogado-indice3" title="Por Nome do Advogado" >Por Nome do Advogado</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-cpf-indice4" title="Por CPF / CNPJ" >Por CPF / CNPJ</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-protocolo-indice5" title="Por Protocolo" >Por Protocolo</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-serventia-indice6" title="Lista de Processos Aptos a Julgamento" >Lista de Processos Aptos a Julgamento</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do?o=prec#tabs-numero-indice0" title="Precatórios Judiciais" >Precatórios Judiciais</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/eJUD/ProcessarProcInconst.aspx" title="Processos de Inconstitucionalidade" >Processos de Inconstitucionalidade</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/consultaPedidoFalencia/inicio.do" title="Pedidos de Falência" >Pedidos de Falência</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/portalDeServicos/jsp/portal/formularioLogin.jsp" title="Por e-mail" >Por e-mail</a></li><li class="lfr-nav-item ultimo " ><a href="http://www.tjrj.jus.br/web/guest/consultas/processos-jud/formas-dispo-consultas" title="Formas disponíveis de Consulta" >Formas disponíveis de Consulta</a></li></ul></div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="content-barra">
+
+<!-- inicio da barra de ferramentas-->
+
+
+
+          <a href="javascript:history.go(-1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif" title="voltar" alt="voltar"/></a>
+
+
+
+      <a href="javascript:history.go(1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif" title="avanÃ§ar" alt="avanÃ§ar"/></a>
+
+
+      <a href="javascript:window.print();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-print.gif" title="imprimir" alt="imprimir"/></a>
+
+
+
+
+
+
+
+
+
+            <a href="javascript:location.href='http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do';"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-busca-arquivo.gif" title="nova busca" alt="nova busca"/></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Fim da barra de ferramentas-->
+</div>
+
+
+
+
+            <div id="content" name="content">
+
+
+
+            <h3>Consulta Processual - N&uacute;mero - Primeira
+                                  Inst&acirc;ncia</h3>
+          <form name="formResultado" action="">
+
+
+
+
+
+                <input type="HIDDEN" name="acessoIP"
+                       value='internet'/>
+
+              <input type="HIDDEN" name="maquinaResposta" value="internet"/>
+              <input id="tipoUsuario" type="HIDDEN" name="tipoUsuario" value=''/>
+
+
+              <table width="100%" border="0">
+                <tr>
+                  <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr valign="top">
+                  <td align="center" colspan="2" class="info">
+                    As informa&ccedil;&otilde;es aqui contidas n&atilde;o produzem
+                    efeitos legais.
+                    <br/>
+                    Somente a publica&ccedil;&atilde;o no DJERJ oficializa
+                    despachos e decis&otilde;es e estabelece prazos.
+                  </td>
+                </tr>
+
+
+
+
+                  <tr valign="top">
+                    <td align="center" colspan="2" class="info">
+
+                      <br/><h2>Processo N<sup>o</sup>
+                      0010368-49.2018.8.19.0029
+                      </h2>
+
+
+                    </td>
+                  </tr>
+
+
+                    <input type="HIDDEN" name="codigoProc"
+                           value='0010368-49.2018.8.19.0029'/>
+
+                  <tr><td>&nbsp;</td></tr>
+                   <tr valign="top">
+                   <td colspan="2" class="info">
+                      TJ/RJ -
+                      14/03/2020 08:16:01
+
+
+
+
+                        - Primeira inst&acirc;ncia
+
+                          - Distribu&iacute;do em
+                          29/11/2018
+
+
+
+                     </td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">&nbsp;</td>
+                     </tr>
+
+
+
+
+
+
+                        <tr valign="top">
+                          <td align="center" colspan="2" class="info" nowrap="nowrap">
+                            <a href="javascript: abrirVisualizador('2018.029.010225-7','1','0010368-49.2018.8.19.0029','N');">
+                              Processo eletrônico - clique aqui para visualizar.
+                             <img name='pesqDocElet' border="0" style="vertical-align:middle;"
+                                     src='http://www4.tjrj.jus.br/portalDeServicos/images/icones/visualizarProcesso.png' title='Pesquisar processo eletrônico'
+                                     alt='Pesquisar processo eletrônico'>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+                          <tr valign="top">
+                            <td align="center" colspan="2" class="info" nowrap="nowrap">
+
+
+
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td class="info">
+
+                        Comarca de Magé
+
+                    </td>
+                    <td class="info">
+
+                        Vara Criminal
+
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td colspan="1"/>
+                    <td class="info">
+
+                        Cartório da Vara Criminal
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Endere&ccedil;o:</td>
+                      <td valign="top">
+                        Rua Domingos Bellize
+                        &nbsp;
+                        178
+                        &nbsp;
+
+                        &nbsp;
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Bairro:</td>
+                      <td valign="top">
+                        Centro
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Cidade:</td>
+                      <td valign="top">
+                        Magé
+                      </td>
+                    </tr>
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Assunto:</td>
+                      <td valign="top">
+                        Tráfico de Drogas e Condutas Afins (Art. 33 - Lei 11.343/06)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Classe:</td>
+                      <td valign="top">
+                        Ação Penal - Procedimento Ordinário
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Aviso ao advogado:</td>
+                      <td valign="top">
+                        peça para juntar - pasta gabinete sigiloso
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Autor
+                        </td>
+                        <td valign="top">
+                          MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Réu
+                        </td>
+                        <td valign="top">
+                          LEONARDO PINTO SALVADOR e outro(s)...
+                        </td>
+                      </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td valign="top">
+                              <a href="javascript:exibeListaPersonagens();">
+                                <font size="-2">Listar todos os personagens</font>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" width="100%">
+                              <div id="listaPersonagens"
+                                   style="z-index:1000; position:absolute; width:50%; display:none; border-style:solid;background-color:#FFFFFA;">
+                                <table width="100%" class="tab-bord" cellpadding="3"
+                                       cellspacing="1">
+                                  <tr>
+                                    <td align="left" class="tab-chamada" width="20%"
+                                        valign="top" bgcolor="#D3D3D3">TIPO</td>
+                                    <td align="left" class="tab-chamada" width="40%"
+                                        valign="top" bgcolor="#D3D3D3">PERSONAGEM</td>
+                                  </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Autor
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LEONARDO PINTO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        GLEICE RANGEL NETO OU GLEICE RANGEL NETO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        ALCEMAR VARGAS DA COSTA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        SOLANGELA VARGAS DA COSTA OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        UELINTON VARGAS DA COSTA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        UELLINGTON DE ARAUJO RAMOS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        FERNANDO DOS SANTOS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARIA RITA DOS SANTOS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LUANA SANTOS DE OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LUCAS COELHO DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARCOS ANTONIO RANGEL DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        PAMELA DA FONSECA COSTA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        DIEGO DE CASTRO MACEDO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LEONARDO VIEIRA CAMARA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        THIAGO DUARTE VIEIRA MARTINS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        ADRIANA DA CONCEIÇÃO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARCOS VINICIOS PINHEIRO MENEZES
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        RITIELLE CORREIA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MAXSUEL MAICON CORREIA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        BRUNO GUEDES FARIA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        RONALD GUEDES FARIA DE OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        VAGNER DE SOUZA RAMOS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LUIZ FERNANDO DA COSTA LUGÃO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARCELO CUNHA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARCOS VINICIUS CORREA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        DOUGLAS SENA VIEIRA ROGERIO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        EDSON JORGE RAMOS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARIANA DE SOUZA PEREIRA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        ANA LUCIA BRUSDZENSKI
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        ALCEIR VARGAS DA COSTA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        ISRAEL LOURENÇO DEOCLECIO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        AUGUSTO LOURENÇO DA SILVA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        MARLON DA SILVA SOUZA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        PAULO CESAR LOURENÇO SANTOS
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        BRUNO FERREIRA DE PINTO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        UALLACE DE ARAUJO RAMOS
+                                      </td>
+                                    </tr>
+
+                                  <tr>
+                                    <td colspan="2" valign="top" nowrap="nowrap">
+                                      <hr></hr>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="right" valign="top"
+                                        nowrap="nowrap">
+                                      <a href="javaScript:printContent('listaPersonagens');">Imprimir</a>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <a href="javaScript:exibeListaPersonagens();">Fechar</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+
+
+
+
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td valign="top">
+                              <a href="javascript:exibeListaHistoricoPersonagens();">
+                                <font size="-2">Listar altera&ccedil;&otilde;es /
+                                                exclus&otilde;es de personagens</font>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" width="100%">
+                              <div id="listaHistoricoPersonagens"
+                                   style="z-index:1000; position:absolute; width:50%; display:none; border-style:solid;background-color:#FFFFFA;">
+                                <table width="100%" class="tab-bord" cellpadding="3"
+                                       cellspacing="1">
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          LEONARDO PINTO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ÜÇõõ­-ÿºà6­ËV?*8g)
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          GLEICE RANGEL NETO OU GLEICE RANGEL NETO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    »?3÷?9uC?)T&#39;æò\¿ÐÛ..:W)îcº ¹DàÔ?Â6%Ö+ëÊw?,s=ý?
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          ALCEMAR VARGAS DA COSTA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    §Ý?²Ö?æ0?ØJ?à?[??¿Ë¿z;?
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          SOLANGELA VARGAS DA COSTA OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ã?3¥àÐ?÷O?z:&lt;Á?¿DÉ?êgÝ?@MwÜöSätþM³å?0
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          UELINTON VARGAS DA COSTA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    _¯+_?ðÈ?keí?aµ³ÄIG?­UNi?©??T
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          UELLINGTON DE ARAUJO RAMOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ý?ÌBàÇÝ¿Q©âª?÷£ÿ©ýÇ?Çìiù*Ùv
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          FERNANDO DOS SANTOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    !
+®ì1:×B?
+qXàVÜæV¯×Ô®`o
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARIA RITA DOS SANTOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ÜDÅ­
+¯^]H?:~,?ÄrpS[¿!B
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          LUANA SANTOS DE OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    /·¹)¿âÓ³ê&amp;Müý4?ny\å[·ÌäW?ü8*z²
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          LUCAS COELHO DA SILVA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                     ¿[âÏbfþJbÒu«&#39;91????íZ
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARCOS ANTONIO RANGEL DA SILVA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    D;Ñ°¿±:o{¯çôK¿??¥uÞþ»(6íÙ-¢¿?
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          PAMELA DA FONSECA COSTA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    NÖ³÷!?¢ÕÆ}??²y_?e v«
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          DIEGO DE CASTRO MACEDO
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ¶îµùs«ÞÑ~à???ò?ó#lª/
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          LEONARDO VIEIRA CAMARA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ÜÇõõ­-ÿºáý9ßC¶OÎ~-3¿
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          THIAGO DUARTE VIEIRA MARTINS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ëöÛC?pG¿ed
+o??ýÚ???sF?!­HTEãH
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          ADRIANA DA CONCEIÇÃO
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    F
+:ßÅ ¯íH?¿b¿gÌùäpKD¶
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARCOS VINICIOS PINHEIRO MENEZES
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    kÔíÓÕ?db}¿oÀîÄÑÑ©Gµu?Íö?_		©x?¿Ì??
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          RITIELLE CORREIA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    £ª7Ûpû¬G?ö?×u±+õ»Ï¿ÝÆ?y^µ^â?óMÍ
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MAXSUEL MAICON CORREIA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ¿ûm×-?6?}céÈ?ÎØ2~ïçLDêàLh?&lt;
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          BRUNO GUEDES FARIA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ßÄWñrôë?f%vÄÀNê?kìJ?&#39;n
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          RONALD GUEDES FARIA DE OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    -®6Û^56G7?uÕ$ú???º&amp;	Oy?y?6Ë
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          VAGNER DE SOUZA RAMOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    Æ¶?	îý?ä_Ü{OÅ¡8¿ø!Q
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          LUIZ FERNANDO DA COSTA LUGÃO
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ¿Ò&gt;¿U=%x¿È{K¶\e~&lt;¶w¿ÿ?!F]ûÙ·÷Ó
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARCELO CUNHA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    l.]Óa»h1¢ÛÏú
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARCOS VINICIUS CORREA DA SILVA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    kÔíÓÕ?db?$FÔ?UÓ???m|²üõNÏ·&gt;Û?
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          DOUGLAS SENA VIEIRA ROGERIO
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    Çà-ùªq
+~(e6?i-p÷©¹\i¿ÑÁÛ&lt;»B?å
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          EDSON JORGE RAMOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ëÔÍ/F&quot;_è=??¯æÄUø?ç6üô
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARIANA DE SOUZA PEREIRA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    M­Z[§&#39;^è?DB?ÐÉ»þ^ÅGfº0ÃAW.\&#39;!
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          ANA LUCIA BRUSDZENSKI
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    Ódø?&quot;&amp;Ä?Ó?-ÏæÍ¿©XaÉv
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          ALCEIR VARGAS DA COSTA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                     ¥  ü¥?
+ß¿;î+¿A?úZ-wpì
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          ISRAEL LOURENÇO DEOCLECIO
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    +è¿.bRP£Womí?à&gt;æ×Úö®?áX? R??¿ü
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          AUGUSTO LOURENÇO DA SILVA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    Zf`²&amp;q-£?Ã?Âì®¡@?¿?êþ}þ?	Ñ/?!
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          MARLON DA SILVA SOUZA
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ñ3ñl?¶©Ãäé&lt;ûS?Ô#ú;Þ?é?
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          PAULO CESAR LOURENÇO SANTOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    9Ïo?ó,DùBb?ïZtÅI?Cn`¿°a?ßæ?íøÑi
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          BRUNO FERREIRA DE PINTO SALVADOR
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ;?ê?n?¿5?ä(&quot; À×.áS?ÅnÀÔÜÉË
+ÃWqÐÑùdjX
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+
+                                    <tr>
+                                      <td width="21%" bgcolor="#FFFFFA">
+                                        Réu
+                                      </td>
+                                      <td width="79%" bgcolor="#FFFFFA" align="left">
+                                          UALLACE DE ARAUJO RAMOS
+                                      </td>
+                                    </tr>
+
+                                      <tr>
+                                        <td colspan="2" bgcolor="#FFFFFA">
+                                          <table width="100%" border="0"
+                                                 align="center" cellpadding="2"
+                                                 cellspacing="1">
+                                            <tr>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Ocorr&ecirc;ncia</td>
+                                              <td width="20%" class="tab-chamada" bgcolor="#D3D3D3">Data</td>
+                                              <td width="60%" class="tab-chamada" bgcolor="#D3D3D3">Nome
+                                                                              anterior</td>
+                                            </tr>
+
+                                              <tr>
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    ALTERADO
+                                                  </td>
+
+
+                                                  <td width="25%" valign="top" bgcolor="#FFFFFA">
+                                                    29/11/2018
+                                                  </td>
+
+
+                                                  <td width="50%" valign="top" bgcolor="#FFFFFA">
+                                                    ¯øÆÏRê?¿P?WÉ«Z r¿úª­U¿
+                                                  </td>
+
+                                              </tr>
+
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+
+                                  <tr>
+                                    <td colspan="3" valign="top" nowrap="nowrap">
+                                      <hr></hr>
+                                    </td>
+                                  </tr>
+                                  <tr id="linhaImpressao">
+                                    <td nowrap="nowrap" valign="top" align="right" colspan="2">
+                                      <a href="javaScript:printContent('listaHistoricoPersonagens');exibeListaHistoricoPersonagens();" alt="Imprimir">Imprimir</a>
+                                      <a href="javaScript:exibeListaHistoricoPersonagens();"
+                                         alt="Exibe/Oculta a lista de personagens baixados/excluídos">Fechar</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+
+
+
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>06/03/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do documento:</td>
+<td valign=top align=justify class='normal'>COM PRISÃO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>07/02/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>07/02/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>07/02/2020</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do documento:</td>
+<td valign=top align=justify class='normal'>.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>02/01/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>02/01/2020</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>17/12/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>17/12/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>17/12/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>28/11/2019</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>28/11/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Tendo em vista a certidão, quanto às petições noticiadas no sistema DCP, informando que foram juntadas aos autos principais de nº 0001193-36.2015.8.19.0029, determino a exclusão das petições protocoladas sob os números:2...
+<br><br>
+<a href='javascript:void("15");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=15&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov15" value="Tendo em vista a certidão, quanto às petições noticiadas no sistema DCP, informando que foram juntadas aos autos principais de nº 0001193-36.2015.8.19.0029, determino a exclusão das petições protocoladas sob os números:201900173725; 201900688291; 201901590526; 201902020175 e 201904165049."><tr>
+<td valign=top nowrap class='negrito'>&nbsp;</td>
+<td valign=top align=justify class='normal'><a href='#' onClick=javascript:abreDocEletronico('000417C2E4A69891D5C4B3C630C6D54E5969C50B4460285A');>Visualizar Ato Assinado Digitalmente <img height='14' width='13' border='0' src='./imagens/pdf4.gif' alt='Visualizar Ato Assinado Digitalmente' title='Visualizar Ato Assinado Digitalmente' );></a></td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>28/11/2019</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>GABRIEL ALMEIDA MATOS DE CARVALHO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>28/11/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifico que as petições noticiadas no sistema DCP, já foram juntadas aos autos de nº 0001193-36.2015.8.19.0029, conforme segue:
+
+201900173725 - Fl. 2094
+201900688291 - Fl. 2231
+201901590526 - Fl. 2321
+201902020175 - Fl. 2593
+201904165049 - Fl. 2819</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>23/10/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>11/10/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Documento</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>25/09/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ciente</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>26/08/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Documento eletrônico juntado de forma automática.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>03/08/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>03/08/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do documento:</td>
+<td valign=top align=justify class='normal'>.</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Apensação</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data do apensamento:</td>
+<td valign=top align=justify class='normal'>14/01/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>14/01/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>CERTIDÃO
+
+
+               Certifico e dou fé que nesta data procedi  o apensamento  destes  autos  no  Processo Principal nº 0001193-36.2015.8.19.0029, tendo em vista que os  Mandados de Prisão foram expedidos nestes autos,  para os devidos fins.
+
+
+                 O   referido  é verdade.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>13/12/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>CERTIDÃO
+
+Certifico que o cadastro dos mandados de prisão foram regularizados no sistema DCP deste Tribunal junto aos órgãos de praxe.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>11/12/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>11/12/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>05/12/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>CERTIDÃO
+
+Certifico que em cumprimento ao Provimento nº 68/2015, de 26/10/2015, este feito foi distribuido por dependência ao processo nº 0001193-36.2015.8.19.0029, para os fins de expedição dos mandados de prisão preventiva nos autos principais.
+
+Certifico ainda que o feito se encontra sob segredo de justiça, em razão de determinação verbal do MM. Juiz de Direito, Dr. Felipe Carvalho Gonçalves da Silva.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>29/11/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Distribuição Dependência</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da distribuição:</td>
+<td valign=top align=justify class='normal'>29/11/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Serventia:</td>
+<td valign=top align=justify class='normal'>Cartório da Vara Criminal - Vara Criminal</td>
+</tr>
+
+
+
+
+
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+
+                  </form>
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Processo Principal:</td>
+                      <td valign="top">
+
+
+
+
+                                                <a href="consultaProc.do?v=2&numProcesso=2015.029.001182-8">
+
+
+
+
+
+                          <b>0001193-36.2015.8.19.0029</b>
+
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <tr>
+                          <td valign="top" class="info">Processo(s) no Tribunal
+                                                           de Justi&ccedil;a:</td>
+
+
+
+
+                         <td valign="top" class="normal">
+                            Não há.
+                         </td>
+
+
+
+
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      &nbsp;
+                    </td>
+                  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Localiza&ccedil;&atilde;o
+                                                                       na serventia:</td>
+                      <td valign="top">
+                        Aguardando Assinatura Digital
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+              </table>
+
+
+
+
+
+                  <p align="justify">
+                      Os autos de processos findos ter&atilde;o como
+                      destina&ccedil;&atilde;o final a guarda permanente ou
+                      a elimina&ccedil;&atilde;o, depois de cumpridos os
+                      respectivos prazos de guarda definidos na  Tabela de
+                      Temporalidade de Documentos do PJERJ.
+                  </p>
+
+
+
+
+
+
+
+
+          </form>
+          <!-- Fim da div#content -->
+        </div>
+        <div class="clear"/>
+        </div>
+        </div>
+      <!-- Fim da div#container -->
+      </div>
+
+
+
+      <div id="footer">
+	<div class="acesso-informacao">
+		<a href="http://www.tjrj.jus.br/web/guest/transparencia/apresentacao" title="Acesso à Informação">
+			<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo-acesso.png" alt="Acesso à Informação">
+		</a>
+	</div>
+	<div class="endereco">
+		<div class="container-fluid-1280">
+			<p>PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL
+				<br> Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 37,
+					Centro / CEP: 20010-090 / Tel.: (0xx21) 3133-2000
+				<br> Horários de funcionamento das Serventias Judiciais em todas as Comarcas do Estado do Rio de Janeiro:
+					 - 11h às 18h | Varas da Infância e da Juventude - 09h às 18h |
+					 Juizados Especiais e Adjuntos - 10h às 18h
+			</p>
+		</div>
+	</div>
+</div>
+<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+
+		i[r] = i[r] || function() {
+			var arrayValue = i[r].q || [];
+
+			i[r].q = arrayValue;
+
+			(i[r].q).push(arguments);
+		};
+
+		i[r].l = 1 * new Date();
+
+		a = s.createElement(o);
+		m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	//ga('create', 'UA-870424-2', 'auto');
+	ga('create', 'UA-870424-19', 'auto', {'sampleRate': 10});
+	ga('send', 'pageview');
+</script>
+      <!-- Fim da div#tudo -->
+    </body>
+</html>

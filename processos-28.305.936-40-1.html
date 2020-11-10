@@ -1,0 +1,987 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+    <script language="JavaScript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script> 
+      
+        
+
+<!---->
+
+      
+      
+        
+<link href="http://www.tjrj.jus.br/importacao-portal/css" type="text/css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/importacao-portal/script"></script>
+      
+    <title>Consulta processual por Nome</title>
+    
+    <!-- Estilo para impressão. -->
+    <style type="text/css" media="print">
+        #navegador-horiz2 { display:none; }
+        #navegador { display:none; }
+        #content-barra  { display:none; }
+        #chamada-areas { display:none; }
+        #cabecalho { display:none; }
+        #rodape { display:none; }
+        #content {
+         margin-left:0px;
+         width:100%;
+        }
+        table { border-width: 0px; }
+        #informacoes { border-width: 1px; border-style:solid }
+        select { display:none; }
+    </style>
+
+    
+    
+    <script language="javascript">
+      // ********************************************************* //
+      // função para controlar navegação de páginas
+      // ********************************************************* //
+      function navegacao(modoNav)
+      {
+        var ctl = false;
+        var pagAtual = Number(document.forms[0].paginaAtual.value);
+        document.forms[0].acao.value="navegacao";
+        
+        if (modoNav==null || modoNav == "")
+        {
+          pagAtual = Number(document.forms[0].pagina.options[document.forms[0].pagina.selectedIndex].value);
+          ctl = true;
+        }
+        else
+        {
+          if (modoNav == "1")
+            if (Number(document.forms[0].paginaAtual.value)+1 <= Number(document.forms[0].totPagina.value))
+            {
+              pagAtual = Number(document.forms[0].paginaAtual.value) + 1;
+              ctl = true;    
+            }
+          if (modoNav == "-1")
+            if (document.forms[0].paginaAtual.value-1>=1)
+            {
+              pagAtual = Number(document.forms[0].paginaAtual.value-1);
+              ctl = true;    
+            }
+          if (modoNav == "0")
+          {
+            pagAtual = 1;
+            ctl = true;
+          }
+          if (modoNav == "-2")
+          {
+            if (Number(document.forms[0].paginaAtual.value) < Number(document.forms[0].totPagina.value))
+            {
+              pagAtual = Number(document.forms[0].totPagina.value);
+              ctl = true;
+            }
+          }
+        }          
+        if (ctl == true)
+        {
+          document.forms[0].paginaAtual.value = pagAtual;
+          document.forms[0].submit();
+        }
+      }
+      
+      function novaConsulta(){
+        document.forms[0].action = "/ConsultaUnificada/consulta.do";
+        document.forms[0].submit();
+      }
+    </script>     
+    
+  </head>
+    <body leftmargin="2" topmargin="2">
+    <!--<script language="JavaScript" src="http://www.tj.rj.gov.br/jsmenu/menu_cnt.js"></script>-->
+    <div id="tudo"><!--inicio div tudo-->
+      <!-- Não importado tpl_topo.jsp-->
+    
+      <!-- INICIO - Topo-Simples -->
+      
+<div id="banner" role="banner">
+	<div id="barra">
+		<div class="container-fluid-1280 clearfix">
+			<div class="atalhos-wrapper">
+				<div class="menu-barra" role="navigation">
+					<ul class="atalhos">
+						<li><a href="http://www.tjrj.jus.br/web/guest/mapa-do-site" title="Mapa do site">Mapa do site</a></li>
+						<li><a href="http://www.tjrj.jus.br/web/guest/fale-conosco" title="Fale conosco">Fale conosco</a></li>
+						<li><a href="http://www.tjrj.jus.br/c/portal/login?p_l_id=10139" title="Intranet">Intranet</a></li>
+						<li><a href="https://outlook.office.com/" title="Webmail">Webmail</a></li>
+						<li><a href="https://portaltj.tjrj.jus.br/web/guest/home-interna" title="Magistrados">Magistrados, Servidores e Colaboradores</a></li>
+					</ul>
+				</div>
+				<ul class="redes clearfix">
+					<li class="nav-facebook"><a href="https://www.facebook.com/tjrjoficial" target="_blank" title="Acessar o Facebook"><i class="icone-rede" aria-label="Facebook"></i></a></li>
+					<li class="nav-twitter"><a href="https://twitter.com/tjrjoficial" target="_blank" title="Acessar o Twitter"><i class="icone-rede" aria-label="Twitter"></i></a></li>
+					<li class="nav-instagram"><a href="https://www.instagram.com/tjrjoficial/" target="_blank" title="Acessar o Instagram"><i class="icone-rede" aria-label="Instagram"></i></a></li>
+					<li class="nav-youtube"><a href="https://www.youtube.com/user/pjerjoficial" target="_blank" title="Acessar o Youtube"><i class="icone-rede" aria-label="Youtube"></i></a></li>
+					<li class="nav-flickr"><a href="https://www.flickr.com/people/pjerjoficial" target="_blank" title="Acessar o Flickr"><i class="icone-rede" aria-label="Flickr"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topo">
+		<div class="conteudo-topo">
+			<div class="container-fluid-1280">
+				<a class="logo" href="http://www.tjrj.jus.br" role="logo" title="TJRJ">
+					<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo.png" alt="TJRJ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+      <!-- FIM - Topo-Simples -->
+      
+      <!-- Não importada tpl_menu.jsp -->
+    
+      <!-- INICIO - Menu-Horizontal-->
+      <div id="navigation" role="navigation">
+	<h1 class="hide-accessible">Navegação</h1>
+	<div class="container-fluid-1280">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav clearfix" aria-label="Páginas do site">
+				<li class="active" role="presentation"><a href="http://www.tjrj.jus.br/web/guest/home" role="menuitem" title="Página inicial">Página inicial</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/consultas" role="menuitem" title="Consultas">Consultas</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/servicos/servicos" role="menuitem" title="Serviços">Serviços</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/institucional/institucional" role="menuitem" title="Institucional">Institucional</a></li>
+				<li role="presentation"><a href="http://cgj.tjrj.jus.br" target="_blank" role="menuitem" title="Corregedoria">Corregedoria</a></li>
+				<li role="presentation"><a href="http://www4.tjrj.jus.br/sislicweb/lic_conteudo.aspx?id=17" role="menuitem" title="Licitações">Licitações</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+      <!-- FIM - Menu-Horizontal-->
+    
+      <!-- Não importada tpl_menu.jsp -->
+        
+        <div id="container"><!--inicio div container--> 
+              <!-- Não importada menu_lateral.jsp -->
+
+              <!-- INICIO - Menu-Lateral -->
+              
+<div id='navegador' class='naveg-vertical navegador list-menu'>
+<h2 class='titulo portlet-title-text'><div class="conteudo">
+<a href="http://www.tjrj.jus.br/web/guest/consultas/processos_jud/processos_jud" title="Judiciais" >Judiciais</a></div></h2><ul class="layouts level-1" ><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-numero-indice0" title="Por Número" >Por Número</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-nome-indice1" title="Por Nome" >Por Nome</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-oab-indice2" title="Por OAB" >Por OAB</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-advogado-indice3" title="Por Nome do Advogado" >Por Nome do Advogado</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-cpf-indice4" title="Por CPF / CNPJ" >Por CPF / CNPJ</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-protocolo-indice5" title="Por Protocolo" >Por Protocolo</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-serventia-indice6" title="Lista de Processos Aptos a Julgamento" >Lista de Processos Aptos a Julgamento</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do?o=prec#tabs-numero-indice0" title="Precatórios Judiciais" >Precatórios Judiciais</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/eJUD/ProcessarProcInconst.aspx" title="Processos de Inconstitucionalidade" >Processos de Inconstitucionalidade</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/consultaPedidoFalencia/inicio.do" title="Pedidos de Falência" >Pedidos de Falência</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/portalDeServicos/jsp/portal/formularioLogin.jsp" title="Por e-mail" >Por e-mail</a></li><li class="lfr-nav-item ultimo " ><a href="http://www.tjrj.jus.br/web/guest/consultas/processos-jud/formas-dispo-consultas" title="Formas disponíveis de Consulta" >Formas disponíveis de Consulta</a></li></ul></div>
+              <!-- FIM - Menu-Lateral -->
+              
+             <div id="content-barra"><!--inicio div content-barra-->
+              
+                 
+
+  
+
+<!---->
+
+
+
+      <script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/js_funcoes/max_min_font_size2.js"></script>
+<!-- inicio da barra de ferramentas-->      
+      <!--
+      
+      <a href="tj_noticias.xml"><img height="17" width="26" class="margin-icos" src="${urlPortal}/imagens/ico-feed.gif" title="RSS Feed" alt="RSS Feed"/></a>
+      
+      -->
+      <!--
+      <a href="javascript:navegacao('-1');"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif" alt="voltar" title="voltar"/></a>
+      <a href="javascript:navegacao('1')"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif" alt="avanï¿½ar" title="avanï¿½ar"/></a>
+      -->
+      <a href="javascript:history.back();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif" alt="voltar" title="voltar"/></a>
+      <a href="javascript:history.go(1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif" alt="avanÃ§ar" title="avanÃ§ar"/></a>
+      <a href="javascript:self.print();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-print.gif" alt="imprimir" title="imprimir"/></a>
+      <a href="javascript:novaConsulta();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-busca-arquivo.gif" alt="Nova Consulta" title="Nova Consulta"/></a>
+      <!--<a href="javascript:decreaseFontSize();"><img height="17" width="31" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-menos.gif" alt="diminuir fonte" title="diminuir fonte"/></a>
+      <a href="javascript:defaultFontSize();"><img height="17" width="24" class="margin-icos"  src="http://www.tjrj.jus.br/imagens/ico-font-default.gif" alt="normalizar fonte" title="normalizar fonte" /></a>
+      <a href="javascript:increaseFontSize();"><img height="17" width="31" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-mais.gif" alt="aumentar fonte" title="aumentar fonte"/></a>-->
+<!-- Fim da barra de ferramentas-->
+
+
+
+              
+              
+             </div><!--fim div content-barra-->
+             
+             <div id="content" name="content"><!--inicio div content-->
+             <table width="100%">
+                      <tr>
+                        <td align="left"><h3>Resultado da pesquisa</h3></td>
+                        <td align="right"><h3>Total de processo(s) encontrado(s): 14</h3></td>
+                      </tr>
+             </table>
+             <p><!--Inicio Usado para aumentar fontes da tabela-->
+                <form name="consultaNomeForm" method="post" action="/consultaProcessoNome/ConsultaNome.do">
+                
+                <input type="hidden" name="acao" value="">
+                <input type="hidden" name="paginaAtual" value="1">
+                <input type="hidden" name="totPagina" value="2.0">
+                <input type="hidden" name="privada" value="">
+                
+                <div style="color:red; padding:10px;">
+                    
+                </div>
+                
+                <table id="barranaveg" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr valign="middle">
+                    <td>
+                      
+                    </td>
+                  </tr>
+                </table>
+              
+                <table id="informacoes" border='0' width='100%' cellpadding='1' cellspacing='3'>
+                  <tr><td colspan="2" align='left' class="info">
+                    As informa&ccedil;&otilde;es aqui contidas n&atilde;o produzem efeitos legais.<BR> Somente a publicação no DJERJ oficializa despachos e decisões e estabelece prazos.
+                    <br><br>
+                  </td></tr>
+                  <tr valign='top'><td colspan="2" align='left' class="head">
+                    <b>TJRJ - 1ª Instância - 16/03/2020 15:50</b>
+                    <br><br>
+                  </td></tr>
+
+
+                      <tr valign='top'>
+                        <td align='left'>CPF/CNPJ pesquisado: <b>28.305.936/0001-40</b></td>
+                      </tr>
+
+
+
+                      <tr valign='top'>
+                        <td align='left'>Comarca: <b>Queimados</b></td>
+                      </tr>
+                      <tr valign='top'>
+                        <td align='left'>Competencia: <b>Criminal</b></td>
+                      </tr>
+
+
+                  <tr valign='top'>
+                    <td align='left'>
+					  Período: <b>2010 a 2010</b>
+					  </b>
+					</td>
+                  </tr>
+
+
+                          <tr valign='top'>
+                            <td align='left' style="color:red"><b>Pesquisa somente por Processos em Andamento</b></td>
+                          </tr>
+
+
+                </table>
+                <br>
+
+
+
+
+
+
+                  <table>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.001.276160-9&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0305533-10.2010.8.19.0001
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Conclusão ao Juiz</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.002663-6&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0002746-77.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Ato Ordinatório Praticado</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.003228-4&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0003310-56.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Conclusão ao Juiz</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.004051-7&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0004127-23.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Réu:</b>
+                              CLAUDIO FONSECA FREITAS e outro(s)...</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Ato Ordinatório Praticado</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.006794-8&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0006888-27.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Réu:</b>
+                              WILLIAM MANUEL GARRIDO CELES e outro(s)...</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Devolução de Carta Precatória</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.008629-3&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0008733-94.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Réu:</b>
+                              MICHAEL MORAES EVANGELISTA</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Envio de Documento Eletrônico</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.010292-4&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0010397-63.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                          <tr><td><b>Fase:</b> Envio de Documento Eletrônico</td></tr>
+
+
+                        <!-- Note que existe um Scriplet no ínicio desse documento
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+
+
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+
+
+                        <!-- Fim Comarca -->
+
+                        <!-- Inicio Serventia -->
+
+                          <tr><td>
+                          <b>
+
+                                Serventia:
+
+                          </b>
+                          Cartório da Vara Criminal</td></tr>
+
+                        <!-- Fim Comarca -->
+
+                        <tr><td>&nbsp;</td></tr>
+
+
+
+                          <tr><td>
+
+
+
+
+                              <a href="http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&amp;numProcesso=2010.067.010295-0&amp;FLAGNOME=S&amp;tipoConsulta=0&back=1&PORTAL=1&v=2">
+
+                                  0010400-18.2010.8.19.0067
+
+
+
+                              </a>
+
+
+
+
+                          </td></tr>
+
+
+
+
+
+
+
+
+
+
+                              <tr><td><b>Autor:</b>
+                              MINISTERIO PUBLICO DO ESTADO DO RIO DE JANEIRO</td></tr>
+                            
+                            
+                            
+                            
+                          
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                          <tr><td><b>Fase:</b> Juntada</td></tr>
+                        
+                        
+                        <!-- Note que existe um Scriplet no ínicio desse documento  
+                             com a lógica de como será exibido os labels abaixo.
+                        -->
+                        <!-- Inicio Comarca -->
+                        
+                            
+                                <tr><td><b>Comarca: </b>Comarca de Queimados</td></tr>
+                            
+                        
+                        <!-- Fim Comarca -->
+                        
+                        <!-- Inicio Serventia -->
+                        
+                          <tr><td>
+                          <b>
+                            
+                                Serventia: 
+                            
+                          </b> 
+                          Cartório da Vara Criminal</td></tr>
+                        
+                        <!-- Fim Comarca -->
+                        
+                        <tr><td>&nbsp;</td></tr>
+                    
+                  </table>
+                
+                  
+                    <table width="100%" border="0" cellspacing="1" cellpadding="1" >
+                      <tr><td>&nbsp;</td></tr>                      
+                      <tr><td align="right">
+                        <a href="javascript:navegacao('-1');">voltar</a>
+                        &nbsp;&nbsp;<select name="pagina" onchange="javascript:navegacao(null)" class="FORMselect"><option value="1" selected="selected">página 1</option>
+<option value="2">página 2</option></select> &nbsp;&nbsp;                       
+                        <a href="javascript:navegacao('1')">avançar</a>
+                      </td></tr>
+                    </table>
+                  
+                  
+                  
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <table id="barranaveg" width="770" border="0" cellspacing="0" cellpadding="0">
+                      <tr valign="middle">
+                        <td>
+                          
+                        </td>
+                      </tr>
+                    </table>
+                  
+                  
+                
+                </form>
+                </p><!--Fim Usado para aumentar fontes da tabela-->
+             </div><!--fim div content-->
+             <div class="clear"></div>
+        </div><!--fim div container--> 
+        <div id="footer">
+	<div class="acesso-informacao">
+		<a href="http://www.tjrj.jus.br/web/guest/transparencia/apresentacao" title="Acesso à Informação"> 
+			<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo-acesso.png" alt="Acesso à Informação"> 
+		</a>
+	</div>
+	<div class="endereco">
+		<div class="container-fluid-1280">
+			<p>PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL
+				<br> Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 37, 
+					Centro / CEP: 20010-090 / Tel.: (0xx21) 3133-2000
+				<br> Horários de funcionamento das Serventias Judiciais em todas as Comarcas do Estado do Rio de Janeiro:
+					 - 11h às 18h | Varas da Infância e da Juventude - 09h às 18h | 
+					 Juizados Especiais e Adjuntos - 10h às 18h
+			</p>
+		</div>
+	</div>
+</div>
+<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+
+		i[r] = i[r] || function() {
+			var arrayValue = i[r].q || [];
+
+			i[r].q = arrayValue;
+
+			(i[r].q).push(arguments);
+		};
+
+		i[r].l = 1 * new Date();
+
+		a = s.createElement(o);
+		m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	//ga('create', 'UA-870424-2', 'auto');
+	ga('create', 'UA-870424-19', 'auto', {'sampleRate': 10});
+	ga('send', 'pageview');
+</script>
+  </div>  
+  </body>
+</html>

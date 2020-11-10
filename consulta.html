@@ -1,0 +1,1539 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  <head>        
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Consultas Processuais</title>
+        
+	<link rel="stylesheet" type="text/css" href="./css/jqueryui.css">
+	<link rel="stylesheet" type="text/css" href="./css/consultaUnificada.css">
+	<link rel="stylesheet" type="text/css" 
+		  href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" 
+		  href="css/jquery-ui-1.10.4.custom.min.css">
+	
+	<script type="text/javascript">
+		var anoAtual = '2020';
+		var dataAtual = '16/03/2020';
+	</script>
+	
+	<!-- BEGIN - JavaScript TJRJ -->
+	<script type="text/javascript" 
+			src="http://www4.tjrj.jus.br/repositorio/jquery/1.10.3/js/jquery-1.9.1.js">
+	</script>
+	<script type="text/javascript" 
+			src="http://www4.tjrj.jus.br/repositorio/js/jquery.meiomask.js">
+	</script>
+	<script type="text/javascript" 
+			src="http://www4.tjrj.jus.br/repositorio/js/util.js">
+	</script>
+	<script type="text/javascript" src="http://www4.tjrj.jus.br/portalDeServicos/extjs/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="http://www4.tjrj.jus.br/portalDeServicos/extjs/ext_all_compact.js"></script>
+	<script type="text/javascript" src="http://www4.tjrj.jus.br/portalDeServicos/extjs/build/locale/ext-lang-pt_BR.js" charset="ISO-8859-1"></script>
+	<link rel="stylesheet" id="cssExt2" type="text/css" href="http://www4.tjrj.jus.br/portalDeServicos/extjs/resources/css/ext-all.css" />
+	<link rel="stylesheet" id="cssExt2" type="text/css" href="http://www4.tjrj.jus.br/portalDeServicos/extjs/resources/css/xtheme-gray.css" />
+	<!-- END - JavaScript TJRJ -->
+        
+	<script type="text/javascript" 
+			src="js/jquery-cookie.js?v=3"></script>
+	<script type="text/javascript" 
+			src="js/jquery.blockUI-2.6.6.js?v=1"></script>
+	<script type="text/javascript" 
+			src="js/jquery.limpar.js"></script>
+	<script type="text/javascript" 
+			src="js/jquery.mask.min.js?v=1"></script>	
+	<script type="text/javascript" 
+			src="js/jquery-migrate-1.2.1.min.js?v=3"></script>
+	<script type="text/javascript" 
+			src="js/jquery-ui.min.js?v=4"></script>		
+
+	<script type="text/javascript" src="js/ambiente.js"></script>
+	<script type="text/javascript" src="js/consulta-jquery.js?v=5"></script>
+	<script type="text/javascript" src="js/consultaNumero.js?v=5"></script>
+	<script type="text/javascript" src="js/consultaProcessual.js?v=11"></script>	
+    <script type="text/javascript" src="js/navega.js?v=1"></script>
+	              
+	<script type="text/javascript" src="js/integracaoPortal.js"></script>
+
+	<c:catch>
+	  
+
+	</c:catch>
+
+	<c:catch>
+	  
+<link href="http://www.tjrj.jus.br/importacao-portal/css" type="text/css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/importacao-portal/script"></script>
+	</c:catch>  
+	
+	<style type="text/css">
+	  input { border-width: expression(this.type=="radio"?'0px':this.type=="checkbox"?'0px':'1px') !important; }
+	  #content input[type='radio'], #content input[type='checkbox']{
+            border-width: 0px !important;
+	  }
+	</style>
+  </head>
+  
+  
+  
+  <body leftmargin="2" topmargin="2" onload="inicializar();">
+    <div id="tudo">
+      <!-- BEGIN - Import Page -->
+      
+<div id="banner" role="banner">
+	<div id="barra">
+		<div class="container-fluid-1280 clearfix">
+			<div class="atalhos-wrapper">
+				<div class="menu-barra" role="navigation">
+					<ul class="atalhos">
+						<li><a href="http://www.tjrj.jus.br/web/guest/mapa-do-site" title="Mapa do site">Mapa do site</a></li>
+						<li><a href="http://www.tjrj.jus.br/web/guest/fale-conosco" title="Fale conosco">Fale conosco</a></li>
+						<li><a href="http://www.tjrj.jus.br/c/portal/login?p_l_id=10139" title="Intranet">Intranet</a></li>
+						<li><a href="https://outlook.office.com/" title="Webmail">Webmail</a></li>
+						<li><a href="https://portaltj.tjrj.jus.br/web/guest/home-interna" title="Magistrados">Magistrados, Servidores e Colaboradores</a></li>
+					</ul>
+				</div>
+				<ul class="redes clearfix">
+					<li class="nav-facebook"><a href="https://www.facebook.com/tjrjoficial" target="_blank" title="Acessar o Facebook"><i class="icone-rede" aria-label="Facebook"></i></a></li>
+					<li class="nav-twitter"><a href="https://twitter.com/tjrjoficial" target="_blank" title="Acessar o Twitter"><i class="icone-rede" aria-label="Twitter"></i></a></li>
+					<li class="nav-instagram"><a href="https://www.instagram.com/tjrjoficial/" target="_blank" title="Acessar o Instagram"><i class="icone-rede" aria-label="Instagram"></i></a></li>
+					<li class="nav-youtube"><a href="https://www.youtube.com/user/pjerjoficial" target="_blank" title="Acessar o Youtube"><i class="icone-rede" aria-label="Youtube"></i></a></li>
+					<li class="nav-flickr"><a href="https://www.flickr.com/people/pjerjoficial" target="_blank" title="Acessar o Flickr"><i class="icone-rede" aria-label="Flickr"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topo">
+		<div class="conteudo-topo">
+			<div class="container-fluid-1280">
+				<a class="logo" href="http://www.tjrj.jus.br" role="logo" title="TJRJ">
+					<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo.png" alt="TJRJ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+      <div id="navigation" role="navigation">
+	<h1 class="hide-accessible">Navegação</h1>
+	<div class="container-fluid-1280">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav clearfix" aria-label="Páginas do site">
+				<li class="active" role="presentation"><a href="http://www.tjrj.jus.br/web/guest/home" role="menuitem" title="Página inicial">Página inicial</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/consultas" role="menuitem" title="Consultas">Consultas</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/servicos/servicos" role="menuitem" title="Serviços">Serviços</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/institucional/institucional" role="menuitem" title="Institucional">Institucional</a></li>
+				<li role="presentation"><a href="http://cgj.tjrj.jus.br" target="_blank" role="menuitem" title="Corregedoria">Corregedoria</a></li>
+				<li role="presentation"><a href="http://www4.tjrj.jus.br/sislicweb/lic_conteudo.aspx?id=17" role="menuitem" title="Licitações">Licitações</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	  <!-- END - Import Page -->	  
+	  <div id="container"><!-- BEGIN - div-container--> 
+	  	  
+		<!-- BEGIN - Menu-Lateral -->
+		
+<div id='navegador' class='naveg-vertical navegador list-menu'>
+<h2 class='titulo portlet-title-text'><div class="conteudo">
+<a href="http://www.tjrj.jus.br/web/guest/consultas/processos_jud/processos_jud" title="Judiciais" >Judiciais</a></div></h2><ul class="layouts level-1" ><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-numero-indice0" title="Por Número" >Por Número</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-nome-indice1" title="Por Nome" >Por Nome</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-oab-indice2" title="Por OAB" >Por OAB</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-advogado-indice3" title="Por Nome do Advogado" >Por Nome do Advogado</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-cpf-indice4" title="Por CPF / CNPJ" >Por CPF / CNPJ</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-protocolo-indice5" title="Por Protocolo" >Por Protocolo</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-serventia-indice6" title="Lista de Processos Aptos a Julgamento" >Lista de Processos Aptos a Julgamento</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do?o=prec#tabs-numero-indice0" title="Precatórios Judiciais" >Precatórios Judiciais</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/eJUD/ProcessarProcInconst.aspx" title="Processos de Inconstitucionalidade" >Processos de Inconstitucionalidade</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/consultaPedidoFalencia/inicio.do" title="Pedidos de Falência" >Pedidos de Falência</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/portalDeServicos/jsp/portal/formularioLogin.jsp" title="Por e-mail" >Por e-mail</a></li><li class="lfr-nav-item ultimo " ><a href="http://www.tjrj.jus.br/web/guest/consultas/processos-jud/formas-dispo-consultas" title="Formas disponíveis de Consulta" >Formas disponíveis de Consulta</a></li></ul></div>
+		<!-- END - Menu-Lateral -->
+		<div id="content" name="content"><!-- BEGIN - div-content-->
+		  <h3>Consultas Processuais</h3>
+		  <div id="tabs">
+			<ul> 
+				<li>
+				  <a href="#tabs-numero-indice0" title="TAB da Consulta por Número" style="font-size: 12px;">
+					Por Número
+				  </a>
+				</li>
+				<li>
+				  <a href="#tabs-nome-indice1" title="TAB da Consulta por Nome" style="font-size: 12px;">
+					Por Nome
+				  </a>
+				</li>
+				<li>
+				  <a href="#tabs-oab-indice2"	title="TAB da Consulta por OAB"	 style="font-size: 12px;">
+					Por OAB
+				  </a>
+				</li>
+				<li>
+				  <a href="#tabs-advogado-indice3" title="TAB da Consulta por Nome do Advogado" style="font-size: 12px;">
+					Por Nome do Advogado
+				  </a>
+				</li>
+				<li>
+				  <a href="#tabs-cpf-indice4" title="TAB da Consulta por CPF/CNPJ" style="font-size: 12px;">
+					Por CPF/CNPJ
+				  </a>
+				</li>
+				<li>
+				  <a href="#tabs-protocolo-indice5" title="TAB da Consulta por Protocolo" style="font-size: 12px;">
+					Por Protocolo
+				  </a>
+				</li>
+				<li>
+				  <a href="#tabs-serventia-indice6" title="TAB da Consulta por Serventia" style="font-size: 12px;" onclick="javascript:limpaFormulario(); locationHash(this);">
+					Sentença
+				  </a>
+				</li>
+			</ul>
+			<div id="tabs-numero-indice0">
+			  <table width="100%" cellpadding="3" cellspacing="3">
+				<tr>
+				  <td width="30%">&nbsp;</td>
+				  <td colspan="5">
+					<script language="JavaScript" type="text/javascript" 
+							src="js/clv_validacaoTJ.js?v=3">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/Cookie.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/evento.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/isIntranet.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/juizado.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/mascara.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/Mask.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/numeracaoUnica.js">
+					</script>
+					<script language="JavaScript" type="text/javascript" 
+							src="js/numeracaoUnicaUI.js">
+					</script>					
+										
+					<style type="text/css">
+					  .txtInput {
+						border:1px solid #333333;
+						color:#333333;
+						font-family:Arial,Helvetica,sans-serif;
+						font-size:11px;
+						position:relative;
+					  }
+					</style>
+
+
+
+
+					<form id="form" style="padding-top:5%" method="post" 
+						  enctype="application/x-www-form-urlencoded" 
+						  onsubmit="return ((consultaAction(document.getElementById('txtNumero').value,document.getElementById('selOrigem').value)) && (document.getElementById('form').validadorMestre.testarValidador()));">
+					  <script type="text/javascript" language="JavaScript">
+						document.getElementById('form').validadorMestre = new ValidadorMestre();
+					  </script>					  
+					  <input type="hidden" 
+							 id="tipoUsuario" name="tipoUsuario" 
+							 value=""/>
+					  <input type="hidden" 
+							 id="idUsuSegWeb" name="idUsuSegWeb" 
+							 value=""/>
+					  <span id="selOpcaoNumeracao">
+						<label>
+						  <input type="radio" checked='true' 
+								 name="selOpcaoNumeracao" value="1" 
+								 onclick="mudarNumeracao()" 
+								 onkeyup="mudarNumeracao()" />Num. única            
+						</label><br/>
+						<label>
+						  <input type="radio"  
+								 name="selOpcaoNumeracao" value="2" 
+								 onclick="mudarNumeracao()" 
+								 onkeyup="mudarNumeracao()" />Num. antiga                  
+						</label><br/>
+					  </span><br/>
+											
+					  <div id="numeracaoAntiga">
+						
+						<input type="hidden" value="" name="N" id="N" />
+						<label>Origem:</label>
+						<br/>
+						<select id="selOrigem" name="form:btorigem" 
+								onchange="alterar(this.value);  mensagemExecucaoFiscal()">
+						  <option value="1">Juizado / 1ªInstância</option>
+						  <option value="2">Tribunal de Justiça (2ªInst)</option>
+						  <option value="3">Alçada Cível</option>
+						  <option value="4">Alçada Criminal</option>
+						  <option value="5">Precatórios Judiciais</option>
+						  <option value="6">Vara de Execuções Penais</option>
+						  <option value="7">Conselho da Magistratura</option>				
+						</select>
+						<br/>
+						<span id="form:selectOneRadio">
+						  <span id="opcaoSegundaInstancia" 
+								style="display: none; margin-top: 10px;">
+							<span id="form:selectOneRadio1">
+							  <label>
+								<input type="radio" checked='true' 
+									   name="form:selectOneRadio1" value="1" 
+									   onchange="aplicarMascara(document.getElementById('selOrigem').value); alterLabelProt();" />Num. de Processo
+							  </label>
+							  <label>
+								<input type="radio" 
+									   name="form:selectOneRadio1" value="2" 
+									   onchange="aplicarMascara(document.getElementById('selOrigem').value); alterLabelProt();" />Num. de Protocolo
+							  </label>
+							  <br />
+							</span>
+						  </span>
+						</span>
+						<br />
+						<label id="labelNumeroProcesso">Número de processo:</label><br/>
+						<label id="labelNumero" style="display: none;">Número:</label>
+						<input type="text" 
+							   name="form:btnumero" id="txtNumero" 
+							   onblur="autoCompletar();" 
+							   maxlength="20" size="20"/>					
+						<br />
+						<span id='form:mensagem'></span>
+						<span id="opcaoVep" style="display: none;">
+						  <div style="text-align: left; width: 100%">
+							<label>ou</label>
+						  </div>
+						  <label>Número de Protocolo:</label><br />
+						  <input id="form:nprotocolo" 
+								 type="text" 
+								 name="form:nprotocolo" />
+						  <div style="text-align: left; width: 100%">
+							<label>ou</label>
+						  </div>					
+						  <div id="form:tipoConsulta">
+							<label>
+							  <input type="radio" checked 
+									 name="form:tipoConsulta" 
+									 value="ifp" />IFP
+							</label>
+							<label>
+							  <input type="radio" 
+									 name="form:tipoConsulta" 
+									 value="numero" />Nº VEP
+							</label>
+						  </div>
+						  <br />
+						  <label>ID:</label>
+						  <br />					
+						  <input id="form:id" type="text" name="form:id" />
+						</span>
+						<br />
+						<input type="submit" name="form:commandButton2"
+							   value="Pesquisar" alt="Pesquisar"/>
+						<input type="button" name="form:commandButton1"
+							   value="Limpar" alt="Limpar"
+							   onclick="limpaFormulario()"/>
+						<br />
+						<div id="mensagemExecucao"
+							 style="display: none; text-align: justify;">
+						  Para visualizar os andamentos processuais posteriores ao dia 08 de dezembro da execução
+						  fiscal estadual. Utilize a opção "Juizado / 1ª Instância" Os movimentos anteriores
+						  a essa data e os movimentos não cartorários permaneceram disponíveis pela opção
+						  "Execução Fiscal Estadual"
+						</div>
+					  </div>
+										
+					  <div id="numeracaoUnica" style="display: none">
+						<input type="text" 
+							   id="parte1ProcCNJ" name="parte1ProcCNJ" 
+							   class="txtInput" maxlength="25" size="15"
+							   onblur="formatarNumeracaoUnica1(this);"/>
+						<label>.8.19.</label>
+						<input type="text"
+							   id="parte2ProcCNJ" name="parte2ProcCNJ"
+							   class="txtInput" maxlength="4" size="4"
+							   onblur="formatarNumeracaoUnica2(this);" />                                                
+						<br>
+						  <span id='mensagemCNJ'></span>
+						<br />
+						<input type="submit" 
+							   name="form:commandButton3" 
+							   value="Pesquisar" alt="Pesquisar"/>
+						<input type="button" 
+							   name="form:commandButton4" 
+							   value="Limpar" alt="Limpar" 
+							   onclick="limpaFormulario()"/>
+						<br/>
+					  </div>
+					</form>
+
+
+
+					<script language="JavaScript"
+							type="text/javascript"
+							src="js/validadores.js"></script>
+					<script language="JavaScript"
+							type="text/javascript">verificarLoad();</script>
+				  </td>
+				</tr>
+			  </table>
+			</div>
+						
+			<div id="tabs-nome-indice1">
+			  <script type="text/javascript"
+					  src="js/jquery.mask.min.js"></script>
+			  <script type="text/javascript"
+					  src="js/tools/toolDataPicker.js"></script>
+
+
+
+			  <form action="" id="consultaNomeForm" 
+					method="post" name="consultaNomeForm">
+				<input type="hidden" name="acao"/>
+				<input type="hidden" name="descOrigem"/>
+				<input type="hidden" name="descComarca"/>
+				<input type="hidden" name="descCompetencia"/>
+				<input type="hidden" name="novaTela" value="true"/>                              
+				<input type="hidden" name="tipousuario" 
+					   value=""/>
+				<input type="hidden" id="idUsuSegWeb" 
+					   name="idUsuSegWeb" value=""/>                              
+
+				<table cellpadding="3" cellspacing="3" class="TDtable1" width="100%">
+				  <tr><td>&nbsp;</td></tr>
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Origem:</label>
+					</td>
+					<td colspan="5">
+					  <core:catch>
+						
+<select name="origem" onchange="alteraVisibilidade(true,this.form)" 
+		title="Origem">
+  <option value="" selected="selected">--- Selecione ---</option>
+  <option value="1">1&ordf; Inst&acirc;ncia</option>
+  <option value="2">Tribunal de Justi&ccedil;a (2&ordf; Inst&acirc;ncia)</option>
+  <option value="3">Tribunal de Al&ccedil;ada C&iacute;vel</option>
+  <option value="4">Tribunal de Al&ccedil;ada Criminal</option>
+  <option value="5">Conselho Recursal</option>
+  <option value="6">Precat&oacute;rios Judiciais</option>
+  <option value="7">Juizados Especiais</option>
+  <option value="8">Vara de Execu&ccedil;&otilde;es Penais</option>
+  <option value="9">Conselho da Magistratura</option>
+</select>
+
+					  </core:catch>
+					</td>
+				  </tr>
+				  
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <div id="radioLabelProtocolo" 
+						   style="display:none"><label>Tipo:</label></div>
+					</td>
+					<td colspan="5">
+					  <div id="radioProtocolo" style="display:none">
+						<label>
+						  <input type="radio" checked="checked" 
+								 name="tiposecinst" value="1"
+								 onclick="alterFilterPeriodo(this.form)"/>
+						  Processo 
+						  <input type="radio"
+								 name="tiposecinst" value="10"
+								 onclick="alterFilterPeriodo(this.form)"/>
+						  Protocolo
+						</label>
+					  </div>
+					</td>
+				  </tr>
+							  
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Comarca/Regional:</label>
+					</td>
+					<td colspan="5">
+					  <select name="comarca" title="Comarca/Regional" 
+							  onchange="alteraVisibilidade(true,this.form)">
+						<option value="" selected>--- Selecione ---</option>
+						<option value="TODAS">Todas Comarcas</option>
+						<core:catch>
+						  
+<option value="201">Capital</option>
+<option value="204">....Bangu</option>
+<option value="209">....Barra da Tijuca</option>
+<option value="205">....Campo Grande</option>
+<option value="207">....Ilha do Governador</option>
+<option value="203">....Jacarepagu&aacute;</option>
+<option value="210">....Leopoldina</option>
+<option value="202">....Madureira</option>
+<option value="208">....M&eacute;ier</option>
+<option value="211">....Pavuna</option>
+<option value="206">....Santa Cruz</option>
+<option value="401">Angra dos Reis</option>
+<option value="424">Araruama</option>
+<option value="341">Arraial do Cabo</option>
+<option value="403">Barra do Pira&iacute;</option>
+<option value="402">Barra Mansa</option>
+<option value="428">Belford Roxo</option>
+<option value="302">Bom Jardim</option>
+<option value="432">Bom Jesus de Itabapoana</option>
+<option value="348">B&uacute;zios</option>
+<option value="404">Cabo Frio</option>
+<option value="304">Cachoeiras de Macacu</option>
+<option value="305">Cambuci</option>
+<option value="220">Campos dos Goytacazes</option>
+<option value="306">Cantagalo</option>
+<option value="355">Carapebus / Quissam&atilde;</option>
+<option value="307">Carmo</option>
+<option value="308">Casimiro de Abreu</option>
+<option value="309">Concei&ccedil;&atilde;o de Macabu</option>
+<option value="310">Cordeiro</option>
+<option value="311">Duas Barras</option>
+<option value="221">Duque de Caxias</option>
+<option value="312">Engenheiro Paulo de Frontin</option>
+<option value="471">Guapimirim</option>
+<option value="343">Iguaba Grande</option>
+<option value="407">Itabora&iacute;</option>
+<option value="408">Itagua&iacute;</option>
+<option value="349">Italva</option>
+<option value="313">Itaocara</option>
+<option value="409">Itaperuna</option>
+<option value="354">Itatiaia</option>
+<option value="350">Japeri</option>
+<option value="314">Laje do Muria&eacute;</option>
+<option value="411">Maca&eacute;</option>
+<option value="410">Mag&eacute;</option>
+<option value="470">....Mag&eacute; - Regional de Inhomirim</option>
+<option value="315">Mangaratiba</option>
+<option value="430">Maric&aacute;</option>
+<option value="317">Mendes</option>
+<option value="439">Mesquita</option>
+<option value="318">Miguel Pereira</option>
+<option value="319">Miracema</option>
+<option value="320">Natividade</option>
+<option value="412">Nil&oacute;polis</option>
+<option value="222">Niter&oacute;i</option>
+<option value="473">....Regi&atilde;o Oce&acirc;nica</option>
+<option value="414">Nova Friburgo</option>
+<option value="223">Nova Igua&ccedil;u</option>
+<option value="321">Paracambi</option>
+<option value="433">Para&iacute;ba do Sul</option>
+<option value="323">Paraty</option>
+<option value="346">Paty do Alferes</option>
+<option value="224">Petr&oacute;polis</option>
+<option value="472">....Itaipava</option>
+<option value="353">Pinheiral</option>
+<option value="324">Pira&iacute;</option>
+<option value="325">Porci&uacute;ncula</option>
+<option value="345">Porto Real - Quatis</option>
+<option value="434">Queimados</option>
+<option value="417">Resende</option>
+<option value="431">Rio Bonito</option>
+<option value="327">Rio Claro</option>
+<option value="328">Rio das Flores</option>
+<option value="342">Rio das Ostras</option>
+<option value="329">Santa Maria Madalena</option>
+<option value="425">Santo Ant&ocirc;nio de P&aacute;dua</option>
+<option value="435">S&atilde;o Fidelis</option>
+<option value="344">S&atilde;o Francisco do Itabapoana</option>
+<option value="225">S&atilde;o Gon&ccedil;alo</option>
+<option value="474">....Alc&acirc;ntara</option>
+<option value="426">S&atilde;o Jo&atilde;o da Barra</option>
+<option value="226">S&atilde;o Jo&atilde;o de Meriti</option>
+<option value="351">S&atilde;o Jos&eacute; do Vale do Rio Preto</option>
+<option value="427">S&atilde;o Pedro da Aldeia</option>
+<option value="334">S&atilde;o Sebasti&atilde;o do Alto</option>
+<option value="335">Sapucaia</option>
+<option value="429">Saquarema</option>
+<option value="352">Serop&eacute;dica</option>
+<option value="337">Silva Jardim</option>
+<option value="338">Sumidouro</option>
+<option value="420">Teres&oacute;polis</option>
+<option value="339">Trajano de Moraes</option>
+<option value="421">Tr&ecirc;s Rios</option>
+<option value="422">Valen&ccedil;a</option>
+<option value="436">Vassouras</option>
+<option value="227">Volta Redonda</option>
+						</core:catch>
+					  </select>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Compet&ecirc;ncia:</label>
+					</td>
+					<td colspan="5">
+					  <core:catch>
+						
+<select name="competencia" title="Compet&ecirc;ncia"
+        onchange="alteraVisibilidade(true,this.form)">
+  <option value="" selected>--- Selecione ---</option>
+  <option value="08">Acidentes do Trabalho</option>
+  <option value="06">Auditoria da Justi&ccedil;a Militar</option>
+  <option value="01">C&iacute;vel</option>
+  <option value="04">Criminal</option>
+  <option value="05">Criminal - Juri</option>
+  <option value="17">D&iacute;vida Ativa Estadual</option>
+  <option value="18">D&iacute;vida Ativa Federal</option>
+  <option value="11">D&iacute;vida Ativa Municipal</option>
+  <option value="03">Empresarial</option>
+  <option value="02">Fam&iacute;lia</option>
+  <option value="10">Fazenda P&uacute;blica</option>
+  <option value="22">Idoso</option>
+  <option value="12">Inf&acirc;ncia e Juventude/I. J. e Idosos</option>
+  <option value="23">Juizado Fazend&aacute;rio</option>
+  <option value="07">&Oacute;rf&atilde;os e Sucess&otilde;es</option>
+  <option value="16">Registro Civil de Pessoas Naturais</option>
+  <option value="09">Registro P&uacute;blico</option>
+  <option value="21">Viol&ecirc;ncia Dom. e Fam. Contra a Mulher</option>
+</select>
+					  </core:catch>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">						
+					  <div id="divLblFilterAnoInic">
+						<label>Ano Inicial:</label>						
+					  </div>  
+					</td>
+					<td>
+					  <div id="divFilterAnoInic">
+						<input type="text" name="anoInicio" maxlength="4" 
+							   size="4" title="Ano Inicial" 
+							   value="2019"/>
+					  </div>
+					</td>
+				  </tr>
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  <div id="divLblFilterAnoFim">
+						<label>Ano Final:</label>
+					  </div>
+					</td>
+					<td>
+					  <div id="divFilterAnoFim">
+						<input type="text" id="anoFinal" name="anoFinal" 
+							   maxlength="4" size="4" title="Ano Final" 
+							   value="2020"/>
+					  </div>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  <div id="divLblFilterDataInic" style="display:none">
+						<label>Data Inicio:</label>
+					  </div>
+					</td>
+					<td>
+					  <div id="divFilterDataInic" style="display:none">
+						<input type="text" class="form-control" 
+							   name="dataInicio" id="dataInicio"  
+							   size="55" maxlength="10" title="Data Início"
+							   style="height: 100%;"/>
+					  </div>
+					</td>
+				  </tr>
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  <div id="divLblFilterDataFim" style="display:none">
+						<label>Data Fim:</label>
+					  </div>
+					</td>
+					<td>
+					  <div id="divFilterDataFim" style="display:none">
+						<input type="text" class="form-control" 
+							  name="dataFim" id="dataFim"  
+							  size="55" maxlength="10" title="Data Fim"
+							  style="height: 100%;"
+							  value="16/03/2020"/>
+					  </div>
+					</td>
+				  </tr>	
+
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  <label>Nome da Parte:</label>
+					</td>
+					<td>
+					  <input type="text" id="nomeParte" name="nomeParte"
+							 maxlength="60" title="Nome da Parte" size="50"/>
+					</td>
+				  </tr>
+				  <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+				  
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  &nbsp;
+					</td>
+					<td>
+					  <div id="procativos_consultaNomeForm" 
+						   name="procativos_consultaNomeForm" 
+						   style="width: 100%">						
+						  <input type="checkbox" 
+								 name="pativos" 
+								 id="pativos" 
+								 value="true" 
+								 style="margin-right:2%">
+							<label>
+							  Exibir somente Processos em Andamento
+							</label>
+						  </input>						
+					  </div>
+					</td>
+				  </tr>
+				  <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+				</table>
+			  </form>
+
+
+
+			  <!-- Bootstrap core JavaScript
+			  ================================================== -->
+			  <script src="bootstrap/js/bootstrap.min.js"></script>
+			  <script src="bootstrap/js/button.js"></script>  
+			  <script src="bootstrap/js/transition.js"></script>
+			  <script src="bootstrap/js/collapse.js"></script>  
+			  <!-- Placed at the end of the document so the pages load faster -->
+
+			</div>
+			
+			<div id="tabs-oab-indice2">
+
+
+
+			  <form action="" id="consultaOABForm" method="post" name="consultaOABForm">
+				<input type="hidden" name="acao" value=""/>
+				<input type="hidden" name="descComarca" value=""/>
+				<input type="hidden" name="descOrigem" value=""/>
+				<input type="hidden" name="novaTela" value="true"/>
+				<input type="hidden" 
+					   id="idUsuSegWeb" name="idUsuSegWeb" 
+					   value=""/>
+				<input type="hidden" 
+					   name="tipousuario" value=""/>
+				
+				<table width="100%" cellpadding="3" cellspacing="3">
+				  <tr><td>&nbsp;</td></tr>
+				  <tr>
+					<td align="right">
+					  <label>Origem:</label>
+					</td>
+					<td colspan="5">
+					  <core:catch>
+						
+<select name="origem" onchange="alteraVisibilidade(true,this.form)" 
+		title="Origem">
+  <option value="" selected="selected">--- Selecione ---</option>
+  <option value="1">1&ordf; Inst&acirc;ncia</option>
+  <option value="2">Tribunal de Justi&ccedil;a (2&ordf; Inst&acirc;ncia)</option>
+  <option value="3">Tribunal de Al&ccedil;ada C&iacute;vel</option>
+  <option value="4">Tribunal de Al&ccedil;ada Criminal</option>
+  <option value="5">Conselho Recursal</option>
+  <!--option value="6">Precat&oacute;rios Judiciais</option-->
+  <option value="7">Juizados Especiais</option>
+  <!--option value="8">Vara de Execu&ccedil;&otilde;es Penais</option-->
+  <option value="9">Conselho da Magistratura</option>
+</select>
+					  </core:catch>
+					</td>
+				  </tr>					
+				  
+				  <tr>
+					<td align="right">
+					 <label>Comarca/Regional:</label>
+					</td>
+					<td colspan="5">
+					  <select name="comarca" 
+							  title="Comarca/Regional" 
+							  onchange="alteraVisibilidade(true,this.form)">
+						<option value="" selected>--- Selecione ---</option>
+						<option value="TODAS">Todas Comarcas</option>
+						<core:catch>
+						  
+<option value="201">Capital</option>
+<option value="204">....Bangu</option>
+<option value="209">....Barra da Tijuca</option>
+<option value="205">....Campo Grande</option>
+<option value="207">....Ilha do Governador</option>
+<option value="203">....Jacarepagu&aacute;</option>
+<option value="210">....Leopoldina</option>
+<option value="202">....Madureira</option>
+<option value="208">....M&eacute;ier</option>
+<option value="211">....Pavuna</option>
+<option value="206">....Santa Cruz</option>
+<option value="401">Angra dos Reis</option>
+<option value="424">Araruama</option>
+<option value="341">Arraial do Cabo</option>
+<option value="403">Barra do Pira&iacute;</option>
+<option value="402">Barra Mansa</option>
+<option value="428">Belford Roxo</option>
+<option value="302">Bom Jardim</option>
+<option value="432">Bom Jesus de Itabapoana</option>
+<option value="348">B&uacute;zios</option>
+<option value="404">Cabo Frio</option>
+<option value="304">Cachoeiras de Macacu</option>
+<option value="305">Cambuci</option>
+<option value="220">Campos dos Goytacazes</option>
+<option value="306">Cantagalo</option>
+<option value="355">Carapebus / Quissam&atilde;</option>
+<option value="307">Carmo</option>
+<option value="308">Casimiro de Abreu</option>
+<option value="309">Concei&ccedil;&atilde;o de Macabu</option>
+<option value="310">Cordeiro</option>
+<option value="311">Duas Barras</option>
+<option value="221">Duque de Caxias</option>
+<option value="312">Engenheiro Paulo de Frontin</option>
+<option value="471">Guapimirim</option>
+<option value="343">Iguaba Grande</option>
+<option value="407">Itabora&iacute;</option>
+<option value="408">Itagua&iacute;</option>
+<option value="349">Italva</option>
+<option value="313">Itaocara</option>
+<option value="409">Itaperuna</option>
+<option value="354">Itatiaia</option>
+<option value="350">Japeri</option>
+<option value="314">Laje do Muria&eacute;</option>
+<option value="411">Maca&eacute;</option>
+<option value="410">Mag&eacute;</option>
+<option value="470">....Mag&eacute; - Regional de Inhomirim</option>
+<option value="315">Mangaratiba</option>
+<option value="430">Maric&aacute;</option>
+<option value="317">Mendes</option>
+<option value="439">Mesquita</option>
+<option value="318">Miguel Pereira</option>
+<option value="319">Miracema</option>
+<option value="320">Natividade</option>
+<option value="412">Nil&oacute;polis</option>
+<option value="222">Niter&oacute;i</option>
+<option value="473">....Regi&atilde;o Oce&acirc;nica</option>
+<option value="414">Nova Friburgo</option>
+<option value="223">Nova Igua&ccedil;u</option>
+<option value="321">Paracambi</option>
+<option value="433">Para&iacute;ba do Sul</option>
+<option value="323">Paraty</option>
+<option value="346">Paty do Alferes</option>
+<option value="224">Petr&oacute;polis</option>
+<option value="472">....Itaipava</option>
+<option value="353">Pinheiral</option>
+<option value="324">Pira&iacute;</option>
+<option value="325">Porci&uacute;ncula</option>
+<option value="345">Porto Real - Quatis</option>
+<option value="434">Queimados</option>
+<option value="417">Resende</option>
+<option value="431">Rio Bonito</option>
+<option value="327">Rio Claro</option>
+<option value="328">Rio das Flores</option>
+<option value="342">Rio das Ostras</option>
+<option value="329">Santa Maria Madalena</option>
+<option value="425">Santo Ant&ocirc;nio de P&aacute;dua</option>
+<option value="435">S&atilde;o Fidelis</option>
+<option value="344">S&atilde;o Francisco do Itabapoana</option>
+<option value="225">S&atilde;o Gon&ccedil;alo</option>
+<option value="474">....Alc&acirc;ntara</option>
+<option value="426">S&atilde;o Jo&atilde;o da Barra</option>
+<option value="226">S&atilde;o Jo&atilde;o de Meriti</option>
+<option value="351">S&atilde;o Jos&eacute; do Vale do Rio Preto</option>
+<option value="427">S&atilde;o Pedro da Aldeia</option>
+<option value="334">S&atilde;o Sebasti&atilde;o do Alto</option>
+<option value="335">Sapucaia</option>
+<option value="429">Saquarema</option>
+<option value="352">Serop&eacute;dica</option>
+<option value="337">Silva Jardim</option>
+<option value="338">Sumidouro</option>
+<option value="420">Teres&oacute;polis</option>
+<option value="339">Trajano de Moraes</option>
+<option value="421">Tr&ecirc;s Rios</option>
+<option value="422">Valen&ccedil;a</option>
+<option value="436">Vassouras</option>
+<option value="227">Volta Redonda</option>
+						</core:catch>
+					  </select>
+					</td>
+				  </tr>
+							  
+				  <tr>
+					<td align="right">
+					  <label>Se&ccedil;&atilde;o da OAB:</label>
+					</td>
+					<td>
+					  <core:catch>
+						
+<select name="secao" title="Se&ccedil;&atilde;o da OAB">
+ <option value="AC" selected="selected">AC</option>
+ <option value="AL">AL</option>
+ <option value="AM">AM</option>
+ <option value="AP">AP</option>
+ <option value="BA">BA</option>
+ <option value="CE">CE</option>
+ <option value="DF">DF</option>
+ <option value="ES">ES</option>
+ <option value="GO">GO</option>
+ <option value="MA">MA</option>
+ <option value="MG">MG</option>
+ <option value="MS">MS</option>
+ <option value="MT">MT</option>
+ <option value="PA">PA</option>
+ <option value="PB">PB</option>
+ <option value="PE">PE</option>
+ <option value="PI">PI</option>
+ <option value="PR">PR</option>
+ <option value="RJ" selected="true">RJ</option>
+ <option value="RN">RN</option>
+ <option value="RO">RO</option>
+ <option value="RR">RR</option>
+ <option value="RS">RS</option>
+ <option value="SC">SC</option>
+ <option value="SE">SE</option>
+ <option value="SP">SP</option>
+ <option value="TO">TO</option>
+</select>
+					  </core:catch>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right">
+					  <label>N&uacute;mero da OAB:</label>
+					</td>
+					<td>
+					  <input type="text" class="numeroOAB" name="numeroOAB"  
+							 maxlength="7" size="10" title="Número da OAB" />
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" nowrap="nowrap">
+					  <label>Ano Inicial:</label>
+					</td>
+					<td>
+					  <input type="text" name="anoInicio" 
+							 maxlength="4" size="5" title="Ano Inicial" 
+							 value="2019"/>
+					</td>
+				  </tr>
+				  <tr>
+					<td align="right" nowrap="nowrap">
+					  <label>Ano Final:</label>
+					</td>
+					<td>
+					  <input type="text" name="anoFinal" 
+							 maxlength="4" size="5" title="Ano Final" 
+							 value="2020"/>
+					</td>
+				  </tr>
+
+				  <tr><td>&nbsp;</td></tr>
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  &nbsp;
+					</td>
+					<td>
+					  <div id="procativos_consultaOABForm" 
+						   name="procativos_consultaOABForm" 
+						   style="width: 100%">
+						<input type="checkbox" 
+							   id="pativos" 
+							   name="pativos"
+							   style="margin-right:2%"
+							   value="true">
+						  <label>
+							Exibir somente Processos em Andamento
+						  </label>
+						</input>
+					  </div>
+					</td>
+				  </tr>
+				  <tr><td>&nbsp;</td></tr>
+				</table>
+			  </form>
+
+
+
+			</div>
+
+			<div id="tabs-advogado-indice3">
+
+
+
+			  <form action="" id="consultaNomeAdvogadoForm"  method="POST" 
+					style="padding-top:2%" name="consultaNomeAdvogadoForm">
+				<input type="hidden" name="novaTela" value="true"/>
+				<input type="hidden" name="tipousuario" value=""/>
+				<input type="hidden" id="idUsuSegWeb" name="idUsuSegWeb" value=""/>
+
+				<table width="100%" cellpadding="3" cellspacing="3">
+				  <tr>
+					<td align="right" nowrap="nowrap">
+					  <label>Nome do Advogado:</label>
+					</td>
+					<td>
+					  <input type="text" name="nomeAdvogado" 
+							 maxlength="60" size="60" 
+							 title="Nome do Advogado" value="" />
+					</td>
+				  </tr>
+				  <tr><td>&nbsp;</td></tr>
+				</table>
+			  </form>
+
+
+
+			</div>
+
+			<div id="tabs-cpf-indice4">
+
+
+
+			  <form action="" id="consultaCPFForm" method="post" 
+					name="consultaCPFForm">
+				<input type="hidden" name="acao"/>
+				<input type="hidden" name="descOrigem" value=""/>
+				<input type="hidden" name="descComarca" value=""/>
+				<input type="hidden" name="descCompetencia" value=""/>
+				<input type="hidden" name="tipoConsultaHidden"/>
+				<input type="hidden" name="novaTela" value="true"/>
+				<input type="hidden" name="tipousuario" value=""/>
+				<input type="hidden" id="idUsuSegWeb" name="idUsuSegWeb" value=""/>
+				
+				<table width="100%" cellpadding="3" cellspacing="3">
+				  <tr><td>&nbsp;</td></tr>
+				  <tr>
+					<td align="right">
+					  <label>Origem:</label>
+					</td>
+					<td colspan="5">
+					  <core:catch>
+						
+<select name="origem" onchange="alteraVisibilidade(true,this.form)" 
+		title="Origem">
+  <option value="" selected="selected">--- Selecione ---</option>
+  <option value="1">1&ordf; Inst&acirc;ncia</option>
+  <option value="2">Tribunal de Justi&ccedil;a (2&ordf; Inst&acirc;ncia)</option>
+  <!--option value="3">Tribunal de Al&ccedil;ada C&iacute;vel</option-->
+  <!--option value="4">Tribunal de Al&ccedil;ada Criminal</option-->
+  <!--option value="5">Conselho Recursal</option-->
+  <!--option value="6">Precat&oacute;rios Judiciais</option-->
+  <option value="7">Juizados Especiais</option>
+  <!--option value="8">Vara de Execu&ccedil;&otilde;es Penais</option-->
+  <!--option value="9">Conselho da Magistratura</option-->
+</select>
+
+					  </core:catch>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right">
+					  <label>Comarca/Regional:</label>
+					</td>
+					<td colspan="5">
+					  <select name="comarca" title="Comarca/Regional" 
+							  onchange="alteraVisibilidade(true,this.form)">
+						<option value="" selected>--- Selecione ---</option>
+						<core:catch>
+						  
+<option value="201">Capital</option>
+<option value="204">....Bangu</option>
+<option value="209">....Barra da Tijuca</option>
+<option value="205">....Campo Grande</option>
+<option value="207">....Ilha do Governador</option>
+<option value="203">....Jacarepagu&aacute;</option>
+<option value="210">....Leopoldina</option>
+<option value="202">....Madureira</option>
+<option value="208">....M&eacute;ier</option>
+<option value="211">....Pavuna</option>
+<option value="206">....Santa Cruz</option>
+<option value="401">Angra dos Reis</option>
+<option value="424">Araruama</option>
+<option value="341">Arraial do Cabo</option>
+<option value="403">Barra do Pira&iacute;</option>
+<option value="402">Barra Mansa</option>
+<option value="428">Belford Roxo</option>
+<option value="302">Bom Jardim</option>
+<option value="432">Bom Jesus de Itabapoana</option>
+<option value="348">B&uacute;zios</option>
+<option value="404">Cabo Frio</option>
+<option value="304">Cachoeiras de Macacu</option>
+<option value="305">Cambuci</option>
+<option value="220">Campos dos Goytacazes</option>
+<option value="306">Cantagalo</option>
+<option value="355">Carapebus / Quissam&atilde;</option>
+<option value="307">Carmo</option>
+<option value="308">Casimiro de Abreu</option>
+<option value="309">Concei&ccedil;&atilde;o de Macabu</option>
+<option value="310">Cordeiro</option>
+<option value="311">Duas Barras</option>
+<option value="221">Duque de Caxias</option>
+<option value="312">Engenheiro Paulo de Frontin</option>
+<option value="471">Guapimirim</option>
+<option value="343">Iguaba Grande</option>
+<option value="407">Itabora&iacute;</option>
+<option value="408">Itagua&iacute;</option>
+<option value="349">Italva</option>
+<option value="313">Itaocara</option>
+<option value="409">Itaperuna</option>
+<option value="354">Itatiaia</option>
+<option value="350">Japeri</option>
+<option value="314">Laje do Muria&eacute;</option>
+<option value="411">Maca&eacute;</option>
+<option value="410">Mag&eacute;</option>
+<option value="470">....Mag&eacute; - Regional de Inhomirim</option>
+<option value="315">Mangaratiba</option>
+<option value="430">Maric&aacute;</option>
+<option value="317">Mendes</option>
+<option value="439">Mesquita</option>
+<option value="318">Miguel Pereira</option>
+<option value="319">Miracema</option>
+<option value="320">Natividade</option>
+<option value="412">Nil&oacute;polis</option>
+<option value="222">Niter&oacute;i</option>
+<option value="473">....Regi&atilde;o Oce&acirc;nica</option>
+<option value="414">Nova Friburgo</option>
+<option value="223">Nova Igua&ccedil;u</option>
+<option value="321">Paracambi</option>
+<option value="433">Para&iacute;ba do Sul</option>
+<option value="323">Paraty</option>
+<option value="346">Paty do Alferes</option>
+<option value="224">Petr&oacute;polis</option>
+<option value="472">....Itaipava</option>
+<option value="353">Pinheiral</option>
+<option value="324">Pira&iacute;</option>
+<option value="325">Porci&uacute;ncula</option>
+<option value="345">Porto Real - Quatis</option>
+<option value="434">Queimados</option>
+<option value="417">Resende</option>
+<option value="431">Rio Bonito</option>
+<option value="327">Rio Claro</option>
+<option value="328">Rio das Flores</option>
+<option value="342">Rio das Ostras</option>
+<option value="329">Santa Maria Madalena</option>
+<option value="425">Santo Ant&ocirc;nio de P&aacute;dua</option>
+<option value="435">S&atilde;o Fidelis</option>
+<option value="344">S&atilde;o Francisco do Itabapoana</option>
+<option value="225">S&atilde;o Gon&ccedil;alo</option>
+<option value="474">....Alc&acirc;ntara</option>
+<option value="426">S&atilde;o Jo&atilde;o da Barra</option>
+<option value="226">S&atilde;o Jo&atilde;o de Meriti</option>
+<option value="351">S&atilde;o Jos&eacute; do Vale do Rio Preto</option>
+<option value="427">S&atilde;o Pedro da Aldeia</option>
+<option value="334">S&atilde;o Sebasti&atilde;o do Alto</option>
+<option value="335">Sapucaia</option>
+<option value="429">Saquarema</option>
+<option value="352">Serop&eacute;dica</option>
+<option value="337">Silva Jardim</option>
+<option value="338">Sumidouro</option>
+<option value="420">Teres&oacute;polis</option>
+<option value="339">Trajano de Moraes</option>
+<option value="421">Tr&ecirc;s Rios</option>
+<option value="422">Valen&ccedil;a</option>
+<option value="436">Vassouras</option>
+<option value="227">Volta Redonda</option>
+						</core:catch>
+					  </select>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right">
+					  <label>Compet&ecirc;ncia:</label>
+					</td>
+					<td colspan="5">
+					  <core:catch>
+						
+<select name="competencia" title="Compet&ecirc;ncia"
+        onchange="alteraVisibilidade(true,this.form)">
+  <option value="" selected>--- Selecione ---</option>
+  <option value="08">Acidentes do Trabalho</option>
+  <option value="06">Auditoria da Justi&ccedil;a Militar</option>
+  <option value="01">C&iacute;vel</option>
+  <option value="04">Criminal</option>
+  <option value="05">Criminal - Juri</option>
+  <option value="17">D&iacute;vida Ativa Estadual</option>
+  <option value="18">D&iacute;vida Ativa Federal</option>
+  <option value="11">D&iacute;vida Ativa Municipal</option>
+  <option value="03">Empresarial</option>
+  <option value="02">Fam&iacute;lia</option>
+  <option value="10">Fazenda P&uacute;blica</option>
+  <option value="22">Idoso</option>
+  <option value="12">Inf&acirc;ncia e Juventude/I. J. e Idosos</option>
+  <option value="23">Juizado Fazend&aacute;rio</option>
+  <option value="07">&Oacute;rf&atilde;os e Sucess&otilde;es</option>
+  <option value="16">Registro Civil de Pessoas Naturais</option>
+  <option value="09">Registro P&uacute;blico</option>
+  <option value="21">Viol&ecirc;ncia Dom. e Fam. Contra a Mulher</option>
+</select>
+					  </core:catch>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" nowrap="nowrap">
+					  <label>Ano Inicial:</label>
+					</td>
+					<td>
+					  <input type="text" name="anoInicio" 
+							 maxlength="4" size="5" 
+							 title="Ano Inicial" value="2019" />
+					</td>
+				  </tr>
+				  <tr>
+					<td align="right" nowrap="nowrap">
+					  <label>Ano Final:</label>
+					</td>
+					<td>
+					  <input type="text" name="anoFinal" 
+							 maxlength="4" size="5" 
+							 title="Ano Final" value="2020"/>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" nowrap="nowrap">
+					  <label>CPF/CNPJ:</label>
+					</td>
+					<td>
+					  <input type="text"
+							 id="numeroCpfCnpj" name="numeroCpfCnpj" 
+							 maxlength="18" size="18" 
+							 title="Informe um CPF ou CNPJ Válido" 
+							 onkeypress="mascaraMutua(this,cpfCnpjEvent)" 
+							 onkeyup="validarCpfCnpjEvent(this.value)" 
+							 onblur="clearTimeout()" 
+							 alt="Informe um CPF ou CNPJ Válido" 
+							 autocomplete="off" 
+							 value=""/>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" nowrap="nowrap">&nbsp;</td>
+					<td><div id="textoResposta" style="width:60%"></div></td>
+				  </tr>
+
+				  <tr><td>&nbsp;</td></tr>
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  &nbsp;
+					</td>
+					<td>
+					  <div id="procativos_consultaCPFForm" 
+						   name="procativos_consultaCPFForm" 
+						   style="width: 100%">
+						<input type="checkbox" id="pativos" name="pativos" 
+							   style="margin-right:2%" value="true">
+						  <label>
+							Exibir somente Processos em Andamento
+						  </label>
+						</input>
+					  </div>
+					</td>
+				  </tr>
+				  <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+				</table>
+			  </form>
+
+
+
+			</div>
+
+			<div id="tabs-protocolo-indice5">
+
+
+
+			  <form action="./redirectprotocolo" class="protocolo" 
+					id="consultaProtocoloForm" method="post" 
+					name="consultaProtocoloForm">
+				<table width="100%" cellpadding="3" cellspacing="3">
+				  <tr><td>&nbsp;</td></tr>
+				  <tr>
+					<td align="right">
+					  <label>Origem:</label>
+					</td>
+					<td colspan="5">
+					  <select title="Origem" id="protorigem" name="protorigem">
+						<option value="" selected>--- Selecione ---</option>
+						<option value="2">Tribunal de Justi&ccedil;a (2&ordf; Inst&acirc;ncia)</option>
+						<option value="5">Conselho Recursal</option>
+						<option value="9">Conselho da Magistratura</option>
+					  </select>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" class="TDtexto" nowrap="nowrap">
+					  <label> Núm. do Protocolo:</label>
+					</td>
+					<td>
+					  <input type="text"
+							 id="nwprotorigem" name="nwprotorigem" 
+							 maxlength="4" size="4" readonly/></input>
+					  <input type="text" 
+							 id="nwprotocolo" name="nwprotocolo" 
+							 maxlength="15" size="32"/></input>
+					</td>
+				  </tr>
+				</table>
+			  </form>				 
+
+
+
+			</div>
+
+			<div id="tabs-serventia-indice6">
+
+
+
+			  <form action=""  id="consultarLstSentencaForm" 
+					method="post" name="consultarLstSentencaForm">
+				<input type="hidden" name="acao"/>
+				<input type="hidden" name="comarca"/>
+				<input type="hidden" name="competencia"/>
+				<input type="hidden" name="descOrigem"/>
+				<input type="hidden" name="descComarca"/>
+				<input type="hidden" name="descCompetencia"/>
+				<input type="hidden" name="descServentia"/>
+				<input type="hidden" name="origem"/>
+				<input type="hidden" name="serventia"/>
+				
+				<input type="hidden"
+					   name="tipousuario"
+					   value=""/>
+			  </form>
+
+			  <form name="ConsultaUnificadaForm" method="post" action="/ConsultaUnificada/consulta.do">
+				<input type="hidden" name="inputHrefTab" value="">
+				<input type="hidden" name="acao"/>
+				<table class="TDtable1" cellpadding="3" cellspacing="3" width="100%">
+				  <tr><td>&nbsp;</td></tr>
+
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Origem:</label>
+					</td>
+					<td colspan="5">
+					  <select name="codOrigem" id="origem"><option value="1">Juizado / 1ªInstância</option></select>
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Comarca/Regional:</label>
+					</td>
+					<td colspan="5">
+					 <select name="codComarca" onchange="carregarCombos();" id="comarca"><option value="">--- Selecione ---</option>
+						<option value="201">Capital</option>
+<option value="204">....Bangu</option>
+<option value="209">....Barra da Tijuca</option>
+<option value="205">....Campo Grande</option>
+<option value="207">....Ilha do Governador</option>
+<option value="203">....Jacarepaguá</option>
+<option value="210">....Leopoldina</option>
+<option value="202">....Madureira</option>
+<option value="208">....Méier</option>
+<option value="211">....Pavuna</option>
+<option value="206">....Santa Cruz</option>
+<option value="401">Angra dos Reis</option>
+<option value="424">Araruama</option>
+<option value="341">Arraial do Cabo</option>
+<option value="403">Barra do Piraí</option>
+<option value="402">Barra Mansa</option>
+<option value="428">Belford Roxo</option>
+<option value="302">Bom Jardim</option>
+<option value="432">Bom Jesus de Itabapoana</option>
+<option value="348">Búzios</option>
+<option value="404">Cabo Frio</option>
+<option value="304">Cachoeiras de Macacu</option>
+<option value="305">Cambuci</option>
+<option value="220">Campos dos Goytacazes</option>
+<option value="306">Cantagalo</option>
+<option value="355">Carapebus / Quissamã</option>
+<option value="307">Carmo</option>
+<option value="308">Casimiro de Abreu</option>
+<option value="309">Conceição de Macabu</option>
+<option value="310">Cordeiro</option>
+<option value="311">Duas Barras</option>
+<option value="221">Duque de Caxias</option>
+<option value="312">Engenheiro Paulo de Frontin</option>
+<option value="471">Guapimirim</option>
+<option value="343">Iguaba Grande</option>
+<option value="407">Itaboraí</option>
+<option value="408">Itaguaí</option>
+<option value="349">Italva</option>
+<option value="313">Itaocara</option>
+<option value="409">Itaperuna</option>
+<option value="354">Itatiaia</option>
+<option value="350">Japeri</option>
+<option value="314">Laje do Muriaé</option>
+<option value="411">Macaé</option>
+<option value="410">Magé</option>
+<option value="470">....Magé - Regional de Inhomirim</option>
+<option value="315">Mangaratiba</option>
+<option value="430">Maricá</option>
+<option value="317">Mendes</option>
+<option value="318">Miguel Pereira</option>
+<option value="319">Miracema</option>
+<option value="320">Natividade</option>
+<option value="412">Nilópolis</option>
+<option value="222">Niterói</option>
+<option value="473">....Região Oceânica</option>
+<option value="414">Nova Friburgo</option>
+<option value="223">Nova Iguaçu</option>
+<option value="439">....Mesquita</option>
+<option value="321">Paracambi</option>
+<option value="433">Paraíba do Sul</option>
+<option value="323">Paraty</option>
+<option value="346">Paty do Alferes</option>
+<option value="224">Petrópolis</option>
+<option value="472">....Itaipava</option>
+<option value="353">Pinheiral</option>
+<option value="324">Piraí</option>
+<option value="325">Porciúncula</option>
+<option value="345">Porto Real - Quatis</option>
+<option value="434">Queimados</option>
+<option value="417">Resende</option>
+<option value="431">Rio Bonito</option>
+<option value="327">Rio Claro</option>
+<option value="328">Rio das Flores</option>
+<option value="342">Rio das Ostras</option>
+<option value="329">Santa Maria Madalena</option>
+<option value="425">Santo Antônio de Pádua</option>
+<option value="435">São Fidelis</option>
+<option value="344">São Francisco do Itabapoana</option>
+<option value="225">São Gonçalo</option>
+<option value="474">....Alcântara</option>
+<option value="426">São João da Barra</option>
+<option value="226">São João de Meriti</option>
+<option value="351">São José do Vale do Rio Preto</option>
+<option value="427">São Pedro da Aldeia</option>
+<option value="334">São Sebastião do Alto</option>
+<option value="335">Sapucaia</option>
+<option value="429">Saquarema</option>
+<option value="352">Seropédica</option>
+<option value="337">Silva Jardim</option>
+<option value="338">Sumidouro</option>
+<option value="420">Teresópolis</option>
+<option value="339">Trajano de Moraes</option>
+<option value="421">Três Rios</option>
+<option value="422">Valença</option>
+<option value="436">Vassouras</option>
+<option value="227">Volta Redonda</option></select>								  
+					</td>
+				  </tr>
+
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Compet&ecirc;ncia:</label>
+					</td>
+					<td colspan="5">
+					  <select name="codCompetencia" onchange="carregarCombos(serventia);" id="competencia"><option value="">--- Selecione ---</option></select>
+					</td>
+				  </tr>							  
+				  <tr>
+					<td align="right" class="TDtexto">
+					  <label>Serventia:</label>
+					</td>
+					<td colspan="5">
+					  <select name="codServentia" id="serventia"><option value="">--- Selecione ---</option></select>
+					</td>
+				  </tr>
+				  
+				  <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+				</table>
+			  </form>
+
+
+				
+			</div>
+		  </div>
+			
+		  
+		  <div id="botoes">                    
+			<table width="100%" cellpadding="3" cellspacing="3">
+			  <tr>
+				<td colspan="6" align="center">
+				  <input id="pesquisa" name="pesquisa" type="button" class="submit"
+						 value='Pesquisar' title="Efetuar a pesquisa" 
+						 alt="Efetuar a pesquisa" onclick="javascript:submeterForm();">
+				  </input>
+				  &nbsp;&nbsp;&nbsp;
+				  <input id="limpar" name="limpar" type="button" class="FORMbutton" 
+						 value='Limpar'
+						 onclick="javascript:limpaFormulario()"
+						 title="Limpar campos de pesquisa" alt="Limpar campos de pesquisa">
+				  </input>
+				</td>
+			  </tr>				  
+			</table>
+		  </div>
+		  
+
+		</div><!--fim div content-->
+		<div class="clear"></div>
+	  </div><!--fim div container-->
+	  <div id="footer">
+	<div class="acesso-informacao">
+		<a href="http://www.tjrj.jus.br/web/guest/transparencia/apresentacao" title="Acesso à Informação"> 
+			<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo-acesso.png" alt="Acesso à Informação"> 
+		</a>
+	</div>
+	<div class="endereco">
+		<div class="container-fluid-1280">
+			<p>PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL
+				<br> Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 37, 
+					Centro / CEP: 20010-090 / Tel.: (0xx21) 3133-2000
+				<br> Horários de funcionamento das Serventias Judiciais em todas as Comarcas do Estado do Rio de Janeiro:
+					 - 11h às 18h | Varas da Infância e da Juventude - 09h às 18h | 
+					 Juizados Especiais e Adjuntos - 10h às 18h
+			</p>
+		</div>
+	</div>
+</div>
+<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+
+		i[r] = i[r] || function() {
+			var arrayValue = i[r].q || [];
+
+			i[r].q = arrayValue;
+
+			(i[r].q).push(arguments);
+		};
+
+		i[r].l = 1 * new Date();
+
+		a = s.createElement(o);
+		m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	//ga('create', 'UA-870424-2', 'auto');
+	ga('create', 'UA-870424-19', 'auto', {'sampleRate': 10});
+	ga('send', 'pageview');
+</script>
+    </div>
+    <script>
+	  $('#consultaNomeForm').attr('action', urlBigIp() + "consultaProcessoNome/ConsultaNome.do");
+	  $('#consultaOABForm').attr('action', urlBigIp() + "consultaProcessoNome/ConsultaOAB.do");
+	  $('#consultaNomeAdvogadoForm').attr('action', urlBigIp() + "consultaProcessoNome/listarAdvogado.do");
+	  $('#consultaCPFForm').attr('action', urlBigIp() + "consultaProcessoNome/consultaCPF.do");
+	  $('#consultarLstSentencaForm').attr('action', urlBigIp() + "consultaProcessoNome/ConsultarLstSentenca.do");		
+    </script>
+
+  </body>
+</html>

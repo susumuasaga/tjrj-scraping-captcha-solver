@@ -1,0 +1,77 @@
+exemplo de consulta
+http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaProc.do?v=2&numProcesso=2014.038.068873-6&FLAGNOME=S&tipoConsulta=publica&back=1&PORTAL=1&v=2
+url do captcha
+http://www4.tjrj.jus.br/consultaProcessoWebV2/captcha?v=2
+nomes
+MARCELO BARCELOS DA SILVA
+JONATHA NASCIMENTO GOUVEIA
+LUCAS SOUZA SILVA
+ALFREDO JORGE FELIPE DA SILVA
+FRANCIS CRISTHIANE SOUSA DE OLIVEIRA
+JOCENILDO COSTA DE JESUS
+LUCIANO MILANEZ DA SILVA
+SEBASTIÃO BERNARDINO DE SOUZA
+EDUARDO LORDAO DOMINGUES
+WILLIAM RIBEIRO DA ROCHA
+ARTHUR BRANCO MAIA
+JOÃO EVANGELISTA COUTINHO
+LUAN RAFAEL DA SILVA
+RANULSO NOGUEIRA CHAVES
+TATIANE OLIVEIRA CRESPO
+CHRISTIAN VELLOSO DE SOUSA
+GILBERTO RAIMUNDO DA SILVA
+FRANCISCA MARIA MATOS DA SILVA
+IGOR ALEXANDRE NAPOLEÃO DOS SANTOS
+MARCIA GONÇALVES FERREIRA
+LILIAN DA SILVA DE ALMEIDA
+LUCAS SOUZA SILVA
+JACKSON AVELINO DE OLIVEIRA
+
+url consulta nome
+http://www4.tjrj.jus.br/consultaProcessoNome/ConsultaNome.do
+Form Data encoding="cp1252"
+acao: consulta
+descOrigem: 1ª Instância
+descComarca: Todas Comarcas
+descCompetencia: Criminal
+novaTela: true
+tipousuario:
+idUsuSegWeb:
+origem: 1
+tiposecinst: 1
+comarca: TODAS
+competencia: 04
+anoInicio: 2000
+anoFinal: 2020
+dataInicio:
+dataFim: 15/03/2020
+nomeParte: Luiz Fernando da Costa
+Form Data
+acao: navegacao
+paginaAtual: 2
+totPagina: 2.0
+privada:
+pagina: 2
+
+http://www4.tjrj.jus.br/consultaProcessoNome/consultaCPF.do
+Form Data encoding="cp1252"
+acao: consulta
+descOrigem: 1ª Instância
+descComarca: Capital
+descCompetencia: Criminal
+tipoConsultaHidden:
+novaTela: true
+tipousuario:
+idUsuSegWeb:
+origem: 1
+comarca: 201
+competencia: 04
+anoInicio: 2000
+anoFinal: 2020
+numeroCpfCnpj: 28.305.936/0001-40
+
+http://www4.tjrj.jus.br/consultaProcessoWebV2/consultaMov.do
+Query String Parameters
+v: 2
+numProcesso: 2014.038.068873-6
+acessoIP: internet

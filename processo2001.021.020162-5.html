@@ -1,0 +1,5852 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+
+
+    <!-- #APPTJ0316 -->
+    <title>Resultado da consulta processual</title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/dataTables.js"></script>
+    <script type="text/javascript" src="./js/jquery-historico-mandado.js"></script>
+    <script language="JavaScript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script>
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+
+
+
+<link href="http://www.tjrj.jus.br/importacao-portal/css" type="text/css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/importacao-portal/script"></script>
+
+
+
+
+
+    <style type="text/css" media="print">
+        #navegador { display:none; }
+        #navegador-horiz { display:none; }
+        #navegador-horiz2 { display:none; }
+        #navegador-horiz3 { display:none; }
+        #navegador-horiz-limpo { display:none; }
+        #content-barra  { display:none; }
+        #cabecalho { display:none; }
+        #rodape { display:none; }
+        #content, #content2,
+        #content3, #content100,
+        #content-center, #content-center2,
+        #content-frame, #content-id-busca,
+        #content-idusuario-100 {
+         margin-left:0px;
+         width:100%;
+        }
+        body { color:#000000; }
+        a { color:#000000; }
+        h1 { color:#000000; }
+        h2 { color:#000000; }
+        h3 { color:#000000; }
+        h4 { color:#000000; }
+        h5 { color:#000000; }
+        h6 { color:#000000; }
+
+        table { border-width: 1px; }
+    </style>
+    <style type="text/css">
+      .info { font-weight: bold; }
+      .negrito {font-weight: bold;}
+    </style>
+    <script type="text/javascript" src="./print.js"></script>
+    <script type="text/javascript" src="./funcoesPopUp.js?v=1.0"></script>
+    <script type="text/javascript" src="./js/consultaPorNumero.js?v=4"></script>
+    <script type="text/javascript" src="./autoCompletar.js"></script>
+    <script type="text/javascript" src="./js/impOutrosEstilos.js"></script>
+
+
+    <link href="./css/demo_table.css" rel="stylesheet" type="text/css">
+    <link href="./css/estilo.css" rel="stylesheet" type="text/css">
+
+
+
+    <script type="text/javascript" type="text/javascript">
+      var arquivosCss = new Array("http://www.tjrj.jus.br/css/body2/body.css",
+                                  "http://www.tjrj.jus.br/css/lay-out.css",
+                                  "http://www.tjrj.jus.br/css/menu.css",
+                                  "http://www.tjrj.jus.br/css/form.css",
+                                  "http://www.tjrj.jus.br/css/textos-img.css");
+      function submetePesqDocElet(){
+        //location.href='consultaProcDocElet.do?numProcesso=2001.021.020162-5&acessoIP=internet&senhaProcesso=document.getElementById('senhaProcesso').value;'
+        var senha = document.getElementById("senhaProcesso").value;
+        document.location.href="consultaProcDocElet.do?v=2&numProcesso=2001.021.020162-5&acessoIP=internet&senhaProcesso="+senha;
+      }
+      function exibeListaPersonagens(){
+        if (document.getElementById('listaPersonagens').style.display == "block")
+          document.getElementById('listaPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaPersonagens').style.display = "block"
+        }
+      }
+      function exibeListaHistoricoPersonagens(){
+        if (document.getElementById('listaHistoricoPersonagens').style.display == "block")
+          document.getElementById('listaHistoricoPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaHistoricoPersonagens').style.display = "block"
+        }
+      }
+
+      function assistirAudiencia(dtAudiencia,horaAudiencia){
+            document.location.href="redirencionakenta?codigoProc=0020058-25.2001.8.19.0021" + "&dtAudiencia=" + dtAudiencia + "&horaAudiencia=" + horaAudiencia;
+      }
+    </script>
+
+  </head>
+  <body>
+
+
+        <div id="tudo">
+
+    <!-- Início da div#tudo -->
+
+
+
+
+
+
+<div id="banner" role="banner">
+	<div id="barra">
+		<div class="container-fluid-1280 clearfix">
+			<div class="atalhos-wrapper">
+				<div class="menu-barra" role="navigation">
+					<ul class="atalhos">
+						<li><a href="http://www.tjrj.jus.br/web/guest/mapa-do-site" title="Mapa do site">Mapa do site</a></li>
+						<li><a href="http://www.tjrj.jus.br/web/guest/fale-conosco" title="Fale conosco">Fale conosco</a></li>
+						<li><a href="http://www.tjrj.jus.br/c/portal/login?p_l_id=10139" title="Intranet">Intranet</a></li>
+						<li><a href="https://outlook.office.com/" title="Webmail">Webmail</a></li>
+						<li><a href="https://portaltj.tjrj.jus.br/web/guest/home-interna" title="Magistrados">Magistrados, Servidores e Colaboradores</a></li>
+					</ul>
+				</div>
+				<ul class="redes clearfix">
+					<li class="nav-facebook"><a href="https://www.facebook.com/tjrjoficial" target="_blank" title="Acessar o Facebook"><i class="icone-rede" aria-label="Facebook"></i></a></li>
+					<li class="nav-twitter"><a href="https://twitter.com/tjrjoficial" target="_blank" title="Acessar o Twitter"><i class="icone-rede" aria-label="Twitter"></i></a></li>
+					<li class="nav-instagram"><a href="https://www.instagram.com/tjrjoficial/" target="_blank" title="Acessar o Instagram"><i class="icone-rede" aria-label="Instagram"></i></a></li>
+					<li class="nav-youtube"><a href="https://www.youtube.com/user/pjerjoficial" target="_blank" title="Acessar o Youtube"><i class="icone-rede" aria-label="Youtube"></i></a></li>
+					<li class="nav-flickr"><a href="https://www.flickr.com/people/pjerjoficial" target="_blank" title="Acessar o Flickr"><i class="icone-rede" aria-label="Flickr"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topo">
+		<div class="conteudo-topo">
+			<div class="container-fluid-1280">
+				<a class="logo" href="http://www.tjrj.jus.br" role="logo" title="TJRJ">
+					<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo.png" alt="TJRJ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+          <div id="navigation" role="navigation">
+	<h1 class="hide-accessible">Navegação</h1>
+	<div class="container-fluid-1280">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav clearfix" aria-label="Páginas do site">
+				<li class="active" role="presentation"><a href="http://www.tjrj.jus.br/web/guest/home" role="menuitem" title="Página inicial">Página inicial</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/consultas" role="menuitem" title="Consultas">Consultas</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/servicos/servicos" role="menuitem" title="Serviços">Serviços</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/institucional/institucional" role="menuitem" title="Institucional">Institucional</a></li>
+				<li role="presentation"><a href="http://cgj.tjrj.jus.br" target="_blank" role="menuitem" title="Corregedoria">Corregedoria</a></li>
+				<li role="presentation"><a href="http://www4.tjrj.jus.br/sislicweb/lic_conteudo.aspx?id=17" role="menuitem" title="Licitações">Licitações</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+      <!-- Início da div#container -->
+      <div id="container">
+
+
+
+
+
+        <!-- Menu Vertical Lateral -->
+
+
+
+<div id='navegador' class='naveg-vertical navegador list-menu'>
+<h2 class='titulo portlet-title-text'><div class="conteudo">
+<a href="http://www.tjrj.jus.br/web/guest/consultas/processos_jud/processos_jud" title="Judiciais" >Judiciais</a></div></h2><ul class="layouts level-1" ><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-numero-indice0" title="Por Número" >Por Número</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-nome-indice1" title="Por Nome" >Por Nome</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-oab-indice2" title="Por OAB" >Por OAB</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-advogado-indice3" title="Por Nome do Advogado" >Por Nome do Advogado</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-cpf-indice4" title="Por CPF / CNPJ" >Por CPF / CNPJ</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-protocolo-indice5" title="Por Protocolo" >Por Protocolo</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-serventia-indice6" title="Lista de Processos Aptos a Julgamento" >Lista de Processos Aptos a Julgamento</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do?o=prec#tabs-numero-indice0" title="Precatórios Judiciais" >Precatórios Judiciais</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/eJUD/ProcessarProcInconst.aspx" title="Processos de Inconstitucionalidade" >Processos de Inconstitucionalidade</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/consultaPedidoFalencia/inicio.do" title="Pedidos de Falência" >Pedidos de Falência</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/portalDeServicos/jsp/portal/formularioLogin.jsp" title="Por e-mail" >Por e-mail</a></li><li class="lfr-nav-item ultimo " ><a href="http://www.tjrj.jus.br/web/guest/consultas/processos-jud/formas-dispo-consultas" title="Formas disponíveis de Consulta" >Formas disponíveis de Consulta</a></li></ul></div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="content-barra">
+
+<!-- inicio da barra de ferramentas-->
+
+
+
+          <a href="javascript:history.go(-1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif" title="voltar" alt="voltar"/></a>
+
+
+
+      <a href="javascript:history.go(1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif" title="avanÃ§ar" alt="avanÃ§ar"/></a>
+
+
+      <a href="javascript:window.print();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-print.gif" title="imprimir" alt="imprimir"/></a>
+
+
+
+
+
+
+
+
+
+            <a href="javascript:location.href='http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do';"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-busca-arquivo.gif" title="nova busca" alt="nova busca"/></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Fim da barra de ferramentas-->
+</div>
+
+
+
+
+            <div id="content" name="content">
+
+
+
+            <h3>Consulta Processual - N&uacute;mero - Primeira
+                                  Inst&acirc;ncia</h3>
+          <form name="formResultado" action="">
+
+
+
+
+
+                <input type="HIDDEN" name="acessoIP"
+                       value='internet'/>
+
+              <input type="HIDDEN" name="maquinaResposta" value="internet"/>
+              <input id="tipoUsuario" type="HIDDEN" name="tipoUsuario" value=''/>
+
+
+              <table width="100%" border="0">
+                <tr>
+                  <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr valign="top">
+                  <td align="center" colspan="2" class="info">
+                    As informa&ccedil;&otilde;es aqui contidas n&atilde;o produzem
+                    efeitos legais.
+                    <br/>
+                    Somente a publica&ccedil;&atilde;o no DJERJ oficializa
+                    despachos e decis&otilde;es e estabelece prazos.
+                  </td>
+                </tr>
+
+
+
+
+                  <tr valign="top">
+                    <td align="center" colspan="2" class="info">
+
+                      <br/><h2>Processo N<sup>o</sup>
+                      0020058-25.2001.8.19.0021
+                      </h2>
+
+
+                    </td>
+                  </tr>
+
+                    <tr><td align="center" colspan="2" class="info">
+                      <h4>2001.021.020162-5</h4>
+                    </td></tr>
+                     <input type="HIDDEN" name="codigoProc"
+                             value='0020058-25.2001.8.19.0021 (2001.021.020162-5)'/>
+
+
+                  <tr><td>&nbsp;</td></tr>
+                   <tr valign="top">
+                   <td colspan="2" class="info">
+                      TJ/RJ -
+                      14/03/2020 08:24:27
+
+
+
+
+                        - Primeira inst&acirc;ncia
+
+                          - Distribu&iacute;do em
+                          28/01/2002
+
+
+
+                     </td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">&nbsp;</td>
+                     </tr>
+
+
+
+
+
+
+
+
+                          <tr valign="top">
+                            <td align="center" colspan="2" class="info" nowrap="nowrap">
+
+
+
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td class="info">
+
+                        Comarca de Duque de Caxias
+
+                    </td>
+                    <td class="info">
+
+                        1ª Vara Criminal
+
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td colspan="1"/>
+                    <td class="info">
+
+                        Cartório da 1ª Vara Criminal
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Endere&ccedil;o:</td>
+                      <td valign="top">
+                        Rua General Dionísio
+                        &nbsp;
+                        764
+                        &nbsp;
+
+                        &nbsp;
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Bairro:</td>
+                      <td valign="top">
+                        25 de Agosto
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Cidade:</td>
+                      <td valign="top">
+                        Duque de Caxias
+                      </td>
+                    </tr>
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Assunto:</td>
+                      <td valign="top">
+                        Tráfico Ilícito de Substância Entorpecente (Art. 12 - Lei 6.368/76)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Classe:</td>
+                      <td valign="top">
+                        Ação Penal - Procedimento Ordinário
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Autor
+                        </td>
+                        <td valign="top">
+                          MINISTERIO PUBLICO - DR. CLAUDIO VARELA
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Acusado
+                        </td>
+                        <td valign="top">
+                          LUIZ FERNANDO DA COSTA VULGO &quot;FERNANDINHO BEIRA MAR&quot;
+                        </td>
+                      </tr>
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+                    <tr>
+                      <td valign="top" class="info">Advogado(s):</td>
+                      <td valign="top">
+
+                          RJ132210
+                          &nbsp;-&nbsp;
+                          MARCO AURELIO TORRES SANTOS
+                          <br/>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Arquivamento</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data de arquivamento:</td>
+<td valign=top align=justify class='normal'>24/08/2016</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Tipo de arquivamento:</td>
+<td valign=top align=justify class='normal'>definitivo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Maço:</td>
+<td valign=top align=justify class='normal'>2394</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Maço recebido pelo arquivo em: </td>
+<td valign=top align=justify class='normal'>14/10/2016</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Local de arquivamento:</td>
+<td valign=top align=justify class='normal'>Arquivo Geral - Rio de Janeiro</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>14/07/2016</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>11/07/2016</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expeça-se segunda via da CES do condenado, conforme solicitado pela Justiça Federal.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>29/06/2016</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>ALESSANDRA DA ROCHA LIMA ROIDIS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Processo Desarquivado</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de desarquivamento:</td>
+<td valign=top align=justify class='normal'>29/06/2016</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Situação:</td>
+<td valign=top align=justify class='normal'>Atendido pelo DEGEA</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data de atendimento:</td>
+<td valign=top align=justify class='normal'>22/06/2016</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Pedido de Desarquivamento</td>
+</tr>
+<tr><td valign=top nowrap class='negrito'>Data do pedido:</td>
+<td valign=top align=justify class='normal'>20/06/2016</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Tipo de arquivamento:</td>
+<td valign=top align=justify class='normal'>definitivo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Solicitante:</td>
+<td valign=top align=justify class='normal'>1 VARA CRIMINAL DE DUQUE DE CAXIAS</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Motivo:</td>
+<td valign=top align=justify class='normal'>Req. judicial</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Arquivamento</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data de arquivamento:</td>
+<td valign=top align=justify class='normal'>20/01/2014</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Tipo de arquivamento:</td>
+<td valign=top align=justify class='normal'>definitivo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Maço:</td>
+<td valign=top align=justify class='normal'>2129</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Maço recebido pelo arquivo em: </td>
+<td valign=top align=justify class='normal'>03/02/2014</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Local de arquivamento:</td>
+<td valign=top align=justify class='normal'>Arquivo Geral - Rio de Janeiro</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Processo Desarquivado</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de desarquivamento:</td>
+<td valign=top align=justify class='normal'>05/08/2013</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Situação:</td>
+<td valign=top align=justify class='normal'>Atendido pelo DEGEA</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data de atendimento:</td>
+<td valign=top align=justify class='normal'>30/07/2013</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Pedido de Desarquivamento</td>
+</tr>
+<tr><td valign=top nowrap class='negrito'>Data do pedido:</td>
+<td valign=top align=justify class='normal'>25/07/2013</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Tipo de arquivamento:</td>
+<td valign=top align=justify class='normal'>definitivo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Solicitante:</td>
+<td valign=top align=justify class='normal'>1 v. criminal de caxias</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Motivo:</td>
+<td valign=top align=justify class='normal'>Req. judicial</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Arquivamento</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data de arquivamento:</td>
+<td valign=top align=justify class='normal'>24/11/2010</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Tipo de arquivamento:</td>
+<td valign=top align=justify class='normal'>definitivo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Maço:</td>
+<td valign=top align=justify class='normal'>1786</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Maço recebido pelo arquivo em: </td>
+<td valign=top align=justify class='normal'>26/11/2010</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Local de arquivamento:</td>
+<td valign=top align=justify class='normal'>Arquivo Geral - Rio de Janeiro</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>25/06/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>20/06/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Ciente. Nada a reqrer.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>16/06/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>16/06/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ciência ao MP.  Nada requerido, arquivem-se, independentemente de nova conclusão.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>12/06/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>GLAUBER BITENCOURT SOARES DA COSTA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>11/06/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>chegada do agravo de instrumento</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>06/06/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>06/06/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Arquivem-se.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>02/06/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>GLAUBER BITENCOURT SOARES DA COSTA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>27/05/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>27/05/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguarde-se o integral cumprimento da pena.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>20/05/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>MARIA DANIELLA BINATO DE CASTRO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Atos da Serventia</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>15/05/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>175</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>13/05/2008</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>13/05/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Dê-se ciência ao MP e à Defesa.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>13/05/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>08/05/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Ciente.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>05/05/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>05/05/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Dê-se ciência ao MP e à Defesa.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>05/05/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>MARIA DANIELLA BINATO DE CASTRO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>18/04/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>18/04/2008</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>15/04/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>VIVIANE TOVAR DE MATTOS ABRAHAO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>04/04/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>04/04/2008</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>02/04/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>VIVIANE TOVAR DE MATTOS ABRAHAO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>02/04/2008</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>01/04/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>27/03/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Ciente do v. acórdão.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>24/03/2008</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>24/03/2008</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Cumpra-se o V. Acórdão.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>12/03/2008</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>MARIA DANIELLA BINATO DE CASTRO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>03/09/2007</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>03/09/2007</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguarde-se o julgamento dos agravos interpostos.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>03/09/2007</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>MARIA DANIELLA BINATO DE CASTRO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>28/08/2007</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Outros</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>18/07/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>0 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Certifico que em sessão hoje realizada pelo (a) Egrégio (a) SEGUNDA CÂMARA CRIMINAL, foi submetido a julgamento o presente feito e proferida, conforme consta da respectiva minuta, a decisão seguinte:  A UNANIMIDADE, REJEITARAM AS PRELIMINARES SUSCITADAS. NO MÉRITO, TAMBÉM EM DECISÃO UNÂNIME, DERAM PARCIAL PROVIMENTO AO RECURSO, PARA FIXAR A PENA PRIVATIVA DE LIBERDADE EM SEIS ANOS DE RECLUSÃO, A SER CUMPRIDA EM REGIME INICIAL FECHADO, EXCLUINDO DA CONDENAÇÃO A PENA DE MULTA, NA CONFORMIDADE DO VOTO DA E. DES. RELATORA.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>13/07/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>13/07/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>630</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Subam os autos ao E. Tribunal de Justiça, com as nossas homenagens.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>12/07/2006</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>10/07/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>03/07/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Contra-razões em separado.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>28/06/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>28/06/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>626</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao Ministério Público, em contra-razões.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>26/06/2006</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>21/06/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Outros</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>24/05/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>0 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>22/05/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>22/05/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>604</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Remetam-se os autos ao E. Tribunal de Justiça, com as nossas homenagens.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>22/05/2006</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>18/05/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>5 dia(s)</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Vista ao Advogado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Advogado:</td>
+<td valign=top align=justify class='normal'>RJ132210 - MARCO AURELIO TORRES SANTOS</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da entrega:</td>
+<td valign=top align=justify class='normal'>17/05/2006</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>05/05/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>05/05/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>602</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Diligencie-se por telefone, se necessário junto à OAB, para intimação do advogado via fone  de forma a evitar maior demora no processamento.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>28/04/2006</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Despacho</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>03/04/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>260</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>24/03/2006</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>24/03/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>24/03/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>600</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1-RECEBO O RECURSO INTERPOSTO, SENDO CERTO QUE A DEFESA REQUER  A APRESENTAÇÃO DE RAZÕES JUNTO AO E.TJ.   2- À DEFESA PARA CUMPRIMENTO E ESCLARECIMENTO DO 2º PARAGRAFO DE FLS 593. 3- APÓS, REMETAM-SE OS AUTOS COM NOSSAS ...
+<br><br>
+<a href='javascript:void("116");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=116&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov116" value="1-RECEBO O RECURSO INTERPOSTO, SENDO CERTO QUE A DEFESA REQUER  A APRESENTAÇÃO DE RAZÕES JUNTO AO E.TJ.   2- À DEFESA PARA CUMPRIMENTO E ESCLARECIMENTO DO 2º PARAGRAFO DE FLS 593. 3- APÓS, REMETAM-SE OS AUTOS COM NOSSAS HOMENAGENS."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>17/03/2006</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>16/03/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Tribunal de Justiça</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>16/02/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>PELO QUE SE VÊ DOS AUTOS, NÃO HOUVE O EFETIVO RECEBIMENTO DE APELAÇÃO INTERPOSTA PELO RÉU,..........DESTA FORMA, DETERMINO QUE OS AUTOS BAIXEM AO JUÍZO DE ORIGEM PARA A DEVIDA REGULARIZAÇÃO E APÓS, VOLTEM.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>15/02/2006</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>15/02/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>589</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ante o requerido às fls. 588, subam os autos ao E. Tribunal de Justiça, com as nossas homenagens. Intimem-se.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>14/02/2006</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>13/02/2006</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>200600155959 - Proger Comarca de Duque de Caxias</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Carta Precatória</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>12/12/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Carta Precatória oriunda do Distrito Federal</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>09/12/2005</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>06/12/2005</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>29/11/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>29/11/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>581</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>29/11/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO CESAR VIEIRA DE CARVALHO FILHO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>28/11/2005</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>23/11/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>23/11/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>0</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>21/11/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO CESAR VIEIRA DE CARVALHO FILHO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>11/11/2005</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>10/10/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>10/10/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>577</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>06/10/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>23/09/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>22/09/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>575</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Atenda-se ao Ministério Público.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>22/09/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>20/09/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>16/09/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>CIENTE DE FLS.573,QUE DILIGENCIE O CARTORIO A FIM DE SE SABER SE O RÉU REALMENTE ESTÁ NA POLÍCIA FEDERAL  EM BRASÍLIA</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>08/09/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>08/09/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Fls. 573 verso e 574 - Dê-se ciência ao Ministério Público.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>08/09/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Carta Precatória</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>06/09/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Carta Precatória negativa</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>15/07/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>15/07/2005</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>14/07/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>05/07/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>05/07/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>570</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>EXPEÇA-SE CARTA PRECATORIA .....</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>29/06/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Carta Precatória</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>31/05/2005</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Despacho</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>03/06/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>289</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>16/05/2005</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>12/05/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>12/05/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>563</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Intime-se o patrono indicado às fls.562, a fim de que apresente as razões de recurso.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>03/05/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>17/03/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expedida Certidão em cumprimento ao Despacho retro.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>16/03/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do documento:</td>
+<td valign=top align=justify class='normal'>2055/4232</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>4ª VCRIM -  Solicitando Certidão sobre o processo.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Carta Precatória</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da expedição:</td>
+<td valign=top align=justify class='normal'>14/03/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do ofício:</td>
+<td valign=top align=justify class='normal'>s/n</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Comarca de Presidente Bernardes</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Carta Precatória</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>14/03/2005</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>10/03/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>10/03/2005</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>10/03/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>FERNANDO ANTONIO DE ALMEIDA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>28/02/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>24/02/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>548</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expeça-se Carta Precatória para intimação do réu afim de que indique novos patronos ou diga  se pretende ser assistido pela Defensoria Pública.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>24/02/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>24/02/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>CERTIFICO que os patronos do acusado encontram-se presos.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>02/02/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>02/02/2005</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>01/02/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>27/01/2005</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>27/01/2005</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>542</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expeça-se nova precatória para intimação do réu. Remeta-se novo fax, solicitando a devida urgência.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>25/01/2005</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>29/11/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expedido ofício ao Distribuidor de Presidente Bernardes / SP</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>28/09/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expedida carta precatória.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>23/09/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>23/09/2004</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>22/09/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>16/09/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>10/09/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>CIENTE DA R. SENTENÇA</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>08/09/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Sentença - Julgado procedente o pedido</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Sentença:</td>
+<td valign=top align=justify class='normal'>06/09/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>522/534</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ante o exposto, JULGO PROCEDENTE a pretensão punitiva estatal para condenar o acusado LUIZ FERNANDO DA COSTA, vulgo "FERNANDINHO BEIRA-MAR", como incurso nas penas do artigo 14 da Lei nº 6.368/76.
+	Passo à dosimetria da...
+<br><br>
+<a href='javascript:void("83");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=83&descMov=Senten%E7a','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Sentença
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov83" value="Ante o exposto, JULGO PROCEDENTE a pretensão punitiva estatal para condenar o acusado LUIZ FERNANDO DA COSTA, vulgo ´FERNANDINHO BEIRA-MAR´, como incurso nas penas do artigo 14 da Lei nº 6.368/76.
+	Passo à dosimetria da pena:
+	Para a conduta tipificada no artigo 14 da Lei nº 6.368/76, atento às diretrizes dos artigos 59 e 68 do Código Penal, acima já analisadas, estabeleço a pena em 10 (dez) anos de reclusão e 360 (trezentos e sessenta) dias-multa, pena esta que se torna definitiva eis que já estabelecida no patamar legal máximo, o que impede o agravamento decorrente da reincidência, não havendo outras circunstâncias ou causas aplicáveis que possam interferir na fixação da pena.
+	Na forma do artigo 2º, §1º, da Lei nº 8.072/90, estabeleço que a pena deverá ser cumprida em regime integralmente fechado.
+	Atento às condições econômicas do réu, já analisadas, fixo o valor do dia-multa em 1 (um) salário mínimo.
+	Custas e taxa judiciária pelo réu.
+	Na forma dos artigos 2º, §2º, da Lei nº 8.072/90 c/c 35, da Lei nº 6.368/76, nego ao réu a possibilidade de recorrer em liberdade, mantendo-se-o custodiado para garantia da aplicação da lei penal.
+	Recomende-se-o na prisão em que se encontra.
+	P.R.I.
+	Transitada em julgado, lance-se o nome do réu no rol dos culpados e procedam-se às comunicações necessárias."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>06/07/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>05/07/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>01/07/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>520 verso</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifique o cartório se há expediente a juntar.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>01/06/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>18/05/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>18/05/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>520</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>esclareça-se as determinações às fls. 497</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>13/05/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>FERNANDO ANTONIO DE ALMEIDA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>12/05/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>10/05/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>ciente do acrescido</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>07/05/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>07/05/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>519</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>AO MP</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>07/05/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>FERNANDO ANTONIO DE ALMEIDA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>14/04/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expedidas diligências</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>12/04/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>12/04/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>516</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Diligencie-se por telefone solicitando a devolução, digo, solicitando o atendimento ao expediente de fls.508.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>05/04/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>15/03/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Ofício da VEP</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>01/03/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>O(s) ofício(s) foi (foram) expedido (s).</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>18/02/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>18/02/2004</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>16/02/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>12/02/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>12/02/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>506</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Requisitem-se as informações solicitadas pelo MP, por tel ou fax, com urgência.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>09/02/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>04/02/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>02/02/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Segue promoção em separado.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>30/01/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Assinatura</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Assinatura:</td>
+<td valign=top align=justify class='normal'>30/01/2004</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>23/01/2004</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>21/01/2004</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Decisão - Decisão interlocutória - Outras</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Decisão:</td>
+<td valign=top align=justify class='normal'>21/01/2004</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>496/497</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>DECISÃO
+
+Vistos, etc.
+	O presente feito encontra-se em fase de sentença, mas o exame dos autos para elaboração do relatório demonstra que não há possibilidade de prolação imediata de sentença.
+	Cuida-se de desmembram...
+<br><br>
+<a href='javascript:void("70");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=70&descMov=Decis%E3o','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Decisão
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov70" value="DECISÃO
+
+Vistos, etc.
+	O presente feito encontra-se em fase de sentença, mas o exame dos autos para elaboração do relatório demonstra que não há possibilidade de prolação imediata de sentença.
+	Cuida-se de desmembramento do processo nº 2001.021.016987-6, que teve curso neste Juízo, sendo relatados os presentes autos na forma que segue:
+	LUIS FERNANDO DA COSTA, qualificado nos autos, e a seguir referido pelo nome em destaque, é processado pela prática da conduta típica prevista no art. 14 da Lei nº 6.368/76, conforme denúncia de fls. 04/08.
+	Interrogatório de LUIS FERNANDO às fls. 187.
+	Audiência de instrução e julgamento do processo de origem às fls. 214/226, na qual foi determinado o desmembramento dos autos.
+	Audiência de instrução e julgamento às fls. 313/332.
+	Certidão do distribuidor às fls. 150 e F.A.C. de LUIZ FERNANDO às fls. 260/275, com diversas anotações.
+	Alegações finais do Ministério Público às fls. 437/446, pela condenação, com documento de fls. 447.
+	Alegações finais da defesa às fls. 458/474, pugnando pela nulidade do processo ou, em caso de julgamento, pela absolvição.
+	Este um breve relatório dos autos.
+	Às fls. 475, foi determinado o esclarecimento da F.A.C..
+	Em suas alegações finais, a defesa alegou nulidade do processo, questão que foi suscitada nesta peça processual, não tendo o parquet  oportunidade de se manifestar sobre tal matéria, o que vai de encontro ao princípio do contraditório.
+	Inexistem, também, nos autos, provas de condenações definitivas do acusado. Não obstante, é fato público e notório, noticiado com freqüência nos jornais, diversas condenações de LUIS FERNANDO.
+	Ante o exposto, CONVERTO O JULGAMENTO EM DILIGÊNCIA para determinar que:
+a)	Certifique-se quanto a resposta de todos os expedientes sobre a F.A.C.;
+b)	Oficie-se à V.E.P. solicitando ser o Juízo informado se o acusado está cumprindo pena por algum processo em que haja condenação definitiva, solicitando urgência, e
+c)	Dê-se vista ao Ministério Público para que se manifeste, exclusivamente, sobre a alegação de nulidade do processo.
+	Não havendo novos requerimentos, com a resposta ao ofício indicado no item ´b´, voltem conclusos para sentença.
+	Duque de Caxias, 20 de janeiro de 2004
+
+
+
+PAULO MELLO FEIJÓ
+Juiz de Direito"><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>25/11/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>PAULO MELLO FEIJO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>06/10/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>EXPEDIDO NOVO OFÍCIO À 4ª VARA CRIMINAL DE CAXIAS</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>18/09/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Resposta da 4ª VCrim-DC.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Ofício</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>16/09/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Resposta da 3ª VCrim-DC.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>29/08/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>O(s) ofício(s) foi (foram) expedido (s).</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>15/08/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>15/08/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>475</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ESCLAREÇA-SE A FAC.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>16/07/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>FERNANDO ANTONIO DE ALMEIDA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>14/07/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>JUNTADA DE ALEGAÇÕES FINAIS DA DEFESA.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>10/07/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>5 dia(s)</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Vista ao Advogado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Advogado:</td>
+<td valign=top align=justify class='normal'>RJ083311 - WELLINGTON DA COSTA JÚNOR</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da entrega:</td>
+<td valign=top align=justify class='normal'>25/06/2003</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>23/06/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguardando a publicação do expediente para que o patrono tome ciência do r. Despacho.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>09/06/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguardando a publicação para que o patrono tome ciência do Despacho</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado edital em 23/06/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>290</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='normal'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>03/06/2003</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicação de Edital</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data do edital:</td>
+<td valign=top align=justify class='normal'>03/06/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Intimação que se faz ao patrono do réu , para que tome ciência do r. Despacho que diz " "Excepcionalmente e face às razões apresentadas às fls. 451, DEFIRO a devolução do prazo à Defesa técnica do réu, para apresentar su...
+<br><br>
+<a href='javascript:void("60");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=60&descMov=Publica%E7%E3o+de+Edital','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Publicação de Edital
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov60" value="Intimação que se faz ao patrono do réu , para que tome ciência do r. Despacho que diz ´ ´Excepcionalmente e face às razões apresentadas às fls. 451, DEFIRO a devolução do prazo à Defesa técnica do réu, para apresentar suas alegações finais.´">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>03/06/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>Solicitando a devolução do prazo para alegações finais</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>03/06/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>02/06/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>452</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>expecionalmente e face ás razões apresentadas as fls. 451, defiro a devolução do prazo à defesa técnica do réu, para apresentar suas alegações finais. I.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>02/06/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>22/05/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>5 dia(s)</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Vista ao Advogado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Advogado:</td>
+<td valign=top align=justify class='normal'>RJ093311 - WELLINGTON CORRÊA DA COSTA JUNIOR</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da entrega:</td>
+<td valign=top align=justify class='normal'>11/04/2003</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Atos da Serventia</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>26/03/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>239</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>28/02/2003</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>28/02/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Intimação que se faz ao patrono do réui , o Dr. WELLLINGTON DA COSTA JÚNIOR- OAB. RJ Nº 83311, para que apresente alegações finais no prazo legal.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>27/02/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/02/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>SEGUE ALEG. FINAIS EM SEPARADO</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>14/02/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>14/02/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>436</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ABRA-SE VISTA AO MP</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>14/02/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>06/02/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>06/02/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>423</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ATENDA-SE AO MP.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>06/02/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>03/02/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>30/01/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Requer certifique o cartório sobre o resultado  da ação  penal de fls. 232, juntando-se cópia  de sentença.Após, direi em aleg. finais.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>28/01/2003</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>24/01/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>422</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ao mp.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>24/01/2003</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>06/01/2003</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expedido ofício ao CIAC.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>17/12/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>17/12/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>404</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>DESENTRANHA-SE FLS. 401/402, POIS NÃO PERTENCEM A ESTES AUTOS, AGUARDE-SE  PELO PRAZO JÁ DETERMINADO</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>17/12/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>12/12/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>12/12/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>399</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>aguarde-se por 30 dias  resposta do ofício.....</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>11/12/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>10/12/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>10/12/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>388</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>09/12/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>04/12/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>04/12/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>388</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>reitere-se os demaios oficios para esclarecimento da fac.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>03/12/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>22/11/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>21/11/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>387</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>CIENTE DOS ACRESCIDOS...</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>21/11/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Atos da Serventia</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>06/12/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>244</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>31/10/2002</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>31/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Intimação que se faz ao Patrono do acusado para que compareça a este Juízo, a fim de tomar ciência da documentação acostada.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>29/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguardando resposta dos ofícios encaminhados à 59ª DP., 4ª Vara Criminal de Duque de caxias, 66ª DP., DRE., 27ª Vara Criminal da Comarca da Capital-RJ., DRACO.,  e Delegacia de Homicídio da Baixada</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>22/10/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>21/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>371</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ATENDA-SE AO MP.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>18/10/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>17/10/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>CIENTE DO ACRESCIDO, INCLUSIVE DA DOCUMENTAÇÃO COLOCADA EM APENSO...QUE SE ESCLAREÇA A FAC DO RÉU NO QUE FOR POSSIVEL.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>04/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguardando resposta do ofício encaminhado a 1ª V. Crim. de Bangú pelo prazo de 10 dias, terminando em 07/10/2002</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>03/10/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>03/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>356</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>AGUARDA-SE POR 10 DIAS</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>03/10/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>02/10/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>02/10/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>354</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>30/09/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>26/09/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>25/09/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>354</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>CIENTE DE FLS.354. REITERE-SE FLS.352.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>25/09/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>24/09/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>19/09/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>A SOLICITAÇÃO CONSTANTE DO OFÍCIO DE FLS. 352 CONTINUA SENDO IMPRESCINDÍVEL AO JULGAMENTO DO FEITO , PELO QUE REQUER O PARQUET PERMANECE AGUARDANDO A RESPECTIVA RESPOSTA ......</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>18/09/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>17/09/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>353</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>AO MP.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>17/09/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>15/08/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>14/08/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>352</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>14/08/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>14/08/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>13/08/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>351</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Atenda-se o MP.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>12/08/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>12/08/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>09/08/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Por via do tel., este MP. tomou conhecimento de que o ofício de fls. 341 ainda não chegou do seu destino (21ª PIP) Entretanto, por considerar que a documentação requerida é importante para a busca da verdade real e tendo em vista que a mesma documentação j[a se encontra nos autos da ação penal recentemente porposta contra o réu na Comarca de Bangú, requeiro seja oficiado, conforme se fez às fls. 341, ao Juízo da 1ª V. Crim da Comarca de Bangú.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>09/08/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>08/08/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>350</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>AO MP.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>08/08/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>31/07/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ofícios encaminhados a 1ª Central de Inq- 21ª PIP solicitando cópias de relatórios e declarações e a 1ª V. Crim. de Duque de Caxias solicitando informações sobre os processos contantes contra os mesmos naquele Juízo</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>17/07/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguardando respostas de ofícios 2574 (1ª VC) e 2552 (1ª CI) - PRESOS</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>16/07/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>15/07/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>341</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>15/07/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>12/07/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>11/07/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>341</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>11/07/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>08/07/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>04/07/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>340</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>04/07/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Audiência Prova de Acusação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da audiência:</td>
+<td valign=top align=justify class='normal'>28/06/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Resultado:</td>
+<td valign=top align=justify class='normal'>Realizada - Outros</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>25/06/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>20/06/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Ciente da data designada às fls. 294. Requer o MP seja acostada aos autos a documentação que segue (4 folhas do jornal O Globo nº 25.151) , em homenagem ao Princípio da Busca da Verdade Real.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>06/06/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>05/06/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>99</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ASSINATURA DE CARTA PRECATÓRIA.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>05/06/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>23/05/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>22/05/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>298</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Expeça-se CP para o Foro Regional de Bangu para citação e interrogatório do r., custodiado em Bangu I. Ciência ao MP</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>22/05/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>FERNANDO ANTONIO DE ALMEIDA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>16/05/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>15/05/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>296</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Esclareça-se a razão pela qual os autos estão vindo conclusos nesta data. Subscreva-se fls.287.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>15/05/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>FERNANDO ANTONIO DE ALMEIDA</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>23/04/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>AGUARDANDO CIÊNCIA DA DEFESA DA DECISÃO DE fls.7 por publicação</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>11/04/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>10/04/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>CIENTE.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>09/04/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>02/04/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>7</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Decisão em autos apartados de exceção de incompetência: ´ ... Pelo exposto, rejeito o pedido, declarando ser competente este Juízo.´</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>02/04/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>25/03/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>21/03/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>...OPINA O MP NÃO SEJA ACOLHIDA A PRESENTE EXCEÇÃO DE INCOMPETÊNCIA, MANTENDO-SE OS AUTOS JUNTO A ESTE JUÍZO.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>20/03/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>18/03/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>120</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>AO MP.<br><br>
+<a href='javascript:void("17");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=17&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov17" value="despacho de mero expediente"></td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>18/03/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>13/03/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>11/03/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>07</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>despacho de mero expediente</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>11/03/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>07/03/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>25/02/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>... pelo desentranhamento de fls.285/7...</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>20/02/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>20/02/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>288</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao MP. s/ a excecção.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>20/02/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>18/02/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>5 dia(s)</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Vista ao Advogado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Advogado:</td>
+<td valign=top align=justify class='normal'>RJ033191 - LYDIO DA HORA SANTOS</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da entrega:</td>
+<td valign=top align=justify class='normal'>31/01/2002</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Distribuição Desmembramento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da distribuição:</td>
+<td valign=top align=justify class='normal'>28/01/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Serventia:</td>
+<td valign=top align=justify class='normal'>Cartório da 5ª Vara Criminal (Inativa) - 5ª Vara Criminal (Inativa)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>24/01/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>23/01/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>236</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>assinatura de ofícios encaminhado a 1ª Vara Criminal de Duque de Caxias.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>23/01/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>22/01/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/01/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>CIENTE DO DESPACHO DE FLS. 201</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>16/01/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>16/01/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>Ciente do acrescido, reitero a promoção de fls. 143.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>14/01/2002</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>11/01/2002</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>30</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1- Ciente dos acrescidos. 2- Intime-se o patrono do réu LUIZ FERNANDO DA COSTA a apresentar as alegações preliminares no prazo legal, conforme fls. 176, pelo telefone, com audiência em 17/01/2002. 3- Dê-se ciência dos ac...
+<br><br>
+<a href='javascript:void("9");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=9&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov9" value="1- Ciente dos acrescidos. 2- Intime-se o patrono do réu LUIZ FERNANDO DA COSTA a apresentar as alegações preliminares no prazo legal, conforme fls. 176, pelo telefone, com audiência em 17/01/2002. 3- Dê-se ciência dos acrescidos às partes. 4- Aguardo audiência."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>11/01/2002</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>19/12/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>19/12/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>225</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>INTIME-SE AS TESTEMUNHAS DE FLS. 132. INDEFIRO A OITIVA DO ACUSADO LUIZ FERNANDO DA COSTA, COMO TESTEMUNHA POR SER CO-RÉU.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>19/12/2001</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>28/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Defensoria Pública Tabelar</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>28/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>28/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Defensor Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>28/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>27/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>26/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>50</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>INTERROGATORIO</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>26/11/2001</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>26/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>21/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>5 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>CIENTE DO INTERROGATORIO DO DIA 26/11/01, OPINANDO FAVORAVELMENTE PELA DEVOLUÇÃO DA IMPORTÂNCIA APREENDIDA POR OCASIÃO DO FLAGRANTE.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>21/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>21/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>63/64</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>DECRETADA A PRISÃO PREVENTIVA DOS ACUSADOS JULIANO GONÇALVES DE OLIVEIRA E LUIZ FERNANDO DA COSTA.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>19/11/2001</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>06/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>06/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descricão da remessa:</td>
+<td valign=top align=justify class='normal'>ciente</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>05/11/2001</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>05/11/2001</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folha do ato:</td>
+<td valign=top align=justify class='normal'>apf</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>ciência</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>05/11/2001</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>CARMEN RIBEIRO VALENTINO</td>
+</tr>
+
+
+
+
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+
+                  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <tr>
+                          <td valign="top" class="info">Processo(s) no Tribunal
+                                                           de Justi&ccedil;a:</td>
+
+
+
+
+
+
+                           <td valign="top" class="normal">
+
+
+
+
+
+
+
+
+                                  <a href="http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N=2006.050.01125">
+                                   <b>
+                                     0020058-25.2001.8.19.0021
+                                   </b>
+                                   </a>
+
+                                    &nbsp; (<script type="text/javascript">
+                                       document.write(formataNumero('2006.050.01125'));
+                                     </script>)
+
+
+                                 <br/>
+
+
+                           </td>
+
+
+
+
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      &nbsp;
+                    </td>
+                  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Localiza&ccedil;&atilde;o
+                                                                       na serventia:</td>
+                      <td valign="top">
+                        Arquivo
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+              </table>
+
+
+
+
+
+                  <p align="justify">
+                      Os autos de processos findos ter&atilde;o como
+                      destina&ccedil;&atilde;o final a guarda permanente ou
+                      a elimina&ccedil;&atilde;o, depois de cumpridos os
+                      respectivos prazos de guarda definidos na  Tabela de
+                      Temporalidade de Documentos do PJERJ.
+                  </p>
+
+
+
+
+
+
+
+
+          </form>
+          <!-- Fim da div#content -->
+        </div>
+        <div class="clear"/>
+        </div>
+        </div>
+      <!-- Fim da div#container -->
+      </div>
+
+
+
+      <div id="footer">
+	<div class="acesso-informacao">
+		<a href="http://www.tjrj.jus.br/web/guest/transparencia/apresentacao" title="Acesso à Informação">
+			<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo-acesso.png" alt="Acesso à Informação">
+		</a>
+	</div>
+	<div class="endereco">
+		<div class="container-fluid-1280">
+			<p>PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL
+				<br> Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 37,
+					Centro / CEP: 20010-090 / Tel.: (0xx21) 3133-2000
+				<br> Horários de funcionamento das Serventias Judiciais em todas as Comarcas do Estado do Rio de Janeiro:
+					 - 11h às 18h | Varas da Infância e da Juventude - 09h às 18h |
+					 Juizados Especiais e Adjuntos - 10h às 18h
+			</p>
+		</div>
+	</div>
+</div>
+<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+
+		i[r] = i[r] || function() {
+			var arrayValue = i[r].q || [];
+
+			i[r].q = arrayValue;
+
+			(i[r].q).push(arguments);
+		};
+
+		i[r].l = 1 * new Date();
+
+		a = s.createElement(o);
+		m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	//ga('create', 'UA-870424-2', 'auto');
+	ga('create', 'UA-870424-19', 'auto', {'sampleRate': 10});
+	ga('send', 'pageview');
+</script>
+      <!-- Fim da div#tudo -->
+    </body>
+</html>

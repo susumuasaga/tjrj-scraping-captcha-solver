@@ -1,0 +1,3278 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+
+
+    <!-- #APPTJ0316 -->
+    <title>Resultado da consulta processual</title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/dataTables.js"></script>
+    <script type="text/javascript" src="./js/jquery-historico-mandado.js"></script>
+    <script language="JavaScript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script>
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+    <!-- import para funcionamento integrado com o portal -->
+
+
+
+
+
+<link href="http://www.tjrj.jus.br/importacao-portal/css" type="text/css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/importacao-portal/script"></script>
+
+
+
+
+
+    <style type="text/css" media="print">
+        #navegador { display:none; }
+        #navegador-horiz { display:none; }
+        #navegador-horiz2 { display:none; }
+        #navegador-horiz3 { display:none; }
+        #navegador-horiz-limpo { display:none; }
+        #content-barra  { display:none; }
+        #cabecalho { display:none; }
+        #rodape { display:none; }
+        #content, #content2,
+        #content3, #content100,
+        #content-center, #content-center2,
+        #content-frame, #content-id-busca,
+        #content-idusuario-100 {
+         margin-left:0px;
+         width:100%;
+        }
+        body { color:#000000; }
+        a { color:#000000; }
+        h1 { color:#000000; }
+        h2 { color:#000000; }
+        h3 { color:#000000; }
+        h4 { color:#000000; }
+        h5 { color:#000000; }
+        h6 { color:#000000; }
+
+        table { border-width: 1px; }
+    </style>
+    <style type="text/css">
+      .info { font-weight: bold; }
+      .negrito {font-weight: bold;}
+    </style>
+    <script type="text/javascript" src="./print.js"></script>
+    <script type="text/javascript" src="./funcoesPopUp.js?v=1.0"></script>
+    <script type="text/javascript" src="./js/consultaPorNumero.js?v=4"></script>
+    <script type="text/javascript" src="./autoCompletar.js"></script>
+    <script type="text/javascript" src="./js/impOutrosEstilos.js"></script>
+
+
+    <link href="./css/demo_table.css" rel="stylesheet" type="text/css">
+    <link href="./css/estilo.css" rel="stylesheet" type="text/css">
+
+
+
+    <script type="text/javascript" type="text/javascript">
+      var arquivosCss = new Array("http://www.tjrj.jus.br/css/body2/body.css",
+                                  "http://www.tjrj.jus.br/css/lay-out.css",
+                                  "http://www.tjrj.jus.br/css/menu.css",
+                                  "http://www.tjrj.jus.br/css/form.css",
+                                  "http://www.tjrj.jus.br/css/textos-img.css");
+      function submetePesqDocElet(){
+        //location.href='consultaProcDocElet.do?numProcesso=2018.001.005599-7&acessoIP=internet&senhaProcesso=document.getElementById('senhaProcesso').value;'
+        var senha = document.getElementById("senhaProcesso").value;
+        document.location.href="consultaProcDocElet.do?v=2&numProcesso=2018.001.005599-7&acessoIP=internet&senhaProcesso="+senha;
+      }
+      function exibeListaPersonagens(){
+        if (document.getElementById('listaPersonagens').style.display == "block")
+          document.getElementById('listaPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaPersonagens').style.display = "block"
+        }
+      }
+      function exibeListaHistoricoPersonagens(){
+        if (document.getElementById('listaHistoricoPersonagens').style.display == "block")
+          document.getElementById('listaHistoricoPersonagens').style.display = "none"
+        else {
+          document.getElementById('listaHistoricoPersonagens').style.display = "block"
+        }
+      }
+
+      function assistirAudiencia(dtAudiencia,horaAudiencia){
+            document.location.href="redirencionakenta?codigoProc=0008242-13.2018.8.19.0001" + "&dtAudiencia=" + dtAudiencia + "&horaAudiencia=" + horaAudiencia;
+      }
+    </script>
+
+  </head>
+  <body>
+
+
+        <div id="tudo">
+
+    <!-- Início da div#tudo -->
+
+
+
+
+
+
+<div id="banner" role="banner">
+	<div id="barra">
+		<div class="container-fluid-1280 clearfix">
+			<div class="atalhos-wrapper">
+				<div class="menu-barra" role="navigation">
+					<ul class="atalhos">
+						<li><a href="http://www.tjrj.jus.br/web/guest/mapa-do-site" title="Mapa do site">Mapa do site</a></li>
+						<li><a href="http://www.tjrj.jus.br/web/guest/fale-conosco" title="Fale conosco">Fale conosco</a></li>
+						<li><a href="http://www.tjrj.jus.br/c/portal/login?p_l_id=10139" title="Intranet">Intranet</a></li>
+						<li><a href="https://outlook.office.com/" title="Webmail">Webmail</a></li>
+						<li><a href="https://portaltj.tjrj.jus.br/web/guest/home-interna" title="Magistrados">Magistrados, Servidores e Colaboradores</a></li>
+					</ul>
+				</div>
+				<ul class="redes clearfix">
+					<li class="nav-facebook"><a href="https://www.facebook.com/tjrjoficial" target="_blank" title="Acessar o Facebook"><i class="icone-rede" aria-label="Facebook"></i></a></li>
+					<li class="nav-twitter"><a href="https://twitter.com/tjrjoficial" target="_blank" title="Acessar o Twitter"><i class="icone-rede" aria-label="Twitter"></i></a></li>
+					<li class="nav-instagram"><a href="https://www.instagram.com/tjrjoficial/" target="_blank" title="Acessar o Instagram"><i class="icone-rede" aria-label="Instagram"></i></a></li>
+					<li class="nav-youtube"><a href="https://www.youtube.com/user/pjerjoficial" target="_blank" title="Acessar o Youtube"><i class="icone-rede" aria-label="Youtube"></i></a></li>
+					<li class="nav-flickr"><a href="https://www.flickr.com/people/pjerjoficial" target="_blank" title="Acessar o Flickr"><i class="icone-rede" aria-label="Flickr"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topo">
+		<div class="conteudo-topo">
+			<div class="container-fluid-1280">
+				<a class="logo" href="http://www.tjrj.jus.br" role="logo" title="TJRJ">
+					<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo.png" alt="TJRJ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+          <div id="navigation" role="navigation">
+	<h1 class="hide-accessible">Navegação</h1>
+	<div class="container-fluid-1280">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav clearfix" aria-label="Páginas do site">
+				<li class="active" role="presentation"><a href="http://www.tjrj.jus.br/web/guest/home" role="menuitem" title="Página inicial">Página inicial</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/consultas" role="menuitem" title="Consultas">Consultas</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/servicos/servicos" role="menuitem" title="Serviços">Serviços</a></li>
+				<li role="presentation"><a href="http://www.tjrj.jus.br/web/guest/institucional/institucional" role="menuitem" title="Institucional">Institucional</a></li>
+				<li role="presentation"><a href="http://cgj.tjrj.jus.br" target="_blank" role="menuitem" title="Corregedoria">Corregedoria</a></li>
+				<li role="presentation"><a href="http://www4.tjrj.jus.br/sislicweb/lic_conteudo.aspx?id=17" role="menuitem" title="Licitações">Licitações</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+      <!-- Início da div#container -->
+      <div id="container">
+
+
+
+
+
+        <!-- Menu Vertical Lateral -->
+
+
+
+<div id='navegador' class='naveg-vertical navegador list-menu'>
+<h2 class='titulo portlet-title-text'><div class="conteudo">
+<a href="http://www.tjrj.jus.br/web/guest/consultas/processos_jud/processos_jud" title="Judiciais" >Judiciais</a></div></h2><ul class="layouts level-1" ><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-numero-indice0" title="Por Número" >Por Número</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-nome-indice1" title="Por Nome" >Por Nome</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-oab-indice2" title="Por OAB" >Por OAB</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-advogado-indice3" title="Por Nome do Advogado" >Por Nome do Advogado</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-cpf-indice4" title="Por CPF / CNPJ" >Por CPF / CNPJ</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-protocolo-indice5" title="Por Protocolo" >Por Protocolo</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do#tabs-serventia-indice6" title="Lista de Processos Aptos a Julgamento" >Lista de Processos Aptos a Julgamento</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do?o=prec#tabs-numero-indice0" title="Precatórios Judiciais" >Precatórios Judiciais</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/eJUD/ProcessarProcInconst.aspx" title="Processos de Inconstitucionalidade" >Processos de Inconstitucionalidade</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/consultaPedidoFalencia/inicio.do" title="Pedidos de Falência" >Pedidos de Falência</a></li><li class="lfr-nav-item " ><a href="http://www4.tjrj.jus.br/portalDeServicos/jsp/portal/formularioLogin.jsp" title="Por e-mail" >Por e-mail</a></li><li class="lfr-nav-item ultimo " ><a href="http://www.tjrj.jus.br/web/guest/consultas/processos-jud/formas-dispo-consultas" title="Formas disponíveis de Consulta" >Formas disponíveis de Consulta</a></li></ul></div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="content-barra">
+
+<!-- inicio da barra de ferramentas-->
+
+
+
+          <a href="javascript:history.go(-1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif" title="voltar" alt="voltar"/></a>
+
+
+
+      <a href="javascript:history.go(1);"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif" title="avanÃ§ar" alt="avanÃ§ar"/></a>
+
+
+      <a href="javascript:window.print();"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-print.gif" title="imprimir" alt="imprimir"/></a>
+
+
+
+
+
+
+
+
+
+            <a href="javascript:location.href='http://www4.tjrj.jus.br/ConsultaUnificada/consulta.do';"><img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-busca-arquivo.gif" title="nova busca" alt="nova busca"/></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Fim da barra de ferramentas-->
+</div>
+
+
+
+
+            <div id="content" name="content">
+
+
+
+            <h3>Consulta Processual - N&uacute;mero - Primeira
+                                  Inst&acirc;ncia</h3>
+          <form name="formResultado" action="">
+
+
+
+
+
+                <input type="HIDDEN" name="acessoIP"
+                       value='internet'/>
+
+              <input type="HIDDEN" name="maquinaResposta" value="internet"/>
+              <input id="tipoUsuario" type="HIDDEN" name="tipoUsuario" value=''/>
+
+
+              <table width="100%" border="0">
+                <tr>
+                  <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr valign="top">
+                  <td align="center" colspan="2" class="info">
+                    As informa&ccedil;&otilde;es aqui contidas n&atilde;o produzem
+                    efeitos legais.
+                    <br/>
+                    Somente a publica&ccedil;&atilde;o no DJERJ oficializa
+                    despachos e decis&otilde;es e estabelece prazos.
+                  </td>
+                </tr>
+
+
+
+
+                  <tr valign="top">
+                    <td align="center" colspan="2" class="info">
+
+                      <br/><h2>Processo N<sup>o</sup>
+                      0008242-13.2018.8.19.0001
+                      </h2>
+
+
+                    </td>
+                  </tr>
+
+
+                    <input type="HIDDEN" name="codigoProc"
+                           value='0008242-13.2018.8.19.0001'/>
+
+                  <tr><td>&nbsp;</td></tr>
+                   <tr valign="top">
+                   <td colspan="2" class="info">
+                      TJ/RJ -
+                      13/03/2020 21:01:07
+
+
+
+
+                        - Primeira inst&acirc;ncia
+
+                          - Distribu&iacute;do em
+                          15/01/2018
+
+
+
+                     </td>
+                     </tr>
+                     <tr>
+                       <td colspan="2">&nbsp;</td>
+                     </tr>
+
+
+
+
+
+
+                        <tr valign="top">
+                          <td align="center" colspan="2" class="info" nowrap="nowrap">
+                            <a href="javascript: abrirVisualizador('2018.001.005599-7','1','0008242-13.2018.8.19.0001','N');">
+                              Processo eletrônico - clique aqui para visualizar.
+                             <img name='pesqDocElet' border="0" style="vertical-align:middle;"
+                                     src='http://www4.tjrj.jus.br/portalDeServicos/images/icones/visualizarProcesso.png' title='Pesquisar processo eletrônico'
+                                     alt='Pesquisar processo eletrônico'>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+                          <tr valign="top">
+                            <td align="center" colspan="2" class="info" nowrap="nowrap">
+
+
+
+                                        <p>Caso deseje acessar gravação audiovisual de audiências <a href="./processoeletronico.do?numProcesso=2018.001.005599-7">clique aqui.</a></p>
+
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td class="info">
+
+                        Comarca de Itaboraí
+
+                    </td>
+                    <td class="info">
+
+                        2ª Vara Criminal
+
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td colspan="1"/>
+                    <td class="info">
+
+                        Cartório da 2ª Vara Criminal
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Endere&ccedil;o:</td>
+                      <td valign="top">
+                        Av. Vereador Hermínio Moreira,
+                        &nbsp;
+                        380
+                        &nbsp;
+                        5º andar sl 544
+                        &nbsp;
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Bairro:</td>
+                      <td valign="top">
+                        Centro
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Cidade:</td>
+                      <td valign="top">
+                        Itaboraí
+                      </td>
+                    </tr>
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Assunto:</td>
+                      <td valign="top">
+                        Tráfico de Drogas e Condutas Afins (Art. 33 - Lei 11.343/06) E Associação para a Produção e Tráfico e Condutas Afins (Art. 35 - Lei 11.343/06)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Classe:</td>
+                      <td valign="top">
+                        Procedimento Especial da Lei Antitóxicos - Criminal (Lei 11.343/06)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Autor
+                        </td>
+                        <td valign="top">
+                          MINISTERIO PUBLICO DO RIO DE JANEIRO
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top" class="info">
+                          Réu
+                        </td>
+                        <td valign="top">
+                          LUIZ FERNANDO DA COSTA ARAUJO ROSA
+                        </td>
+                      </tr>
+
+
+
+
+
+
+
+
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td valign="top">
+                              <a href="javascript:exibeListaPersonagens();">
+                                <font size="-2">Listar alterações / exclusões de personagens</font>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" width="100%">
+                              <div id="listaPersonagens"
+                                   style="z-index:1000; position:absolute; width:50%; display:none; border-style:solid;background-color:#FFFFFA;">
+                                <table width="100%" class="tab-bord" cellpadding="3"
+                                       cellspacing="1">
+                                  <tr>
+                                    <td align="left" class="tab-chamada" width="20%"
+                                        valign="top" bgcolor="#D3D3D3">TIPO</td>
+                                    <td align="left" class="tab-chamada" width="40%"
+                                        valign="top" bgcolor="#D3D3D3">PERSONAGEM</td>
+                                  </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Testemunha
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        PMERJ - JEFFERSON FERREIRA DE OLIVEIRA
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Testemunha
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        PMERJ - RODOLFO BARRETO PEIXOTO
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="20%" class="tab-titulo-bold"
+                                          bgcolor="#FFFFFA" valign="top">
+                                        Réu
+                                      </td>
+                                      <td width="40%" bgcolor="#FFFFFA" valign="top">
+                                        LUAN DA SILVA MENEZES
+                                      </td>
+                                    </tr>
+
+                                  <tr>
+                                    <td colspan="2" valign="top" nowrap="nowrap">
+                                      <hr></hr>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="right" valign="top"
+                                        nowrap="nowrap">
+                                      <a href="javaScript:printContent('listaPersonagens');">Imprimir</a>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <a href="javaScript:exibeListaPersonagens();">Fechar</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+
+
+
+
+
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+                    <tr>
+                      <td valign="top" class="info">Advogado(s):</td>
+                      <td valign="top">
+
+                          RJ032442
+                          &nbsp;-&nbsp;
+                          FLAVIO JORGE DA GRAÇA MARTINS
+                          <br/>
+
+                          RJ177721
+                          &nbsp;-&nbsp;
+                          MICHELLE FELIX BARCELLOS DE ALVARENGA
+                          <br/>
+
+                          RJ127014
+                          &nbsp;-&nbsp;
+                          MARCO ANTONIO AUGUSTO DOS SANTOS
+                          <br/>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Tribunal de Justiça</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>18/01/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>18/01/2019</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1 - Certifico que as contrarrazões interpostas às fls. 225/240 são tempestivas.
+
+2-  Certifico, em cumprimento ao Ato Normativo 07/2013 TJ/CGJ, artigo 3º, parágrafo 2º, que os autos estão devidamente regularizados, estando o processo, seus apensos, anexos e apartados corretamente cadastrados no sistema informatizado de 1ª instância-DCP</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>18/01/2019</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>11/01/2019</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>21/12/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>21/12/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao MP para contrarrazões.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>18/12/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201809382963 - Prog Comarca de Belford Roxo</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Decisão</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>06/12/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>656/657</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>04/12/2018</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>27/11/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Decisão - Recebido o recurso Sem efeito suspensivo</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Decisão:</td>
+<td valign=top align=justify class='normal'>27/11/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Recebo a apelação, apenas em seu efeito devolutivo, eis que tempestiva.
+	Às partes para apresentarem razões e contrarrazões.
+	Em seguida, certificada a tempestividade das mesmas, subam os autos ao Tribunal de Justiça.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>27/11/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>05/11/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifico que o Recurso de Apelação interposto às fls. 209/213 é tempestivo.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>05/11/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201808173258 - Prog Comarca de São João de Meriti</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>26/10/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201806391309 - Proger Comarca da Capital</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>22/10/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>22/10/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>22/10/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Nesta data prestei as informações que seguem.
+
+	Intime-se o réu para que regularize a sua representação processual, no prazo legal, caso não haja manifestação dentro do referido prazo, fica desde já nomeado o Defensor ...
+<br><br>
+<a href='javascript:void("53");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=53&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov53" value="Nesta data prestei as informações que seguem.
+
+	Intime-se o réu para que regularize a sua representação processual, no prazo legal, caso não haja manifestação dentro do referido prazo, fica desde já nomeado o Defensor Público para atuar em favor do mesmo."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>22/10/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>26/09/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>18/09/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>17/09/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>17/09/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>17/09/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Nesta data, prestei as informações que seguem.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>06/09/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Documento</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>05/09/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição da juntada:</td>
+<td valign=top align=justify class='normal'>ofício 1 Câmara Criminal-informações HC</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>04/09/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201806208523 - Proger Comarca de São Gonçalo</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>04/09/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>03/09/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>27/08/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>27/08/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Ao MP para ciência da sentença.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>22/08/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/08/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/08/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Intimação para ciência da sentença<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> JAPERI CENTRAL DE CUMP DE MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 20/08/2018</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 24/08/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>17/08/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>17/08/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>15/08/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Sentença - Julgado procedente o pedido</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Sentença:</td>
+<td valign=top align=justify class='normal'>14/08/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>"...Pelo exposto, JULGO PROCEDENTES os pedidos contidos na denúncia, para condenar o acusado LUIZ FERNANDO DA COSTA ARAÚJO ROSA como incurso nas penas dos artigos 33, caput e 35 da Lei 11.343/06, na forma do art. 69 do C...<br><br>
+<a href='javascript:void("40");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=40&descMov=Senten%E7a','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Sentença
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov40" value="LUIZ FERNANDO DA COSTA ARAÚJO ROSA, foi denunciado como incurso nas penas dos arts. 33, caput, e art. 35 da Lei 11343/2006, consoante os termos da denúncia de fls. 2-A/2-D.
+
+Registro de Ocorrência Aditado, fls. 03.
+
+Auto de Prisão em Flagrante, fls. 04.
+
+Laudo de Exame de Definitivo de Material Entorpecente, fls. 07/08.
+
+Auto de Apreensão, fls. 09.
+
+Decisão da Central de Custódia de fls. 35/36, que converteu a prisão em flagrante dos acusados em prisão preventiva.
+
+F.A.C do acusado Luan da Silva Menezes, fls. 43/47.
+
+Determinada a notificação dos acusados, fls. 55.
+
+Laudo de Exame de Definitivo de Material Entorpecente, fls. 63/64.
+
+Defesa Prévia de Luan da Silva Menezes, fls. 70/71.
+
+Defesa  Prévia de Luiz Fernando Rosa, fls. 78/81.
+
+C.A.C do acusado Luan, fls. 82/83.
+
+C.A.C do acusado Luiz Fernando da Costa Araujo Rosa, fls. 84.
+
+Decisão de recebimento da denúncia, fls. 85.
+
+Pedido de Revogação da Prisão Preventiva em favor do acusado Luiz Fernando, fls. 91/97.
+
+Decisão de fls. 112, indeferiu o pleito libertário.
+
+F.A.C do acusado Luiz Fernando, fls. 117/119.
+
+F.A.C do acusado Luan Menezes, fls. 120/123.
+
+Audiência de instrução e julgamento, conforme assentada de fls. 128, oportunidade em que foram ouvidas as testemunhasEvelin da Conceição Pinto, Cleber Correa da Conceição, Nathalia Soares Sodré, Jefferson Ferreira de Oliveira e Rodolfo Barreto Peixoto. Pela defesa do acusado Luiz Fernando foi requerida a revogação da prisão. Pelo MP foi dito que se opõe ao pleito de revogação. Foi proferido despacho que determinou o desmembramento do feito em relação ao acusado Luan da Silva e designou novo ato.
+
+Laudo de Exame de Definitivo de material Entorpecente, fls. 140/142.
+
+Laudo de Exame de descrição de material, fls. 143/146.
+
+Audiência de instrução e julgamento, conforme assentada de fls. 151, oportunidade em que foi realizado o interrogatório do acusado. Foi proferido despacho determinando a manifestação das partes em alegações finais.
+
+Alegações Finais do Ministério Público, às fls. 158/161, pela condenação do acusado, nos termos da denúncia.
+
+Alegações Finais da Defesa, às fls. 169/175, pela absolvição do acusados, nos termos do art. 386, V do CPP.
+
+Vieram os autos conclusos para sentença.
+
+É o relatório. Decido.
+
+Trata-se de ação penal proposta em face deLUIZ FERNANDO DA COSTA ARAÚJO ROSA pela prática dos delitos previstos nosarts. 33, caput, e 35 da Lei 11343/06.
+
+Compulsando os autos, verifica-se que há razões suficientes a impor a condenação que agora se realiza.
+
+Como são imputados ao acusado delitos diversos, os crimes devem ser analisados em separado.
+
+01- Do delito previsto no artigo 33, caput da Lei 11.343/06:
+
+A materialidade do delito está evidenciada pelo Registro de Ocorrência que instrui o feito, pelo Auto de Prisão em Flagrante de fls. 04, pelo Auto de apreensão  (fls. 09) pelo laudo  definitivo de substância entorpecente de fls. 07/08.
+
+Passo a analisar a autoria do delito em tela.
+
+Ouvido em Juízo, o policial militar Rodolfo Barreto Peixoto
+
+que receberam a informação de que os acusados estavam fazendo parte da venda de entorpecentes, que nesta informação não citava o nome dos dois, mas citava as características de um deles e a residência; que informaram que eles estavam na prática de venda de entorpecentes na Praça do Apollo; que foram até o local e nada foi encontrado, porém foram na casa do acusado, ele atendeu e o reconheceram pelas características(...); que chegaram no local, (...) conversaram com o acusado; que ele confessou e foi na parte debaixo da casa, onde foi apreendida uma sacola, que tinha maconha; que a cocaína foi encontrada em outra residência apontada pelo acusado; que foram até a outra residência, onde foram atendidos pelo outro acusado; que nessa segunda residência foi encontrada a cocaína, que estava dentro de uma mochila em cima do armário; que o acusado apontou, não precisou revistar; que os acusados eram conhecidos; (...) que ele não apontou mais nenhum integrante; que as características que foram passadas para os policiais eram do acusado Luan; que depois que prenderam o Luan se dirigiram diretamente para a outra residência.
+
+No mesmo sentido foram as declarações de seu colega de farda, Jefferson Ferreira de Oliveira:
+
+Que estavam de serviço regular, na parte da manhã, patrulhando no Bairro do Apollo, que tiveram a informação com as características de um indivíduo que estaria fazendo a venda de entorpecente (...); que a pessoa que passou a informação, falou que se o acusado não estivesse na praça, estaria em casa com as drogas, apontou o endereço do acusado Luan; que foram até a quadra e não o encontraram e foram para o endereço; que ao chegar no local, a esposa atendeu e disse que ele não estava, porém, logo em seguida, ele apareceu na sala para ver quem era; que ele se exaltou um pouco; que adentraram a residência e conversaram com o acusado; que ele confessou onde estaria a droga, no sótão, embaixo da casa; que encontraram a droga; que eram uns tabletes de maconha, que não se recorda a quantidade; que ele admitiu que a droga seria para a venda, mas que ele não era o gerente; que perguntaram ao acusado, onde ele arrecadava as drogas e ele apontou o Luiz Fernando e passou o endereço do mesmo, para que fossem até o local e lá foi encontrado, no quarto dele uma mochila com droga; que a região tem bastante ocorrência de tráfico; que não conhecia os acusados; que inicialmente só receberam as características do Luan; que não viu a hora em que seu colega pegou as drogas.
+
+
+Frise-se que os depoimentos dos autores do flagrante, são harmônicos, seguros e coerentes entre si, merecendo destacar que tais depoimentos são dotados de presunção de idoneidade.
+
+A testemunha de defesa Cleber Correa da Conceição narrou que:
+
+Conhece o acusado somente de vista; que viu quando os policiais entraram na casa do Luiz Fernando e quando saíram; que os policiais antes de entrarem na casa do acusado, foram em uma outra casa; que a rua, onde mora o acusado é um ponto de venda de drogas; que na hora que os policiais entraram na rua, uns meninos do tráfico correram e se espalharam; (...) que dois deles entraram na avenida onde o acusado mora; que viu que um deles estava com uma mochila; que é normal, o pessoal invadir as casas, pois quando chega a polícia, eles correm, pulam o muro dos outros, invadem as casas, para poderem se livrar; que não viu nenhum desses meninos entrarem na casa do Luiz Fernando; que não sabe afirmar que o acusado seja envolvido com o tráfico.
+
+A testemunha de defesa Nathalia Soares Sodré afirmou que:
+
+Que estava em frente do portão e no dia dos fatos, estava tendo muito barulho de meninos passando na rua, em razão de time de futebol; que em seguida, viu um carro de polícia na esquina da quadra e revistaram os meninos; que na quadra tem um foco de drogas; que no dia dos fatos, logo cedo, já estava tendo um movimento de meninos vendendo drogas; que os meninos, quando viram que os policiais estavam indo em direção dos mesmos, correram, entraram no primeiro portão que estava aberto, onde tem uma vila cheia de casa; que o policial parou o carro no local e dois policiais entraram procurando; que Luiz Fernando não é um dos meninos que correu; que um dos meninos que entrou na avenida estava com uma mochila preta; que na vila tem como os meninos se evadirem, pois ela dá acesso a Rua Onze e a Rua Oito; que no local é comum, eles saírem entrando nos locais, que eles encontrem facilidade, portão aberto ou porta aberta; que um dos meninos entrou na casa do acusado Luiz Fernando.
+
+A testemunha de defesa Evelin da Conceição Pinto, companheira do acusado, narrou que:
+
+(...) que o acusado estava na cozinha, quando entrou um menino correndo e foi para o quarto da depoente com uma mochila na mão e jogou em cima do guarda-roupa; que era uma mochila preta; que o menino fez ameaça e estava com uma arma prata na mão e disse que iria volta para pegar a mochila (...).
+
+Em sede de audiência de continuação, foi interrogado o réu, o qual afirmou que:
+
+´Os fatos contidos na denúncia não são verdadeiros; que não conhece o Luan e que as drogas não lhe pertenciam; que nunca foi preso antes e não faz uso de drogas; (...) que estava em casa e ouviu uns passos, quando olhou pela janela, viu um ´pretinho´ correndo com uma mochila na mão; (...) que viu o ´pretinho´ saindo de dentro de sua casa, com uma arma prata na mão; que foi até o quarto e a companheira falou que ele (o pretinho) jogou a mochila em cima do armário; que não conhecia ele; que o local, onde mora tem tráfico e a facção dominante é o Comando Vermelho´.
+
+No entanto, tal versão restou no mínimo não convincente no canteiro probatório, tendo em vista o teor dos depoimentos dos policiais. Assim, a prova indicativa da venda de entorpecente pelo réu é robusta e inconteste, aplicável à hipótese o verbete nº 70 da Súmula deste Tribunal.
+
+A defesa técnica do acusado não produziu qualquer prova, pelo que não há como chegar à conclusão diversa daquela constante da denúncia.
+
+Frise-se que, não se está, data vênia do alegado pela defesa, diante de insuficiência de prova a embasar a condenação, uma vez que finda a instrução, a prova indicativa do tráfico ilícito de entorpecentes pelo réu é robusta e inconteste.
+
+Conclui-se, pois, que não há dúvidas de que o acusado vendia e mantinha em seu poder substância entorpecente, o que vem a caracterizar o delito previsto no artigo 33, caput, da Lei 11343/2006.
+
+2 -  Quanto ao delito previsto no art. 35 da lei de Tóxicos:
+
+A materialidade delitiva está comprovada pelo auto de prisão em flagrante (fls. 04) , pelo registro de ocorrência (fls. 03), pelo auto de apreensão (fls. 09) e pelos laudos de exame de entorpecente (fls. 07/08, 63/64 e 140/142).
+No que tange à autoria, finda a instrução, o conjunto probatório é contundente e não deixa qualquer dúvida quanto à atuação criminosa do réu, no que diz respeito ao cometimento da conduta prevista no dispositivo suso mencionado, valendo ressaltar o depoimento dos policiais militares, os quais são uníssonos e coerentes em afirmar que o acusado Luan foi quem apontou o réu Luiz Fernando, tendo inclusive informado o endereço deste.
+
+Consigno que, no caso ´sub judice´, estão presentes elementos empíricos que, conjugados com aqueles colhidos no curso da instrução probatória, demonstram a indisfarçável prática do delito de associação ao tráfico.
+Ademais, verifica-se que a prisão se deu em área, conhecida como ponto de venda de drogas, sendo encontrada com o mesmo quantidade expressiva de substância entorpecente, contendo a inscrição referente à facção criminosa do Comando Vermelho, desta feita, diante de todos os elementos constantes nos autos, resta patente a estabilidade própria de uma associação para a prática do crime de tráfico, não se tratando o denunciado de traficante autônomo ou independente. Ressalto, que tal condição de estabilidade não foi afastada por nenhum elemento de prova existente no presente feito.
+
+Portanto, conclui-se, pois, que não há dúvidas de que o denunciado estava associado para a prática do tráfico de entorpecentes, na modalidade prevista no artigo 35 da Lei 11.343/06.
+
+Neste Sentido:
+
+´0040641-97.2015.8.19.0002  - APELAÇÃO
+
+1ª Ementa
+Des(a). KÁTIA MARIA AMARAL JANGUTTA - Julgamento: 12/06/2018 - SEGUNDA CÂMARA CRIMINAL
+
+
+APELAÇÃO. Artigos 33 e 35, ambos da Lei 11.343/06, em concurso material. Condenação. Agente que, no dia 24/08/2015, por volta das 8 horas, na Rua Seis, no interior da Comunidade Nova Brasília, em Engenhoca, Niterói, de forma livre e consciente, e, em associação estável com outros indivíduos não identificados, integrantes do tráfico de drogas local, guardava, para fins de tráfico, sem autorização e em desacordo com determinação legal ou regulamentar, 125,8 gramas de cloridrato de cocaína, distribuídos em 242 tubos plásticos, além de 01 rádio comunicador e 1 telefone celular. RECURSO DO MINISTÉRIO PÚBLICO. Exclusão da causa de diminuição de pena, prevista no §4º, do artigo 33, da Lei 11.343/06. RECURSO DEFENSIVO. Absolvição por ambos os delitos, por fragilidade probatória. Aplicação das penas-base em seu mínimo legal. Aplicação da causa de diminuição do artigo 33, §4º, da Lei Antidrogas em seu patamar máximo. Substituição da pena privativa de liberdade por restritiva de direitos. Concessão de sursis. 1. Induvidosas a materialidade e a autoria do crime de tráfico ilícito de drogas, devidamente comprovadas pelas peças técnicas acostadas aos autos, bem como pela segura prova testemunhal colhida no decorrer do processo, especialmente, nos depoimentos firmes e seguros de policiais responsáveis pela prisão, sobre os quais não se evidenciou qualquer motivo para quererem, propositadamente, prejudicar o réu, incidindo, na hipótese, o disposto na Súmula 70, desse Tribunal. O acusado, durante o interrogatório judicial, apresentou versão contrária à oferecida em sede policial, negando os fatos, com o objetivo de se furtar da responsabilidade penal. A afirmação de que, as drogas que estavam no fundo de sua casa, no mesmo terreno de sua residência, não lhe pertenciam, não tem substrato de verossimilhança. Ademais, ele próprio admitiu que não conhecia os agentes da lei que o prenderam. Frise-se que, foram encontrados na residência em que estava o acusado 125,8 g de cloridrato de cocaína, distribuída em 242 pequenos tubos, isto é, prontos para venda. 2. Para a configuração do crime previsto no artigo 35, da Lei 11.343/06, é imprescindível a verificação do elemento subjetivo do tipo, qual seja o animus associativo, consubstanciado na convergência de vontade do agente em se unir de forma reiterada ou não, com a finalidade de exercer o comércio ilícito de drogas. No caso, as circunstâncias fáticas delineadas revelam com clareza, o animus associativo, existente entre o acusado e os elementos não identificados. Ambos os agentes da lei foram uníssonos em afirmar que, o acusado estava unido a outros indivíduos, quando empreendeu fuga, logrando ser capturado, tendo a prisão ocorrido em comunidade dominada pela organização criminosa Comando Vermelho, não sendo crível que alguém que não pertença a esta facção, possa estar guardando tamanha quantidade de drogas embaladas para a venda na residência em que se encontrava, além do fato de ter sido apreendido rádio transmissor. 3. Incabível a concessão da benesse prevista no §4º, do artigo 33, da Lei 11.343/06, pois o apelante não preenche os requisitos legais e necessários à sua obtenção, posto que a condenação por atividade ilícita de tráfico de drogas, somada à associação para tanto, é incompatível com o presente redutor. 4. Penas-base fixadas no mínimo legal, em concurso material, totalizando valores que tornam inviável a substituição da pena privativa de liberdade por restritiva de direitos, bem como a concessão de sursis, a teor do disposto nos artigos 44, I, e 77, do Código Penal. RECURSO MINISTERIAL PROVIDO. RECURSO DEFENSIVO DESPROVIDO. ´
+
+Pelo exposto, JULGO PROCEDENTES os pedidos contidos na denúncia, para condenar o acusado LUIZ FERNANDO DA COSTA ARAÚJO ROSA como incurso nas penas dos artigos 33, caput e 35 da Lei 11.343/06, na forma do art. 69 do Código Penal.
+
+Passo a dosar a pena, consoante as diretrizes da Lei Penal.
+
+1)-Crime previsto no art. 33, caput da Lei 11.343:
+
+Na primeira etapa, doso a pena base em 5 (cinco) anos de reclusão e 500 (quinhentos) dias-multa, tendo em vista não se configurar nenhuma circunstância judicial em desfavor do acusado, nos moldes do art.59 do CP.
+
+Na segunda fase da aplicação da pena, não se visualiza nenhuma agravante ou atenuante aplicável ao caso em análise. Assim, a pena intermediária permanece no mesmo patamar acima fixado.
+
+Na terceira fase de aplicação da pena, deve-se frisar a impossibilidade de aplicação da causa de diminuição de pena constante no art. 33, § 4º da Lei 11343/2006, uma vez que foi encontrada com o acusado quantidade expressiva de material entorpecente, de qualidade variada, contendo inscrição da facção criminosa ´Comando Vermelho´, o que afasta a caracterização do acusado como traficante episódico. Na esteira desse entendimento:
+
+´0025781-91.2015.8.19.0002 -APELACAO - 1ª Ementa - DES. ELIZABETE ALVES DE AGUIAR - Julgamento: 17/02/2016 - OITAVA CAMARA CRIMINAL
+APELAÇÃO. TRÁFICO ILÍCITO DE ENTORPECENTES. RECURSO DEFENSIVO BUSCANDO: 1) A ABSOLVIÇÃO POR ALEGADA INSUFICIÊNCIA DE PROVAS. SUBSIDIARIAMENTE PRETENDE: 2) A APLICAÇÃO DA CAUSA DE DIMINUIÇÃO DO ARTIGO 33, §4º DA LEI ANTIDROGAS; 3) A SUBSTITUIÇÃO DA PENA PRIVATIVA DE LIBERDADE POR RESTRITIVA DE DIREITOS. CONHECIMENTO E DESPROVIMENTO DO RECURSO Autoria e materialidade incontroversas. Quanto ao pleito absolutório, certo é que o conjunto probatório produzido, ao contrário do que alega a Defesa, é firme e seguro no sentido de proclamar o real envolvimento do acusado na empreitada criminosa ora em comento. As circunstâncias da prisão do apelante, somada a grande quantidade e diversidade de drogas encontradas: maconha - 652g (seiscentos e cinquenta e dois gramas), distribuída em 205 (duzentos e cinco) embalagens; cocaína 410g (quatrocentos e dez gramas), distribuído em 375 (trezentos e setenta e cinco) microtubos em plástico rígido incolor e, ainda, uma arma de fogo, leva a concluir que o réu apelante se dedica à atividade criminosa, de mercancia de entorpecentes. Descabimento da substituição da pena privativa de liberdade por restritivas de direitos, porquanto o requisito objetivo temporal não está satisfeito, valendo registrar que, em consonância com a Resolução nº 05/2012 do Senado Federal, embora atualmente possível a substituição da pena privativa de liberdade por restritiva de direitos, tal benesse é direcionada ao réu que tenha a pena fixada abaixo do limite previsto no artigo 44 do Código Penal, o que não é o caso dos autos. CONHECIMENTO E DESPROVIMENTO DO RECURSO.´
+
+Assim, resta o acusado LUIZ FERNANDO DA COSTA ARAÚJO ROSA definitivamente condenado a 5 (cinco) anos de reclusão, acrescidos da pecuniária de 500 (quinhentos) dias-multa.
+
+Fixo o dia-multa na razão unitária mínima legal.
+
+2)-Crime previsto no art. 35 da Lei 11.343:
+
+Na primeira etapa, doso a pena base em 3 (três) anos de reclusão e 500 (quinhentos) dias-multa, tendo em vista não se configurar nenhuma circunstância judicial em desfavor do acusado, nos moldes do art.59 do CP.
+
+Na segunda fase da aplicação da pena, não se visualiza nenhuma agravante ou atenuante aplicável ao caso em análise. Assim, a pena intermediária permanece no mesmo patamar acima fixado.
+
+Na terceira fase, tendo em vista a inocorrência de qualquer causa de aumento ou de diminuição de pena, mantenho a pena acima aplicada, chegando-se, assim, à pena definitiva.
+
+Em decorrência do cúmulo material das penas, previsto no art. 69 do CP, a pena total referente à prática de ambos os delitos é de 8 (oito) anos de reclusão  e 1.200 (mil e duzentos) dias-multa, no valor unitário mínimo legal, a ser cumprida em regime fechado, nos moldes fixados no art. 33, § 2º, ´a´ do CP.
+
+Deixo de substituir a reprimenda aplicada, nos moldes do disposto no art. 44 do CP, em razão do constante no inciso I.
+
+Fixo o dia-multa na razão unitária mínima legal.
+
+Por outro lado, tendo em conta a gravidade dos fatos praticados pelo acusado, que ameaçam sobremaneira a ordem pública, a fim de manter-se a paz e a tranquilidade social, nego ao mesmo o direito de recorrer em liberdade.
+
+Condeno, ainda, o apenado ao pagamento da taxa judiciária e das custas processuais, nos termos do art. 804 do CPP.
+
+Ao contador para cálculo das custas processuais.
+
+Expeça-se CES provisória.
+
+Após o trânsito em julgado, expeça-se mandado de prisão decorrente de sentença condenatória e adite-se a CES provisória. Recolha-se ainda o mandado de prisão preventiva.
+
+Tudo feito, arquive-se.
+
+Determino ao Coordenador da Secretaria de Administração Penitenciária que providencie a transferência do condenado para estabelecimento prisional compatível com o regime fixado na sentença.
+
+Com o trânsito em julgado, procedam-se aos atos visando à destruição da droga apreendida, com fulcro no artigo 72 da Lei n° 11.343/2006, devendo ser providenciadas as anotações e comunicações pertinentes.
+
+P.I."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>14/08/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>23/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifico que as custas referentes ao ato pretendido à fl. 167 foram regularmente recolhidas.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Alegações Finais</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>23/07/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>23/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do documento:</td>
+<td valign=top align=justify class='normal'>grerj fl 167</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Despacho</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>27/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>432/433</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>20/07/2018</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>17/07/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>16/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Fls. 167, defiro com cautelas de praxe. Atente-se que se trata de réu preso, com instrução finda, devendo as alegações finais serem depositadas tão logo, quanto possível.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>13/07/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>13/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Tendo em vista fls. 167, remeto os autos a conclusão.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Atos da Serventia</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>12/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>565/566</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>09/07/2018</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>09/07/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Aguardando apresentação das alegações finais pela defesa.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>09/07/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>29/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>29/06/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>29/06/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>29/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Nesta data prestei as informações que seguem.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>29/06/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho em Audiência  - Proferido despacho de mero expediente</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data do despacho:</td>
+<td valign=top align=justify class='normal'>26/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Pela MMa. Juíza foi proferido o seguinte DESPACHO: Digam as partes em alegações finais.<br><br>
+<a href='javascript:void("30");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=30&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov30" value="Feito o pregão de estilo, foi apresentado o acusado(a), estando acompanhado pela Defensoria Pública. ABERTA A AUDIÊNCIA, lida a denúncia, foi realizado o interrogatório do acusado. Pela MMa. Juíza foi proferido o seguinte DESPACHO: Digam as partes em alegações finais."></td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Audiência Instrução e Julgamento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da audiência:</td>
+<td valign=top align=justify class='normal'>26/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Resultado:</td>
+<td valign=top align=justify class='normal'>Realizada - Despacho em audiência</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Feito o pregão de estilo, foi apresentado o acusado(a), estando acompanhado pela Defensoria Pública. ABERTA A AUDIÊNCIA, lida a denúncia, foi realizado o interrogatório do acusado. Pela MMa. Juíza foi proferido o seguint...
+<br><br>
+<a href='javascript:void("3784316");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=3784316&descMov=Audi%EAncia+Instru%E7%E3o+e+Julgamento&exibeNumMov=N','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Audiência Instrução e Julgamento
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov3784316" value="Feito o pregão de estilo, foi apresentado o acusado(a), estando acompanhado pela Defensoria Pública. ABERTA A AUDIÊNCIA, lida a denúncia, foi realizado o interrogatório do acusado. Pela MMa. Juíza foi proferido o seguinte DESPACHO: Digam as partes em alegações finais.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>15/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifico que os únicos laudos disponíveis no SIC-WEB foram juntados aos autos em fls. 140/146.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Decisão em Audiência  - Decisão ou Despacho Não-Concessão</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da decisão:</td>
+<td valign=top align=justify class='normal'>12/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Pela MMa. Juíza foi proferido a seguinte DECISÃO:
+1 - Acolho as razões expostas pelo Ministério Público, ressaltando, outrossim, que o interrogatório do acusado não tardará visto que ora designado para o dia 26/06/2018...<br><br>
+<a href='javascript:void("28");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=28&descMov=Decis%E3o','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Decisão
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov28" value="Feito o pregão de estilo, ABERTA A AUDIÊNCIA, não foi apresentado o acusado, Presente seu advogado.
+                    Pela defesa foi requerido: Reitera o pedido de revogação de prisão que estava para ser apreciado, conforme pendente última assentada e/ou relaxamento de prisão, tendo em vista a segunda audiência consecutiva sem apresentação do acusado, estando pendente somente o interrogatório.
+ Pelo MP, em relação ao pedido de relaxamento de prisão, foi dito que o fato ocorreu em 14/01/2018. A autoridade policial dispõe de 30 dias para conclusão do inquérito. O MP dispõe de 10 dias para oferecimento de denúncia. Observa-se que o inquérito foi concluído e a denúncia foi oferecida em 23/01/2018, portanto em apenas 9 dias. A Defesa Prévia somente foi ofertada em 23/02/2018. A primeira audiência de instrução e julgamento foi designada para 08/05/2018, portanto, dentro do prazo previsto no artigo 400 do Código Penal. Recentemente, a SEAP alterou a apresentação de presos em todo o estado, o que começou a ser implementado neste mês de junho, e, evidentemente, que o processo se encontra em fase de ¿calibragem¿. Mesmo com toda a crise pelo qual o Estado do Ri ode Janeiro vem passando, no presente feito só falta o interrogatório do acusado. Em razão do exposto, não há que se falar em recesso de prazo, sobretudo porque tal construção é de natureza doutrinária e não pode avaliada de forma genérica, e sim analisados os elementos do caso concreto. Em diligências, o MP requer o laudo de descrição de bens apreendidos, conforme item 2-B de fls. 54.
+Pela MMa. Juíza foi proferido a seguinte DECISÃO:
+1 - Acolho as razões expostas pelo Ministério Público, ressaltando, outrossim, que o interrogatório do acusado não tardará visto que ora designado para o dia 26/06/2018 às 13:00h. Assim sendo, não há que se falar em excesso de prazo.
+2 - Atenda-se ao MP no que tange a diligencia ora requerida.
+3 ¿ Designo novo ato para o dia 26/06/2018 às 13:00h. Requisite-se apenas o acusado.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Audiência Interrogatório</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da audiência:</td>
+<td valign=top align=justify class='normal'>12/06/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Resultado:</td>
+<td valign=top align=justify class='normal'>Realizada - decisão em audiência</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Feito o pregão de estilo, ABERTA A AUDIÊNCIA, não foi apresentado o acusado, Presente seu advogado.
+                    Pela defesa foi requerido: Reitera o pedido de revogação de prisão que estava para ser apreciado, ...
+<br><br>
+<a href='javascript:void("17366683");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=17366683&descMov=Audi%EAncia+Interrogat%F3rio&exibeNumMov=N','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Audiência Interrogatório
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov17366683" value="Feito o pregão de estilo, ABERTA A AUDIÊNCIA, não foi apresentado o acusado, Presente seu advogado.
+                    Pela defesa foi requerido: Reitera o pedido de revogação de prisão que estava para ser apreciado, conforme pendente última assentada e/ou relaxamento de prisão, tendo em vista a segunda audiência consecutiva sem apresentação do acusado, estando pendente somente o interrogatório.
+ Pelo MP, em relação ao pedido de relaxamento de prisão, foi dito que o fato ocorreu em 14/01/2018. A autoridade policial dispõe de 30 dias para conclusão do inquérito. O MP dispõe de 10 dias para oferecimento de denúncia. Observa-se que o inquérito foi concluído e a denúncia foi oferecida em 23/01/2018, portanto em apenas 9 dias. A Defesa Prévia somente foi ofertada em 23/02/2018. A primeira audiência de instrução e julgamento foi designada para 08/05/2018, portanto, dentro do prazo previsto no artigo 400 do Código Penal. Recentemente, a SEAP alterou a apresentação de presos em todo o estado, o que começou a ser implementado neste mês de junho, e, evidentemente, que o processo se encontra em fase de ¿calibragem¿. Mesmo com toda a crise pelo qual o Estado do Ri ode Janeiro vem passando, no presente feito só falta o interrogatório do acusado. Em razão do exposto, não há que se falar em recesso de prazo, sobretudo porque tal construção é de natureza doutrinária e não pode avaliada de forma genérica, e sim analisados os elementos do caso concreto. Em diligências, o MP requer o laudo de descrição de bens apreendidos, conforme item 2-B de fls. 54.
+Pela MMa. Juíza foi proferido a seguinte DECISÃO:
+1 - Acolho as razões expostas pelo Ministério Público, ressaltando, outrossim, que o interrogatório do acusado não tardará visto que ora designado para o dia 26/06/2018 às 13:00h. Assim sendo, não há que se falar em excesso de prazo.
+2 - Atenda-se ao MP no que tange a diligencia ora requerida.
+3 ¿ Designo novo ato para o dia 26/06/2018 às 13:00h. Requisite-se apenas o acusado.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>11/05/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Certifico que, nesta data, procedi ao desmembramento do presente feito em relação ao réu LUAN DA SILVA MENEZES, gerando o processo 0007432-69.2018.8.19.0023.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho em Audiência  - Proferido despacho de mero expediente</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>JULIANA CARDOSO MONTEIRO DE BARROS</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data do despacho:</td>
+<td valign=top align=justify class='normal'>08/05/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Pela MMa. Juíza foi proferido o seguinte DESPACHO:
+1 - Desmembre-se o feito em relação ao acusado LUAN DA SILVA diante da não concordância de seu patrono.
+2- Designo novo ato para o dia 12/06/2018 às 13:00h. Requisit...<br><br>
+<a href='javascript:void("26");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=26&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov26" value="Feito o pregão de estilo, não foram apresentados os acusados. ABERTA A AUDIÊNCIA, presentes os patronos de LUIZ FERNANDO E LUAN. A defesa de LUAN não concordou com a oitiva das testemunhas sem sua presença, ao revés da defesa de LUIZ FERNANDO, que não se opôs. lida a denúncia, foi procedida a oitiva das testemunhas EVELIN DA CONCEIÇÃO PINTO, CLEBER CORREA DA CONCEIÇÃO, NATHALIA SOARES SODRÉ, JEFFERSON FERREIRA DE OLIVEIRA E RODOLFO BARRETO PEIXOTO. Pela defesa do acusado LUIZ FERNANDO foi dito: ¿Requer a revogação da prisão, tendo em vista a contradição dos policiais, como por exemplo, um falou que demorou cinco minutos de deslocamento e o outro vinte minutos, um falou que não fez parada em local nenhum e o outro falou que houve duas paradas anteriores. E por outro lado, a defesa do acusado foi firme em dizer que viu o elemento que se evadiu do tráfico entrando na casa do acusado LUIZ FERNANDO com uma mochila. Também ficou comprovado que há meios de fuga na avenida que dá acesso para outra rua, fatos esses que também houve contradição dos policiais. Ademais, não há ainda a certeza ou prova robusta quanto a associação ao tráfico. Decaindo esta tipicidade restará somente o tráfico, onde com os demais elementos subjetivos do acusado poderá responder em liberdade.¿ Pelo MP foi dito que ¿Sem querer aprofundar na análise probatória, vez que não se trata ainda de alegações finais, passa o MP apenas a pontuar as argumentações expostas no pleito defensivo. Com relação à variação de tempo, trata-se de aspecto irrelevante pelo simples motivo de que a percepção de cada um pode variar, sendo razoável que uma determinada pessoa entenda ter havido 5 minutos e outra, tempo superior. Sendo assim, trata-se de aspecto de pouca credibilidade para se aferir o valor de depoimento. Com relação às duas paradas anteriores, se ocorreram ou não, tal análise depende do ponto de vista de quem está avaliando o depoimento, isso porque no entender de determinada testemunha a simples abordagem anterior de uma moradora com o intuito de localizar o endereço fornecido pelo primeiro acusado pode ser tida como irrelevante, ao passo que para outra testemunha pode se tratar de aspecto importante no depoimento. Vale lembrar que uma das testemunhas de defesa confirmou que a guarnição de fato esteve em outra residência, mas sem adentrá-la para fins de revista, apenas abordando a moradora do lado de fora. Com relação à possibilidade meios de fuga, também não se percebe qualquer contradição no depoimento dos policias, pelo simples motivo de que ambas as prisões os denunciados se encontravam na residência e não esboçavam qualquer tentativa de fuga. Por fim, contradição existe no depoimento da informante ora prestado, vez que foi categórica em afirmar que a região é perigosa, onde há constante movimento do tráfico, e ao mesmo tempo afirmou que no dia da prisão havia deixado o portão e a porta de sua residência abertos, o que teria permitido que suposto traficante adentrasse a residência e largar a mochila. Pelo exposto, e refutando todos os argumentos defensivo, opina contrariamente ao pleito de revogação da prisão.
+Pela MMa. Juíza foi proferido o seguinte DESPACHO:
+1 - Desmembre-se o feito em relação ao acusado LUAN DA SILVA diante da não concordância de seu patrono.
+2- Designo novo ato para o dia 12/06/2018 às 13:00h. Requisite-se o acusado.
+3 ¿ Após a preparação da audiência, venham conclusos para decisão.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>08/05/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Audiência Instrução e Julgamento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da audiência:</td>
+<td valign=top align=justify class='normal'>08/05/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Resultado:</td>
+<td valign=top align=justify class='normal'>Realizada - Despacho em audiência</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Feito o pregão de estilo, não foram apresentados os acusados. ABERTA A AUDIÊNCIA, presentes os patronos de LUIZ FERNANDO E LUAN. A defesa de LUAN não concordou com a oitiva das testemunhas sem sua presença, ao revés da d...
+<br><br>
+<a href='javascript:void("24074312");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=24074312&descMov=Audi%EAncia+Instru%E7%E3o+e+Julgamento&exibeNumMov=N','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Audiência Instrução e Julgamento
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov24074312" value="Feito o pregão de estilo, não foram apresentados os acusados. ABERTA A AUDIÊNCIA, presentes os patronos de LUIZ FERNANDO E LUAN. A defesa de LUAN não concordou com a oitiva das testemunhas sem sua presença, ao revés da defesa de LUIZ FERNANDO, que não se opôs. lida a denúncia, foi procedida a oitiva das testemunhas EVELIN DA CONCEIÇÃO PINTO, CLEBER CORREA DA CONCEIÇÃO, NATHALIA SOARES SODRÉ, JEFFERSON FERREIRA DE OLIVEIRA E RODOLFO BARRETO PEIXOTO. Pela defesa do acusado LUIZ FERNANDO foi dito: ¿Requer a revogação da prisão, tendo em vista a contradição dos policiais, como por exemplo, um falou que demorou cinco minutos de deslocamento e o outro vinte minutos, um falou que não fez parada em local nenhum e o outro falou que houve duas paradas anteriores. E por outro lado, a defesa do acusado foi firme em dizer que viu o elemento que se evadiu do tráfico entrando na casa do acusado LUIZ FERNANDO com uma mochila. Também ficou comprovado que há meios de fuga na avenida que dá acesso para outra rua, fatos esses que também houve contradição dos policiais. Ademais, não há ainda a certeza ou prova robusta quanto a associação ao tráfico. Decaindo esta tipicidade restará somente o tráfico, onde com os demais elementos subjetivos do acusado poderá responder em liberdade.¿ Pelo MP foi dito que ¿Sem querer aprofundar na análise probatória, vez que não se trata ainda de alegações finais, passa o MP apenas a pontuar as argumentações expostas no pleito defensivo. Com relação à variação de tempo, trata-se de aspecto irrelevante pelo simples motivo de que a percepção de cada um pode variar, sendo razoável que uma determinada pessoa entenda ter havido 5 minutos e outra, tempo superior. Sendo assim, trata-se de aspecto de pouca credibilidade para se aferir o valor de depoimento. Com relação às duas paradas anteriores, se ocorreram ou não, tal análise depende do ponto de vista de quem está avaliando o depoimento, isso porque no entender de determinada testemunha a simples abordagem anterior de uma moradora com o intuito de localizar o endereço fornecido pelo primeiro acusado pode ser tida como irrelevante, ao passo que para outra testemunha pode se tratar de aspecto importante no depoimento. Vale lembrar que uma das testemunhas de defesa confirmou que a guarnição de fato esteve em outra residência, mas sem adentrá-la para fins de revista, apenas abordando a moradora do lado de fora. Com relação à possibilidade meios de fuga, também não se percebe qualquer contradição no depoimento dos policias, pelo simples motivo de que ambas as prisões os denunciados se encontravam na residência e não esboçavam qualquer tentativa de fuga. Por fim, contradição existe no depoimento da informante ora prestado, vez que foi categórica em afirmar que a região é perigosa, onde há constante movimento do tráfico, e ao mesmo tempo afirmou que no dia da prisão havia deixado o portão e a porta de sua residência abertos, o que teria permitido que suposto traficante adentrasse a residência e largar a mochila. Pelo exposto, e refutando todos os argumentos defensivo, opina contrariamente ao pleito de revogação da prisão.
+Pela MMa. Juíza foi proferido o seguinte DESPACHO:
+1 - Desmembre-se o feito em relação ao acusado LUAN DA SILVA diante da não concordância de seu patrono.
+2- Designo novo ato para o dia 12/06/2018 às 13:00h. Requisite-se o acusado.
+3 ¿ Após a preparação da audiência, venham conclusos para decisão.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>26/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Intimação de Testemunha/Vítima Art.455 do Novo CPC<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> ITABORAI CENTRAL DE CUMP DE MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 02/05/2018</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 07/05/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>26/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Intimação de Testemunha/Vítima Art.455 do Novo CPC<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> ITABORAI CENTRAL DE CUMP DE MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 02/05/2018</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 07/05/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>26/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Intimação de Testemunha/Vítima Art.455 do Novo CPC<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> ITABORAI CENTRAL DE CUMP DE MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 02/05/2018</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 07/05/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>26/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201802548132 - Proger Comarca de São Gonçalo</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Decisão</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>25/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>639</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>24/04/2018</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>18/04/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Decisão - Decisão ou Despacho Não-Concessão</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Decisão:</td>
+<td valign=top align=justify class='normal'>17/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>...com crime de extrema lesividade social, que afeta diretamente a população, seja por meio da destruição de instituições familiares fundamentais para o desenvolvimento individual e coletivo, seja pela atuação violenta d...<br><br>
+<a href='javascript:void("20");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=20&descMov=Decis%E3o','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Decisão
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov20" value="Cuida-se de pedido de concessão de liberdade provisória/revogação da prisão preventiva de LUIZ FERNANDO DA COSTA ARAUJO ROSA, formulado pela defesa, às fls. 91-97, que alega, em síntese, que estão ausentes os requisitos autorizadores da segregação cautelar preventiva.
+
+Ouvido, o Ministério Público opinou contrariamente ao pleito defensivo, às fls. 110-111.
+É O BREVE RELATÓRIO. DECIDO.
+
+Assiste razão ao Ministério Público em relação à necessidade da manutenção da custódia cautelar do acusado. Frise-se que não houve qualquer alteração no contexto fático que deu ensejo à decisão que decretou a prisão preventiva.
+
+Resta-nos, portanto, verificar se há fundamento fático-jurídico para, no caso concreto, manter a custódia cautelar dos acusados, como requer o MP.
+
+Na hipótese, verifica-se que as peças de informação que integram estes autos contemplam sólidos elementos indicadores da existência material de fatos em tese delituoso (tráfico de entorpecentes ) e da autoria do acusado, que, diga-se, foi preso em flagrante na posse de quantidade significativa de entorpecentes consistente em 172 pinos de cocaína (Fls 09) e 33 tabletes de maconha (Fls.09) . Sobejamente configurado, portanto, o fumus comissi delicti (artigo 312, caput, parte final, do CPP).
+
+Quanto à necessidade da prisão, pode-se afirmar, com segurança, que a constrição da liberdade de locomoção do réu é medida que se impõe como forma de se garantir a ordem pública e a aplicação da lei penal.
+
+Note-se que estamos lidando com crime de extrema lesividade social, que afeta diretamente a população, seja por meio da destruição de instituições familiares fundamentais para o desenvolvimento individual e coletivo, seja pela atuação violenta dos narcotraficantes sobre os indefesos integrantes da cidade.
+
+Nesse contexto, sendo o réu apontado como vendedor de drogas, parece claro que sua liberdade contribuirá para o crescimento da nefasta atividade criminosa acima mencionada, incrementando o estado de insegurança social. Registre-se que não estamos falando de dados abstratos, mas de fatos concretos extraídos da indesejada e conhecida realidade da Comarca.
+
+Com base nestes fatos, entendo presentes os pressupostos autorizadores (artigos 312 e 313, inciso I e II do Código de Processo Penal) a justificar a manutenção da prisão cautelar.
+
+Ante o exposto, acolho os argumentos ministeriais e, por conseguinte, mantenho do decreto prisional, por seus próprios fundamentos e INDEFIRO O PEDIDO formulado pela defesa."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>17/04/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>RAFAEL DE OLIVEIRA MONACO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>13/04/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>10/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>10/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201802028035 - Proger Regional de Alcântara</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>10/04/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>03/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>27/03/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Decisão</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>05/04/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>468/469</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>03/04/2018</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>22/03/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Decisão - Recebida a denúncia</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Decisão:</td>
+<td valign=top align=justify class='normal'>22/03/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>...tensões postas na inicial acusatória com toda as provas indiciárias ali contidas.
+
+O Processo está regular e válido, inexistindo vício a ensejar o reconhecimento de nulidade. Estão presentes as condições de ação e o...<br><br>
+<a href='javascript:void("15");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=15&descMov=Decis%E3o','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Decisão
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov15" value="Notificados regularmente, os denunciados apresentaram as peças de defesa técnica de fls. 70-71 e 78-81.
+
+Em que pese o empenho defensivo, as questões suscitadas não foram suficientes para fulminar as pretensões postas na inicial acusatória com toda as provas indiciárias ali contidas.
+
+O Processo está regular e válido, inexistindo vício a ensejar o reconhecimento de nulidade. Estão presentes as condições de ação e os pressupostos processuais. As questões pertinentes ao mérito da ação serão analisadas, oportunamente, quando do julgamento do mérito.
+
+Repise-se que os fatos e fundamentos deduzidos na defesa escrita não afastam os indícios de autoria e materialidade coligidos em sede extrajudicial, impondo-se a apuração dos fatos narrados na exordial da presente ação penal, garantindo-se ao(s) imputado(s) a ampla defesa e o contraditório.
+
+Destarte só a instrução processual penal futura poderá esclarecer os pontos controvertidos fixados pelas partes nestes autos.
+
+Isto posto, RECEBO A DENÚNCIA.
+
+Designo o dia 08/05/2018, 13;40 horas para realização da AIJ.
+
+Requisitem-se/intimem-se os réus e as testemunhas arroladas pelas partes.
+
+Dê-se ciência ao MP e à defesa técnica."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>22/03/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>RAFAEL DE OLIVEIRA MONACO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>20/03/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201801577442 - Proger Comarca de São Gonçalo</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'></td>
+<td valign=top align=justify class='normal'>201801484678 - Prog Comarca de Niterói</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>08/03/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>08/03/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Junte-se petição pendente no DCP, após voltem os autos conclusos.</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>08/03/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>RAFAEL DE OLIVEIRA MONACO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>06/03/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1- Tendo em vista fls. 70/72, remeto os autos a conclusão.
+
+2- Cabe informar que há nos autos duas procurações (fls. 52 e 69) para o mesmo réu LUIZ FERNANDO DA COSTA ARAUJO ROSA.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada - Petição</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>06/03/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Número do Documento:</td>
+<td valign=top align=justify class='normal'>201801172712 - Prog Regional da Região Oceânica</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>26/02/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Juntada de Mandado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da juntada:</td>
+<td valign=top align=justify class='normal'>23/02/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>19/02/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Envio de Documento Eletrônico</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>08/02/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Documentos Digitados:</td>
+<td valign=top align=justify class='normal'>Mandado de Notificação da Lei 11343/06<BR>Mandado de Notificação da Lei 11343/06<BR></td>
+</tr>
+<tr><td><b>Nome da Central Destinatária:</b> </td>
+<td valign=top align=justify class='normal'> MEIER REGIONAL CENTRAL DE CUMP MANDADOS</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Recebimento pelo OJA: 15/02/2018</td>
+</tr><tr><td>&nbsp;</td>
+<td valign=top align=justify class='normal'>Data de Devolução pelo OJA: 23/02/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Publicado&nbsp; Despacho</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da publicação:</td>
+<td valign=top align=justify class='normal'>19/02/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Folhas do DJERJ.:</td>
+<td valign=top align=justify class='normal'>721/722</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Enviado para publicação</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do expediente:</td>
+<td valign=top align=justify class='normal'>15/02/2018</td>
+</tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebimento</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data de Recebimento:</td>
+<td valign=top align=justify class='normal'>29/01/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Despacho - Proferido despacho de mero expediente</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data Despacho:</td>
+<td valign=top align=justify class='normal'>29/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>1) O MINISTÉRIO PÚBLICO ofereceu denúncia em desfavor de LUIZ FERNANDO DA COSTA ARAUJO ROSA e LUAN DA SILVA MENEZES, imputando-lhes a prática do delito descrito no artigo 33 caput e 35, ambos  da Lei 11.343/06.
+
+Em aná...
+<br><br>
+<a href='javascript:void("6");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=6&descMov=Despacho','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Despacho
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov6" value="1) O MINISTÉRIO PÚBLICO ofereceu denúncia em desfavor de LUIZ FERNANDO DA COSTA ARAUJO ROSA e LUAN DA SILVA MENEZES, imputando-lhes a prática do delito descrito no artigo 33 caput e 35, ambos  da Lei 11.343/06.
+
+Em análise preliminar, presentes estão os pressupostos processuais, bem assim os requisitos de validade do processo e as condições da ação.
+
+A inicial acusatória preenche os requisitos formais enunciados pelo art. 41, do CPP, não se verificando, portanto, hipótese de rejeição liminar da denúncia.
+
+Assim, NOTIFIQUEM-SE os indiciados para que se manifestem em defesa prévia, no prazo de 10 (dez) dias, nos termos do art. 55, da Lei 11.343/06.Caso o indiciado não manifeste o desejo de patrocínio pela DP, e as respectivas peças defensivas não sejam apresentadas em tempo, remetam-se os autos à DP, nos termos do art. 396-A, § 2º, do CPP.
+
+2) DEFIRO os requerimentos ministeriais na manifestação que acompanha a denúncia."><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Conclusão ao Juiz</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da conclusão:</td>
+<td valign=top align=justify class='normal'>29/01/2018</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>RAFAEL DE OLIVEIRA MONACO</td>
+</tr>
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Ato Ordinatório Praticado</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data:</td>
+<td valign=top align=justify class='normal'>26/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>A conclusão.</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr>
+<td colspan=2>&nbsp;</td></tr><tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Recebidos os autos</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data do recebimento:</td>
+<td valign=top align=justify class='normal'>24/01/2018</td>
+</tr><tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Ministério Público</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>19/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Distribuição Sorteio</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da distribuição:</td>
+<td valign=top align=justify class='normal'>19/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Serventia:</td>
+<td valign=top align=justify class='normal'>Cartório da 2ª Vara Criminal - 2ª Vara Criminal</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Remessa</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Destinatário:</td>
+<td valign=top align=justify class='normal'>Serventia de 1ª Instância</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da remessa:</td>
+<td valign=top align=justify class='normal'>18/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Prazo:</td>
+<td valign=top align=justify class='normal'>15 dia(s)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Digitação de Documentos</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da digitação:</td>
+<td valign=top align=justify class='normal'>16/01/2018</td>
+</tr>
+
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr  class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Decisão em Audiência  - Convertido(a) o(a)</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Juiz:</td>
+<td valign=top align=justify class='normal'>LETICIA D'AIUTO DE MORAES FERREIRA MICHELLI</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Data da decisão:</td>
+<td valign=top align=justify class='normal'>16/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Isto posto, por isso, CONVERTO a prisão em flagrante em preventiva, com base no art. 312, caput, do CPP, uma vez que a prisão cautelar é necessária para garantia da ordem pública, por conveniência da instrução criminal e...<br><br>
+<a href='javascript:void("1");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=1&descMov=Decis%E3o','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Decisão
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov1" value="Em 16 de janeiro de 2018, na sala de audiências deste Juízo, perante a MMª Juíza de Direito, Dr.(a). LETÍCIA D'AIUTO DE MORAES FERREIRA MICHELLI, realizou-se a Audiência de Custódia nestes autos, presentes o i. Membro do Ministério Público e o(s) custodiado(s), acompanhado(s) de sua(s) supracitada(s) defesa(s). Justificada a manutenção das algemas no(s) custodiado(s) em virtude da situação recente de flagrância, dimensões da sala de audiências, bem como pela necessidade de preservação da integridade física dos presentes. Aberta a audiência, foram os presentes cientificados da utilização do registro fonográfico/audiovisual. Após a(s) Defesa(s) ter(em) se entrevistado reservadamente com o(s) custodiado(s), procedeu-se à(s) entrevista(s), conforme termo(s) e registro(s) audiovisual. As declarações hoje colhidas, gravadas, foram salvas no CD que acompanha esta assentada e será acautelado no Cartório da CEAC.
+
+O MP opina pela conversão da prisão em flagrante em prisão preventiva.
+
+Pela Defesa foi requerida a liberdade provisória.
+
+Pela MMª Juíza de Direito foi proferida a seguinte DECISÃO: ´Inicialmente, cumpre consignar que pelo custodiado LUAN foi dito que foi agredido com um chute na costela no momento de sua prisão; que estava deitado e algemado no momento; que não ficou com marcas; que a agressão foi realizada por Policial Militar.
+
+Pelo custodiado LUIZ FERNANDO não foi informada qualquer agressão no ato prisional.
+
+Compulsando os autos, verifico que custodiado presos em flagrante delito pela prática, em tese do crime de TRAFICO E ASSOCIAÇAO PARA O TRÁFICO.
+
+Inicialmente, cabe ressaltar que não há nada que indique ilegalidade na prisão do acusado, tratando-se de flagrante formal e perfeito. A alegação defensiva de que os policiais teriam entrado na casa do custodiado e ´forjado´ o flagrante não possui qualquer guarida nos depoimentos prestados em sede policial, devendo-se ter em conta ainda que o estado flagrancial desde já afasta eventual alegação de nulidade pelo ingresso na residência deste sem mandado judicial.
+
+Em relação ao pedido de prisão preventiva formulado pelo Ministério Público, de se notar se trata de medida de cautela processual, cabível, excepcionalmente, quando presentes e demonstrados, ainda que sucintamente, os pressupostos e requisitos insertos no artigo 312 do Código de Processo Penal.
+
+Como medida cautelar, deve ser demonstrada a coexistência de fumus comissi delicti e periculum libertatis que justifiquem o cárcere antes do trânsito em julgado de decisão condenatória. No presente caso, atesta-se a presença do fumus comissi delicti pela prisão em flagrante dos custodiados na posse de mais de 100 ´sacolés´ de maconha e 172 ´sacolés´ de cocaína, nos termos do auto de apreensão e laudo prévio acostado aos autos, além de 06 rádios comunicadores.
+
+O periculum libertatis, definido como o risco provocado pela manutenção da acusada em liberdade, está igualmente presente: trata-se de crime grave, em que os custodiados traziam consigo quantidade considerável de droga para venda, consistente em quase 300 ´sacolés´ de droga, todos devidamente acondicionados para venda, além de meia dúzia de radiocomunicadores denotam a gravidade em concreto do delito.
+
+O periculum libertatis, definido como o risco provocado pela manutenção do acusado em liberdade, está igualmente presente: A FAC atesta que o custodiado LUAN é REINCIDENTE ESPECIFICO, o que evidencia a alta periculosidade do acusado e o grande risco de reiteração criminosa, de forma que sua liberdade enseja grande risco para a ordem pública.
+
+Ademais, não há que se falar em violação ao princípio da homogeneidade no caso em tela, visto que consideração dos elementos dispostos no art. 59 do Código Penal autoriza o eventual cumprimento de pena em regime fechado, nos termos do art. 33 § 3º do Código Penal.
+
+Deve-se ter em conta que a alegação defensiva de que a colaboração de LUAN deveria ensejar sua soltura por ofensa a tal princípio não pode ser ensejadora da liberdade provisória requerida, seja pela necessidade de analise nos termos acima aventados, seja pela condição de reincidente que este ostenta.
+
+Neste sentido é o posicionamento do Superior Tribunal de Justiça, senão vejamos:
+
+A alegação de desproporcionalidade da prisão preventiva somente poderá ser aferível após a prolação de sentença, não cabendo, durante o curso do processo, a antecipação da análise quanto a possibilidade de cumprimento de pena em regime menos gravoso, caso seja prolatada sentença condenatória, sob pena de exercício de adivinhação e futurologia, sem qualquer previsão legal. Assim, não há que se falar em ofensa ao princípio da homogeneidade das medidas cautelares porque não cabe ao STJ, em um exercício de futurologia, antecipar a provável colocação da paciente em regime aberto/semiaberto ou a substituição da sua pena de prisão por restritiva de direitos. STJ. 5ª Turma. RHC 77.070/MG, Rel. Min. Felix Fischer, julgado em 16/02/2017. STJ. 6ª Turma. RHC 79.041/MG, Rel. Min. Nefi Cordeiro, julgado em 28/03/2017.
+
+No mesmo sentido, não há nos autos a comprovação de que o acusado reside no endereço indicado ou mesmo que exerça ocupação lícita, de forma que a decretação da cautelar em questão assegura igualmente a aplicação da lei penal. Isto porque, ausente qualquer demonstração de vínculo com esta localidade, a colocação em liberdade poderia impedir sua localização posterior.
+
+Finalmente, os crimes de tráfico e associação para o tráfico cometidos pelo acusado enquadra-se no disposto no art. 313, I CPP, visto que possuem pena privativa de liberdade máxima superior a 4 anos, tendo sido observados os requisitos formais da presente conversão.
+
+No presente caso, a determinação de medida cautelar diversa da prisão, conforme art. 319 não seria adequada ou suficiente para a garantia da ordem pública e a aplicação da lei penal pelas razões acima expostas.
+
+Isto posto, por isso, CONVERTO a prisão em flagrante em preventiva, com base no art. 312, caput, do CPP, uma vez que a prisão cautelar é necessária para garantia da ordem pública, por conveniência da instrução criminal e para assegurar a aplicação da lei penal. Expeça-se mandado de prisão.
+
+Deve o cartório da CEAC enviar estes autos ao juízo competente por distribuição, bem como acautelar a mídia em local próprio. Intimados os presentes. Nada mais havendo, foi encerrada a audiência.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Audiência Custódia</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da audiência:</td>
+<td valign=top align=justify class='normal'>16/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Resultado:</td>
+<td valign=top align=justify class='normal'>Realizada - decisão em audiência</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Descrição:</td>
+<td valign=top align=justify class='normal'>Em 16 de janeiro de 2018, na sala de audiências deste Juízo, perante a MMª Juíza de Direito, Dr.(a). LETÍCIA D'AIUTO DE MORAES FERREIRA MICHELLI, realizou-se a Audiência de Custódia nestes autos, presentes o i. Membro do...
+<br><br>
+<a href='javascript:void("19688941");' onClick=window.open('popdespacho.jsp?tipoato=Descri%E7%E3o&numMov=19688941&descMov=Audi%EAncia+Cust%F3dia&exibeNumMov=N','','width=500,height=250,left=300,top=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no');>
+Ver íntegra do(a) Audiência Custódia
+</a>
+</td>
+</tr>
+<input type="HIDDEN" name="descMov19688941" value="Em 16 de janeiro de 2018, na sala de audiências deste Juízo, perante a MMª Juíza de Direito, Dr.(a). LETÍCIA D'AIUTO DE MORAES FERREIRA MICHELLI, realizou-se a Audiência de Custódia nestes autos, presentes o i. Membro do Ministério Público e o(s) custodiado(s), acompanhado(s) de sua(s) supracitada(s) defesa(s). Justificada a manutenção das algemas no(s) custodiado(s) em virtude da situação recente de flagrância, dimensões da sala de audiências, bem como pela necessidade de preservação da integridade física dos presentes. Aberta a audiência, foram os presentes cientificados da utilização do registro fonográfico/audiovisual. Após a(s) Defesa(s) ter(em) se entrevistado reservadamente com o(s) custodiado(s), procedeu-se à(s) entrevista(s), conforme termo(s) e registro(s) audiovisual. As declarações hoje colhidas, gravadas, foram salvas no CD que acompanha esta assentada e será acautelado no Cartório da CEAC.
+
+O MP opina pela conversão da prisão em flagrante em prisão preventiva.
+
+Pela Defesa foi requerida a liberdade provisória.
+
+Pela MMª Juíza de Direito foi proferida a seguinte DECISÃO: ´Inicialmente, cumpre consignar que pelo custodiado LUAN foi dito que foi agredido com um chute na costela no momento de sua prisão; que estava deitado e algemado no momento; que não ficou com marcas; que a agressão foi realizada por Policial Militar.
+
+Pelo custodiado LUIZ FERNANDO não foi informada qualquer agressão no ato prisional.
+
+Compulsando os autos, verifico que custodiado presos em flagrante delito pela prática, em tese do crime de TRAFICO E ASSOCIAÇAO PARA O TRÁFICO.
+
+Inicialmente, cabe ressaltar que não há nada que indique ilegalidade na prisão do acusado, tratando-se de flagrante formal e perfeito. A alegação defensiva de que os policiais teriam entrado na casa do custodiado e ´forjado´ o flagrante não possui qualquer guarida nos depoimentos prestados em sede policial, devendo-se ter em conta ainda que o estado flagrancial desde já afasta eventual alegação de nulidade pelo ingresso na residência deste sem mandado judicial.
+
+Em relação ao pedido de prisão preventiva formulado pelo Ministério Público, de se notar se trata de medida de cautela processual, cabível, excepcionalmente, quando presentes e demonstrados, ainda que sucintamente, os pressupostos e requisitos insertos no artigo 312 do Código de Processo Penal.
+
+Como medida cautelar, deve ser demonstrada a coexistência de fumus comissi delicti e periculum libertatis que justifiquem o cárcere antes do trânsito em julgado de decisão condenatória. No presente caso, atesta-se a presença do fumus comissi delicti pela prisão em flagrante dos custodiados na posse de mais de 100 ´sacolés´ de maconha e 172 ´sacolés´ de cocaína, nos termos do auto de apreensão e laudo prévio acostado aos autos, além de 06 rádios comunicadores.
+
+O periculum libertatis, definido como o risco provocado pela manutenção da acusada em liberdade, está igualmente presente: trata-se de crime grave, em que os custodiados traziam consigo quantidade considerável de droga para venda, consistente em quase 300 ´sacolés´ de droga, todos devidamente acondicionados para venda, além de meia dúzia de radiocomunicadores denotam a gravidade em concreto do delito.
+
+O periculum libertatis, definido como o risco provocado pela manutenção do acusado em liberdade, está igualmente presente: A FAC atesta que o custodiado LUAN é REINCIDENTE ESPECIFICO, o que evidencia a alta periculosidade do acusado e o grande risco de reiteração criminosa, de forma que sua liberdade enseja grande risco para a ordem pública.
+
+Ademais, não há que se falar em violação ao princípio da homogeneidade no caso em tela, visto que consideração dos elementos dispostos no art. 59 do Código Penal autoriza o eventual cumprimento de pena em regime fechado, nos termos do art. 33 § 3º do Código Penal.
+
+Deve-se ter em conta que a alegação defensiva de que a colaboração de LUAN deveria ensejar sua soltura por ofensa a tal princípio não pode ser ensejadora da liberdade provisória requerida, seja pela necessidade de analise nos termos acima aventados, seja pela condição de reincidente que este ostenta.
+
+Neste sentido é o posicionamento do Superior Tribunal de Justiça, senão vejamos:
+
+A alegação de desproporcionalidade da prisão preventiva somente poderá ser aferível após a prolação de sentença, não cabendo, durante o curso do processo, a antecipação da análise quanto a possibilidade de cumprimento de pena em regime menos gravoso, caso seja prolatada sentença condenatória, sob pena de exercício de adivinhação e futurologia, sem qualquer previsão legal. Assim, não há que se falar em ofensa ao princípio da homogeneidade das medidas cautelares porque não cabe ao STJ, em um exercício de futurologia, antecipar a provável colocação da paciente em regime aberto/semiaberto ou a substituição da sua pena de prisão por restritiva de direitos. STJ. 5ª Turma. RHC 77.070/MG, Rel. Min. Felix Fischer, julgado em 16/02/2017. STJ. 6ª Turma. RHC 79.041/MG, Rel. Min. Nefi Cordeiro, julgado em 28/03/2017.
+
+No mesmo sentido, não há nos autos a comprovação de que o acusado reside no endereço indicado ou mesmo que exerça ocupação lícita, de forma que a decretação da cautelar em questão assegura igualmente a aplicação da lei penal. Isto porque, ausente qualquer demonstração de vínculo com esta localidade, a colocação em liberdade poderia impedir sua localização posterior.
+
+Finalmente, os crimes de tráfico e associação para o tráfico cometidos pelo acusado enquadra-se no disposto no art. 313, I CPP, visto que possuem pena privativa de liberdade máxima superior a 4 anos, tendo sido observados os requisitos formais da presente conversão.
+
+No presente caso, a determinação de medida cautelar diversa da prisão, conforme art. 319 não seria adequada ou suficiente para a garantia da ordem pública e a aplicação da lei penal pelas razões acima expostas.
+
+Isto posto, por isso, CONVERTO a prisão em flagrante em preventiva, com base no art. 312, caput, do CPP, uma vez que a prisão cautelar é necessária para garantia da ordem pública, por conveniência da instrução criminal e para assegurar a aplicação da lei penal. Expeça-se mandado de prisão.
+
+Deve o cartório da CEAC enviar estes autos ao juízo competente por distribuição, bem como acautelar a mídia em local próprio. Intimados os presentes. Nada mais havendo, foi encerrada a audiência.">
+
+
+
+
+
+
+
+
+                                <tr><td colspan=2>&nbsp;</td></tr>
+<tr class='tipoMovimento'>
+<td valign=top nowrap class='negrito'>Tipo do Movimento:</td>
+<td valign=top align=justify class='normal'>Distribuição Dirigida</td>
+</tr><tr>
+<td valign=top nowrap class='negrito'>Data da distribuição:</td>
+<td valign=top align=justify class='normal'>15/01/2018</td>
+</tr>
+<tr>
+<td valign=top nowrap class='negrito'>Serventia:</td>
+<td valign=top align=justify class='normal'>Cartório da Central de Custódia - Central de Custódia</td>
+</tr>
+
+
+
+
+
+                        <tr>
+                          <td colspan="2">&nbsp;</td>
+                        </tr>
+
+
+
+
+
+
+                  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <tr>
+                          <td valign="top" class="info">Processo(s) no Tribunal
+                                                           de Justi&ccedil;a:</td>
+
+
+
+
+
+
+                           <td valign="top" class="normal">
+
+
+
+
+
+
+
+
+                                  <a href="http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N=2018.059.13418">
+                                   <b>
+                                     0032159-64.2018.8.19.0000
+                                   </b>
+                                   </a>
+
+
+                                 <br/>
+
+
+
+
+
+
+
+
+
+                                  <a href="http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N=2018.059.19473">
+                                   <b>
+                                     0048551-79.2018.8.19.0000
+                                   </b>
+                                   </a>
+
+
+                                 <br/>
+
+
+
+
+
+
+
+
+
+                                  <a href="http://www4.tjrj.jus.br/ejud/ConsultaProcesso.aspx?N=2019.050.02472">
+                                   <b>
+                                     0008242-13.2018.8.19.0001
+                                   </b>
+                                   </a>
+
+
+                                 <br/>
+
+
+                           </td>
+
+
+
+
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      &nbsp;
+                    </td>
+                  </tr>
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Protocolo(s) no Tribunal de
+                                                       Justi&ccedil;a:</td>
+                      <td valign="top">
+
+                          201800333837
+                          &nbsp; - &nbsp; Data:&nbsp;
+                          18/06/2018
+                          <br/>
+
+                          201800498357
+                          &nbsp; - &nbsp; Data:&nbsp;
+                          31/08/2018
+                          <br/>
+
+                          201900048201
+                          &nbsp; - &nbsp; Data:&nbsp;
+                          01/02/2019
+                          <br/>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                      <td valign="top" nowrap="nowrap" class="info">Localiza&ccedil;&atilde;o
+                                                                       na serventia:</td>
+                      <td valign="top">
+                        Processo Retornado do Tribunal de Justiça
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+
+
+
+
+
+              </table>
+
+
+
+
+
+                  <p align="justify">
+                      Os autos de processos findos ter&atilde;o como
+                      destina&ccedil;&atilde;o final a guarda permanente ou
+                      a elimina&ccedil;&atilde;o, depois de cumpridos os
+                      respectivos prazos de guarda definidos na  Tabela de
+                      Temporalidade de Documentos do PJERJ.
+                  </p>
+
+
+
+
+
+
+
+
+          </form>
+          <!-- Fim da div#content -->
+        </div>
+        <div class="clear"/>
+        </div>
+        </div>
+      <!-- Fim da div#container -->
+      </div>
+
+
+
+
+              <div id="wndHistoricoMandados" class="window">
+                    <a href="#" class="fechar">Fechar</a>
+                    <table id="tbdados">
+                        <thead>
+                          <tr>
+                            <th>Número do Mandado</th>
+                            <th>Nome da Central Destinatária</th>
+                            <th>Nome do Tipo Mandado</th>
+                            <th>Data de Envio do Documento</th>
+                            <th>Data de Recebimento</th>
+							<th>Data de Recebimento pelo OJA</th>
+							<th>Data de Devolução pelo OJA</th>
+                            <th>Data de Devolução</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                                <tr>
+                                   <td>116/2018/MND</td>
+                                   <td>MEIER REGIONAL CENTRAL DE CUMP MANDADOS</td>
+                                   <td>Mandado de Notificação da Lei 11343/06</td>
+                                   <td>08/02/2018</td>
+                                   <td>08/02/2018</td>
+								   <td>15/02/2018</td>
+                                   <td>22/02/2018</td>
+                                   <td>22/02/2018</td>
+                                   <td>Positivo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>115/2018/MND</td>
+                                   <td>MEIER REGIONAL CENTRAL DE CUMP MANDADOS</td>
+                                   <td>Mandado de Notificação da Lei 11343/06</td>
+                                   <td>08/02/2018</td>
+                                   <td>08/02/2018</td>
+								   <td>15/02/2018</td>
+                                   <td>23/02/2018</td>
+                                   <td>23/02/2018</td>
+                                   <td>Positivo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>507/2018/MND</td>
+                                   <td>ITABORAI CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Intimação de Testemunha/Vítima Art.455 do Novo CPC</td>
+                                   <td>26/04/2018</td>
+                                   <td>27/04/2018</td>
+								   <td>02/05/2018</td>
+                                   <td>07/05/2018</td>
+                                   <td>07/05/2018</td>
+                                   <td>Negativo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>509/2018/MND</td>
+                                   <td>ITABORAI CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Intimação de Testemunha/Vítima Art.455 do Novo CPC</td>
+                                   <td>26/04/2018</td>
+                                   <td>27/04/2018</td>
+								   <td>02/05/2018</td>
+                                   <td>07/05/2018</td>
+                                   <td>07/05/2018</td>
+                                   <td>Negativo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>505/2018/MND</td>
+                                   <td>ITABORAI CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Intimação de Testemunha/Vítima Art.455 do Novo CPC</td>
+                                   <td>27/04/2018</td>
+                                   <td>27/04/2018</td>
+								   <td>02/05/2018</td>
+                                   <td>07/05/2018</td>
+                                   <td>07/05/2018</td>
+                                   <td>Positivo</td>
+                                </tr>
+
+                                <tr>
+                                   <td>1466/2018/MND</td>
+                                   <td>JAPERI CENTRAL DE CUMP DE MANDADOS</td>
+                                   <td>Mandado de Intimação para ciência da sentença</td>
+                                   <td>17/08/2018</td>
+                                   <td>17/08/2018</td>
+								   <td>20/08/2018</td>
+                                   <td>24/08/2018</td>
+                                   <td>24/08/2018</td>
+                                   <td>Positivo</td>
+                                </tr>
+
+                        </tbody>
+                    </table>
+              </div>
+              <!--<div id="mascara"></div>-->
+
+
+
+      <div id="footer">
+	<div class="acesso-informacao">
+		<a href="http://www.tjrj.jus.br/web/guest/transparencia/apresentacao" title="Acesso à Informação">
+			<img src="http://www.tjrj.jus.br/theme-tjrj/images/logo-acesso.png" alt="Acesso à Informação">
+		</a>
+	</div>
+	<div class="endereco">
+		<div class="container-fluid-1280">
+			<p>PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL
+				<br> Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 37,
+					Centro / CEP: 20010-090 / Tel.: (0xx21) 3133-2000
+				<br> Horários de funcionamento das Serventias Judiciais em todas as Comarcas do Estado do Rio de Janeiro:
+					 - 11h às 18h | Varas da Infância e da Juventude - 09h às 18h |
+					 Juizados Especiais e Adjuntos - 10h às 18h
+			</p>
+		</div>
+	</div>
+</div>
+<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+
+		i[r] = i[r] || function() {
+			var arrayValue = i[r].q || [];
+
+			i[r].q = arrayValue;
+
+			(i[r].q).push(arguments);
+		};
+
+		i[r].l = 1 * new Date();
+
+		a = s.createElement(o);
+		m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m);
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	//ga('create', 'UA-870424-2', 'auto');
+	ga('create', 'UA-870424-19', 'auto', {'sampleRate': 10});
+	ga('send', 'pageview');
+</script>
+      <!-- Fim da div#tudo -->
+    </body>
+</html>
